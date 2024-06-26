@@ -1,0 +1,23 @@
+-- Component directory C:/get-started/BTL_VXL/components/communications does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/get-started/BTL_VXL/components/display does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/get-started/BTL_VXL/components/sensors does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/get-started/BTL_VXL/components/communications does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/get-started/BTL_VXL/components/display does not contain a CMakeLists.txt file. No component will be added
+-- Component directory C:/get-started/BTL_VXL/components/sensors does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 7 dependencies:
+[1/7] espressif/cmake_utilities (0.5.3) from file:///C:/Espressif/registry
+[2/7] espressif/esp_lcd_gc9a01 (1.2.0) from file:///C:/Espressif/registry
+[3/7] espressif/esp_lcd_ili9341 (1.2.0) from file:///C:/Espressif/registry
+[4/7] espressif/esp_lcd_touch (1.1.1) from file:///C:/Espressif/registry
+[5/7] espressif/esp_lcd_touch_stmpe610 (1.0.6) from file:///C:/Espressif/registry
+[6/7] idf (5.2.1)
+[7/7] lvgl/lvgl (8.3.11) from file:///C:/Espressif/registry
+-- Configuring incomplete, errors occurred!
+See also "C:/get-started/BTL_VXL/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\get-started\BTL_VXL -BC:\get-started\BTL_VXL\build

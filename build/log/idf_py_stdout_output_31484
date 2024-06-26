@@ -1,0 +1,100 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/BTL_VXL/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/get-started/BTL_VXL/main/main.c: In function 'Display_Task':
+C:/get-started/BTL_VXL/main/main.c:579:14: warning: unused variable 'task_delay_ms' [-Wunused-variable]
+  579 |     uint32_t task_delay_ms = EXAMPLE_LVGL_TASK_MAX_DELAY_MS;
+      |              ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_LCD':
+C:/get-started/BTL_VXL/main/main.c:665:16: warning: unused variable 'disp' [-Wunused-variable]
+  665 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:125:12: warning: 's_retry_num' defined but not used [-Wunused-variable]
+  125 | static int s_retry_num = 0;
+      |            ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:122:20: warning: 'TAG_WIFI' defined but not used [-Wunused-variable]
+  122 | static const char *TAG_WIFI = "wifi station";
+      |                    ^~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable main.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/BTL_VXL/build/main.bin
+[7/8] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/BTL_VXL/build/partition_table/partition-table.bin C:/get-started/BTL_VXL/build/main.bin"
+main.bin binary size 0xec690 bytes. Smallest app partition is 0x177000 bytes. 0x8a970 bytes (37%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting...............
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:b2:1c:a7:ba:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fcfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16364...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16364 compressed) at 0x00001000 in 0.9 seconds (effective 239.0 kbit/s)...
+Hash of data verified.
+Compressed 968336 bytes to 607274...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d920... (5 %)
+Writing at 0x00026477... (7 %)
+Writing at 0x0002b321... (10 %)
+Writing at 0x000345c2... (13 %)
+Writing at 0x0003f563... (15 %)
+Writing at 0x00044eb1... (18 %)
+Writing at 0x0004aaa4... (21 %)
+Writing at 0x000506e3... (23 %)
+Writing at 0x0005634d... (26 %)
+Writing at 0x0005be7f... (28 %)
+Writing at 0x00061ef6... (31 %)
+Writing at 0x00068387... (34 %)
+Writing at 0x0006e19b... (36 %)
+Writing at 0x00073ce5... (39 %)
+Writing at 0x00078e27... (42 %)
+Writing at 0x0007e342... (44 %)
+Writing at 0x0008383d... (47 %)
+Writing at 0x00088ccc... (50 %)
+Writing at 0x0008e1f0... (52 %)
+Writing at 0x00093b09... (55 %)
+Writing at 0x00099973... (57 %)
+Writing at 0x0009f1f9... (60 %)
+Writing at 0x000a4dba... (63 %)
+Writing at 0x000aa6ee... (65 %)
+Writing at 0x000b030d... (68 %)
+Writing at 0x000b60f9... (71 %)
+Writing at 0x000bb9a8... (73 %)
+Writing at 0x000c15ce... (76 %)
+Writing at 0x000c71c5... (78 %)
+Writing at 0x000cc9d7... (81 %)
+Writing at 0x000d2d0a... (84 %)
+Writing at 0x000dcf03... (86 %)
+Writing at 0x000e4d2a... (89 %)
+Writing at 0x000eadad... (92 %)
+Writing at 0x000f0826... (94 %)
+Writing at 0x000f6912... (97 %)
+Writing at 0x000fbf95... (100 %)
+Wrote 968336 bytes (607274 compressed) at 0x00010000 in 14.1 seconds (effective 548.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 375.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/get-started/BTL_VXL/build -P C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

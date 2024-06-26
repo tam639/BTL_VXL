@@ -1,0 +1,1818 @@
+I╜╜╤╣esp32: SPI Sp²ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+I (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader
+I (31) boot: compile time Jun 25 2024 11:41:08
+I (31) boot: Multicore bootloader
+I (36) boot: chip revision: v3.1
+I (40) boot.esp32: SPI Speed      : 40MHz
+I (44) boot.esp32: SPI Mode       : DIO
+I (49) boot.esp32: SPI Flash Size : 2MB
+I (53) boot: Enabling RNG early entropy source...
+I (59) boot: Partition Table:
+I (62) boot: ## Label            Usage          Type ST Offset   Length
+I (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (85) boot:  2 factory          factory app      00 00 00010000 00177000
+I (92) boot: End of partition table
+I (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f0fch (258300) map
+I (193) esp_image: segment 1: paddr=0004f124 vaddr=3ffb0000 size=00ef4h (  3828) load
+I (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=dda58h (907864) map
+I (510) esp_image: segment 3: paddr=0012da80 vaddr=3ffb0ef4 size=02fe8h ( 12264) load
+I (515) esp_image: segment 4: paddr=00130a70 vaddr=40080000 size=19fd4h (106452) load
+I (570) boot: Loaded app from partition at offset 0x10000
+I (570) boot: Disabling RNG early entropy source...
+I (582) cpu_start: Multicore app
+I (591) cpu_start: Pro cpu start user code
+I (591) cpu_start: cpu freq: 160000000 Hz
+I (591) cpu_start: Application information:
+I (594) cpu_start: Project name:     main
+I (599) cpu_start: App version:      1
+I (603) cpu_start: Compile time:     Jun 25 2024 11:40:52
+I (609) cpu_start: ELF file SHA256:  6476b21a0...
+I (615) cpu_start: ESP-IDF:          v5.2.1-dirty
+I (620) cpu_start: Min chip rev:     v0.0
+I (625) cpu_start: Max chip rev:     v3.99 
+I (629) cpu_start: Chip rev:         v3.1
+I (634) heap_init: Initializing. RAM available for dynamic allocation:
+I (642) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (647) heap_init: At 3FFC0D90 len 0001F270 (124 KiB): DRAM
+I (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (667) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM
+I (674) spi_flash: detected chip: generic
+I (677) spi_flash: flash io: dio
+W (681) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+W (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (706) main_task: Started on CPU0
+I (716) main_task: Calling app_main()
+I (756) wifi:wifi driver task: 3ffc8d68, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+I (806) wifi_init: rx ba win: 6
+I (806) wifi_init: tcpip mbox: 32
+I (816) wifi_init: udp mbox: 6
+I (816) wifi_init: tcp mbox: 6
+I (826) wifi_init: tcp tx win: 5760
+I (826) wifi_init: tcp rx win: 5760
+I (826) wifi_init: tcp mss: 1440
+I (836) wifi_init: WiFi IRAM OP enabled
+I (836) wifi_init: WiFi RX IRAM OP enabled
+I (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (996) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (996) wifi:state: init -> auth (b0)
+I (1006) wifi:state: auth -> init (8a0)
+I (1006) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3436) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3436) wifi:state: init -> auth (b0)
+I (3496) wifi:state: auth -> assoc (0)
+I (3616) wifi:state: assoc -> run (10)
+I (3746) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3746) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (3756) wifi:pm start, type: 1
+
+I (3756) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3836) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4766) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1
+I (4776) example: Turn off LCD backlight
+I (4776) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4776) example: Initialize SPI bus
+I (4786) example: Install panel IO
+I (4786) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4796) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+I (4806) example: Install ILI9341 panel driver
+I (4806) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4816) ili9341: LCD panel create success, version: 1.2.0
+I (4896) MQTT_PROJECT: MQTT_EVENT_CONNECTED
+I (4946) example: Turn on LCD backlight
+I (4946) example: Initialize LVGL library
+I (4946) example: Register display driver to LVGL
+I (4956) example: Install LVGL tick timer
+I (4956) TX_MHZ14A_TASK: Wrote 9 bytes
+I (4956) bmx280: Probing for BMP280/BME280 sensors on I2C 0
+
+Available after enqueue: 9 
+
+I (4966) bmx280: Probe success: address=ec, id=60
+I (4966) wifi:state: run -> init (0)
+I (4976) bmx280: Reading out calibration values...
+I (4976) wifi:pm stop, total sleep time: 524160 us / 1225382 us
+I (4986) bmx280: Read Low Bank.
+
+I (4986) wifi:<ba-del>idx:0, tid:0
+I (4986) bmx280: Read High Bank.
+I (4996) bmx280: Dumping calibration...
+I (4996) bmx280: 4d 6d d0 67 32 00 0a 92 86 d6 d0 0b ca 1d fd ff 
+I (5006) bmx280: f9 ff ac 26 0a d8 bd 10 10 00 84 01 00 00 04 01 
+I (5016) bmx280: 32 00 1e 00 
+I (5016) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4966) main_task: Returned from app_main()
+E (5026) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54
+E (5036) mqtt_client: Poll read error: 119, aborting connection
+I (5046) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5046) mqtt_client: Client force reconnect requested
+E (5056) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5066) transport_base: Failed to open a new connection: 32772
+E (5066) mqtt_client: Error transport connect
+I (5076) smartconfig: SC version: V3.0.1
+I (5076) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5086) mqtt_client: Client force reconnect requested
+I (5086) smartconfig: scan status 1
+E (5086) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5086) MQTT_PROJECT: WiFi Connected to app
+E (5096) transport_base: Failed to open a new connection: 32772
+E (5106) mqtt_client: Error transport connect
+
+Available after dequeue: 10 
+
+I (5116) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5116) test: Read Values: temp = 27.9900, hum = 46.1934
+I (5126) mqtt_client: Client force reconnect requested
+E (5136) esp-tls: [sock=54] connect() error: Host is unreachable
+W (5146) wifi:sta_scan: STA is connecting, scan are not allowed!
+E (5146) transport_base: Failed to open a new connection: 32772
+E (5146) smartconfig: promis scan ret 12294
+E (5156) mqtt_client: Error transport connect
+I (5166) wifi:I (5166) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1I (5166) mqtt_client: Client force reconnect requested
+
+I (5176) wifi:state: init -> auth (b0)
+E (5186) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5186) transport_base: Failed to open a new connection: 32772
+E (5196) mqtt_client: Error transport connect
+I (5206) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5206) mqtt_client: Client force reconnect requested
+E (5216) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5216) transport_base: Failed to open a new connection: 32772
+E (5226) mqtt_client: Error transport connect
+I (5226) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5236) mqtt_client: Client force reconnect requested
+I (5236) ui_Screen1_screen_init: temp:27.99
+E (5246) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5246) ui_Screen1_screen_init: Buffer: TEMP : 27.99 ┬░C
+E (5256) transport_base: Failed to open a new connection: 32772
+I (5266) ui_Screen1_screen_init: Co2:0.00
+E (5266) mqtt_client: Error transport connect
+I (5276) ui_Screen1_screen_init: Buffer: Co2 : 0.00 ppm
+I (5276) wifi:I (5276) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+state: auth -> assoc (0)I (5286) mqtt_client: Client force reconnect requested
+
+I (5286) ui_Screen1_screen_init: Humi:46.19
+E (5296) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5306) ui_Screen1_screen_init: Buffer: HUMI : 46.19 %
+E (5306) transport_base: Failed to open a new connection: 32772
+E (5316) mqtt_client: Error transport connect
+I (5326) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5326) mqtt_client: Client force reconnect requested
+E (5336) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5346) transport_base: Failed to open a new connection: 32772
+E (5346) mqtt_client: Error transport connect
+I (5356) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5356) mqtt_client: Client force reconnect requested
+E (5366) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5376) transport_base: Failed to open a new connection: 32772
+E (5376) mqtt_client: Error transport connect
+I (5386) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5386) mqtt_client: Client force reconnect requested
+E (5396) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5396) wifi:state: assoc -> run (10)
+E (5406) transport_base: Failed to open a new connection: 32772
+E (5416) mqtt_client: Error transport connect
+I (5416) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5426) mqtt_client: Client force reconnect requested
+E (5426) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5436) transport_base: Failed to open a new connection: 32772
+E (5436) mqtt_client: Error transport connect
+I (5446) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5446) mqtt_client: Client force reconnect requested
+E (5456) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5466) transport_base: Failed to open a new connection: 32772
+E (5466) mqtt_client: Error transport connect
+I (5476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5476) mqtt_client: Client force reconnect requested
+E (5486) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5496) transport_base: Failed to open a new connection: 32772
+E (5496) mqtt_client: Error transport connect
+I (5506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5506) mqtt_client: Client force reconnect requested
+E (5516) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5526) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30E (5526) transport_base: Failed to open a new connection: 32772
+
+E (5536) mqtt_client: Error transport connect
+I (5536) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (5546) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5556) mqtt_client: Client force reconnect requested
+I (5566) wifi:pm start, type: 1
+
+E (5566) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5566) transport_base: Failed to open a new connection: 32772
+E (5576) mqtt_client: Error transport connect
+I (5576) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5576) wifi:I (5586) mqtt_client: Client force reconnect requested
+AP's beacon interval = 102400 us, DTIM period = 1
+E (5596) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5606) transport_base: Failed to open a new connection: 32772
+E (5606) mqtt_client: Error transport connect
+I (5616) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5616) mqtt_client: Client force reconnect requested
+E (5626) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5636) transport_base: Failed to open a new connection: 32772
+E (5636) mqtt_client: Error transport connect
+I (5646) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5646) mqtt_client: Client force reconnect requested
+E (5656) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5656) transport_base: Failed to open a new connection: 32772
+E (5666) mqtt_client: Error transport connect
+I (5676) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5676) mqtt_client: Client force reconnect requested
+E (5686) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5686) transport_base: Failed to open a new connection: 32772
+E (5696) mqtt_client: Error transport connect
+I (5706) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5706) mqtt_client: Client force reconnect requested
+E (5716) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5716) transport_base: Failed to open a new connection: 32772
+E (5726) mqtt_client: Error transport connect
+I (5726) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5736) mqtt_client: Client force reconnect requested
+E (5746) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5746) transport_base: Failed to open a new connection: 32772
+E (5756) mqtt_client: Error transport connect
+I (5756) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5766) mqtt_client: Client force reconnect requested
+E (5776) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5776) transport_base: Failed to open a new connection: 32772
+E (5786) mqtt_client: Error transport connect
+I (5786) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5796) mqtt_client: Client force reconnect requested
+E (5806) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5806) transport_base: Failed to open a new connection: 32772
+E (5816) mqtt_client: Error transport connect
+I (5816) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5826) mqtt_client: Client force reconnect requested
+E (5826) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5836) transport_base: Failed to open a new connection: 32772
+E (5846) mqtt_client: Error transport connect
+I (5846) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5856) mqtt_client: Client force reconnect requested
+E (5856) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5866) transport_base: Failed to open a new connection: 32772
+E (5876) mqtt_client: Error transport connect
+I (5876) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5886) mqtt_client: Client force reconnect requested
+E (5896) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5896) transport_base: Failed to open a new connection: 32772
+E (5896) mqtt_client: Error transport connect
+I (5906) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5906) mqtt_client: Client force reconnect requested
+E (5916) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5926) transport_base: Failed to open a new connection: 32772
+E (5926) mqtt_client: Error transport connect
+I (5936) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5936) mqtt_client: Client force reconnect requested
+E (5946) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5956) transport_base: Failed to open a new connection: 32772
+E (5956) mqtt_client: Error transport connect
+I (5966) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5966) mqtt_client: Client force reconnect requested
+E (5976) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5986) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+E (5986) transport_base: Failed to open a new connection: 32772
+I (5986) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 05 45 00 09 00  24                       |....E...$|
+E (5996) mqtt_client: Error transport connect
+I (6006) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 850.30 ppm
+
+
+I (6006) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6016) mqtt_client: Client force reconnect requested
+E (6026) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6036) transport_base: Failed to open a new connection: 32772
+E (6036) mqtt_client: Error transport connect
+I (6046) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6046) mqtt_client: Client force reconnect requested
+E (6056) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6066) transport_base: Failed to open a new connection: 32772
+E (6066) mqtt_client: Error transport connect
+I (6076) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6076) mqtt_client: Client force reconnect requested
+E (6086) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6096) transport_base: Failed to open a new connection: 32772
+E (6096) mqtt_client: Error transport connect
+I (6106) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6106) mqtt_client: Client force reconnect requested
+E (6116) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6126) transport_base: Failed to open a new connection: 32772
+E (6126) mqtt_client: Error transport connect
+I (6136) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6136) mqtt_client: Client force reconnect requested
+E (6146) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6156) transport_base: Failed to open a new connection: 32772
+E (6156) mqtt_client: Error transport connect
+I (6166) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6166) mqtt_client: Client force reconnect requested
+E (6176) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6176) transport_base: Failed to open a new connection: 32772
+E (6186) mqtt_client: Error transport connect
+I (6196) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6196) mqtt_client: Client force reconnect requested
+E (6206) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6206) transport_base: Failed to open a new connection: 32772
+E (6216) mqtt_client: Error transport connect
+I (6216) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6226) mqtt_client: Client force reconnect requested
+E (6236) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6236) transport_base: Failed to open a new connection: 32772
+E (6246) mqtt_client: Error transport connect
+I (6246) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6256) mqtt_client: Client force reconnect requested
+E (6266) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6266) transport_base: Failed to open a new connection: 32772
+E (6276) mqtt_client: Error transport connect
+I (6276) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6286) mqtt_client: Client force reconnect requested
+E (6296) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6296) transport_base: Failed to open a new connection: 32772
+E (6306) mqtt_client: Error transport connect
+I (6306) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6316) mqtt_client: Client force reconnect requested
+E (6326) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6326) transport_base: Failed to open a new connection: 32772
+E (6336) mqtt_client: Error transport connect
+I (6336) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6346) mqtt_client: Client force reconnect requested
+E (6346) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6356) transport_base: Failed to open a new connection: 32772
+E (6366) mqtt_client: Error transport connect
+I (6366) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6376) mqtt_client: Client force reconnect requested
+E (6376) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6386) transport_base: Failed to open a new connection: 32772
+E (6396) mqtt_client: Error transport connect
+I (6396) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6406) mqtt_client: Client force reconnect requested
+E (6406) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6416) transport_base: Failed to open a new connection: 32772
+E (6416) mqtt_client: Error transport connect
+I (6426) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6426) mqtt_client: Client force reconnect requested
+E (6436) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6446) transport_base: Failed to open a new connection: 32772
+E (6446) mqtt_client: Error transport connect
+I (6456) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6456) mqtt_client: Client force reconnect requested
+E (6466) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6476) transport_base: Failed to open a new connection: 32772
+E (6476) mqtt_client: Error transport connect
+I (6486) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6486) mqtt_client: Client force reconnect requested
+E (6496) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6506) transport_base: Failed to open a new connection: 32772
+E (6506) mqtt_client: Error transport connect
+I (6516) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6516) mqtt_client: Client force reconnect requested
+E (6526) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6536) transport_base: Failed to open a new connection: 32772
+E (6536) mqtt_client: Error transport connect
+I (6546) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6546) mqtt_client: Client force reconnect requested
+E (6556) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6556) transport_base: Failed to open a new connection: 32772
+I (6566) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1
+E (6566) mqtt_client: Error transport connect
+I (6576) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6586) mqtt_client: Client force reconnect requested
+I (6606) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+I (6686) MQTT_PROJECT: MQTT_EVENT_CONNECTED
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+I (6986) ui_Screen1_screen_init: temp:27.99
+I (6986) ui_Screen1_screen_init: Buffer: TEMP : 27.99 ┬░C
+I (6986) ui_Screen1_screen_init: Co2:850.30
+I (6986) ui_Screen1_screen_init: Buffer: Co2 : 850.30 ppm
+I (6996) ui_Screen1_screen_init: Humi:46.19
+I (7006) ui_Screen1_screen_init: Buffer: HUMI : 46.19 %
+I (7226) test: Read Values: temp = 27.9900, hum = 46.1934
+I (8016) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (8986) ui_Screen1_screen_init: temp:27.99
+I (8986) ui_Screen1_screen_init: Buffer: TEMP : 27.99 ┬░C
+I (8996) ui_Screen1_screen_init: Co2:850.30
+I (8996) ui_Screen1_screen_init: Buffer: Co2 : 850.30 ppm
+I (9006) ui_Screen1_screen_init: Humi:46.19
+I (9006) ui_Screen1_screen_init: Buffer: HUMI : 46.19 %
+I (9046) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (9046) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 0e 45 00 09 00  1b                       |....E....|
+I (9046) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 860.20 ppm
+
+
+I (9326) test: Read Values: temp = 27.9900, hum = 46.2295
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+I (10986) ui_Screen1_screen_init: temp:27.99
+I (10996) ui_Screen1_screen_init: Buffer: TEMP : 27.99 ┬░C
+I (10996) ui_Screen1_screen_init: Co2:860.20
+I (10996) ui_Screen1_screen_init: Buffer: Co2 : 860.20 ppm
+I (11006) ui_Screen1_screen_init: Humi:46.23
+I (11006) ui_Screen1_screen_init: Buffer: HUMI : 46.23 %
+I (11056) TX_MHZ14A_TASK: Wrote 9 bytes
+I (11426) test: Read Values: temp = 27.9900, hum = 46.1934
+I (12086) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (12086) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 16 45 00 09 00  13                       |....E....|
+I (12086) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 869.00 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (12986) ui_Screen1_screen_init: temp:27.99
+I (12996) ui_Screen1_screen_init: Buffer: TEMP : 27.99 ┬░C
+I (12996) ui_Screen1_screen_init: Co2:869.00
+I (12996) ui_Screen1_screen_init: Buffer: Co2 : 869.00 ppm
+I (13006) ui_Screen1_screen_init: Humi:46.19
+I (13006) ui_Screen1_screen_init: Buffer: HUMI : 46.19 %
+I (13526) test: Read Values: temp = 27.9800, hum = 46.2168
+I (14096) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (14996) ui_Screen1_screen_init: temp:27.98
+I (14996) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (14996) ui_Screen1_screen_init: Co2:869.00
+I (14996) ui_Screen1_screen_init: Buffer: Co2 : 869.00 ppm
+I (15006) ui_Screen1_screen_init: Humi:46.22
+I (15016) ui_Screen1_screen_init: Buffer: HUMI : 46.22 %
+I (15126) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (15126) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 1a 45 00 09 00  0f                       |....E....|
+I (15126) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 873.40 ppm
+
+
+I (15626) test: Read Values: temp = 27.9800, hum = 46.1318
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (16996) ui_Screen1_screen_init: temp:27.98
+I (16996) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (17006) ui_Screen1_screen_init: Co2:873.40
+I (17006) ui_Screen1_screen_init: Buffer: Co2 : 873.40 ppm
+I (17016) ui_Screen1_screen_init: Humi:46.13
+I (17016) ui_Screen1_screen_init: Buffer: HUMI : 46.13 %
+I (17136) TX_MHZ14A_TASK: Wrote 9 bytes
+I (17726) test: Read Values: temp = 27.9800, hum = 46.1191
+I (18166) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (18166) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 1b 45 00 09 00  0e                       |....E....|
+I (18166) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 874.50 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (18996) ui_Screen1_screen_init: temp:27.98
+I (19006) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (19006) ui_Screen1_screen_init: Co2:874.50
+I (19006) ui_Screen1_screen_init: Buffer: Co2 : 874.50 ppm
+I (19016) ui_Screen1_screen_init: Humi:46.12
+I (19016) ui_Screen1_screen_init: Buffer: HUMI : 46.12 %
+I (19826) test: Read Values: temp = 27.9800, hum = 46.0713
+I (20176) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (21006) ui_Screen1_screen_init: temp:27.98
+I (21006) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (21006) ui_Screen1_screen_init: Co2:874.50
+I (21006) ui_Screen1_screen_init: Buffer: Co2 : 874.50 ppm
+I (21016) ui_Screen1_screen_init: Humi:46.07
+I (21016) ui_Screen1_screen_init: Buffer: HUMI : 46.07 %
+I (21206) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (21206) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 1b 45 00 09 00  0e                       |....E....|
+I (21206) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 874.50 ppm
+
+
+I (21926) test: Read Values: temp = 27.9800, hum = 46.1807
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (23006) ui_Screen1_screen_init: temp:27.98
+I (23006) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (23016) ui_Screen1_screen_init: Co2:874.50
+I (23016) ui_Screen1_screen_init: Buffer: Co2 : 874.50 ppm
+I (23026) ui_Screen1_screen_init: Humi:46.18
+I (23026) ui_Screen1_screen_init: Buffer: HUMI : 46.18 %
+I (23216) TX_MHZ14A_TASK: Wrote 9 bytes
+I (24026) test: Read Values: temp = 27.9800, hum = 46.1191
+I (24246) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (24246) RX_MHZ14A_TASK: 0x3ffdc190   ff 86 03 1b 45 00 09 00  0e                       |....E....|
+I (24246) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 874.50 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (25006) ui_Screen1_screen_init: temp:27.98
+I (25006) ui_Screen1_screen_init: Buffer: TEMP : 27.98 ┬░C
+I (25016) ui_Screen1_screen_init: Co2:874.50
+I (25016) ui_Screen1_screen_init: Buffer: Co2 : 874.50 ppm
+I (25026) ui_Screen1_screen_init: Humi:46.12
+I (25026) ui_Screen1_screen_init: Buffer: HUMI : 46.12 %
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400dfbbd  PS      : 0x00060f30  A0      : 0x800df119  A1      : 0x3ffdea30  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000057  A5      : 0x00000001  
+A6      : 0x00000000  A7      : 0x0000004c  A8      : 0x800f0f70  A9      : 0x3ffdea10  
+A10     : 0x00000000  A11     : 0x0000004c  A12     : 0x3ffb4648  A13     : 0x401a2e34  
+A14     : 0x00000000  A15     : 0x0000004c  SAR     : 0x0000001f  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400013f9  LEND    : 0x4000140d  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x400dfbba:0x3ffdea30 0x400df116:0x3ffdea50 0x400f7c5f:0x3ffdea70 0x400d88ba:0x3ffdea90 0x400d89bd:0x3ffdeb00 0x400d80ae:0x3ffdeb20 0x4008c269:0x3ffdeb50
+
+
+
+
+ELF file SHA256: 6476b21a0
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+I (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader
+I (31) boot: compile time Jun 25 2024 11:41:08
+I (31) boot: Multicore bootloader
+I (36) boot: chip revision: v3.1
+I (40) boot.esp32: SPI Speed      : 40MHz
+I (44) boot.esp32: SPI Mode       : DIO
+I (49) boot.esp32: SPI Flash Size : 2MB
+I (53) boot: Enabling RNG early entropy source...
+I (59) boot: Partition Table:
+I (62) boot: ## Label            Usage          Type ST Offset   Length
+I (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (84) boot:  2 factory          factory app      00 00 00010000 00177000
+I (92) boot: End of partition table
+I (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f0fch (258300) map
+I (193) esp_image: segment 1: paddr=0004f124 vaddr=3ffb0000 size=00ef4h (  3828) load
+I (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=dda58h (907864) map
+I (510) esp_image: segment 3: paddr=0012da80 vaddr=3ffb0ef4 size=02fe8h ( 12264) load
+I (515) esp_image: segment 4: paddr=00130a70 vaddr=40080000 size=19fd4h (106452) load
+I (570) boot: Loaded app from partition at offset 0x10000
+I (570) boot: Disabling RNG early entropy source...
+I (582) cpu_start: Multicore app
+I (591) cpu_start: Pro cpu start user code
+I (591) cpu_start: cpu freq: 160000000 Hz
+I (591) cpu_start: Application information:
+I (594) cpu_start: Project name:     main
+I (598) cpu_start: App version:      1
+I (603) cpu_start: Compile time:     Jun 25 2024 11:40:52
+I (609) cpu_start: ELF file SHA256:  6476b21a0...
+I (614) cpu_start: ESP-IDF:          v5.2.1-dirty
+I (620) cpu_start: Min chip rev:     v0.0
+I (624) cpu_start: Max chip rev:     v3.99 
+I (629) cpu_start: Chip rev:         v3.1
+I (634) heap_init: Initializing. RAM available for dynamic allocation:
+I (641) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (647) heap_init: At 3FFC0D90 len 0001F270 (124 KiB): DRAM
+I (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (666) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM
+I (674) spi_flash: detected chip: generic
+I (677) spi_flash: flash io: dio
+W (681) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+W (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`
+I (706) main_task: Started on CPU0
+I (716) main_task: Calling app_main()
+I (756) wifi:wifi driver task: 3ffc8d68, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+I (806) wifi_init: rx ba win: 6
+I (806) wifi_init: tcpip mbox: 32
+I (816) wifi_init: udp mbox: 6
+I (816) wifi_init: tcp mbox: 6
+I (826) wifi_init: tcp tx win: 5760
+I (826) wifi_init: tcp rx win: 5760
+I (826) wifi_init: tcp mss: 1440
+I (836) wifi_init: WiFi IRAM OP enabled
+I (836) wifi_init: WiFi RX IRAM OP enabled
+I (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (956) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (956) wifi:state: init -> auth (b0)
+I (966) wifi:state: auth -> init (8a0)
+I (966) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3396) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3396) wifi:state: init -> auth (b0)
+I (3456) wifi:state: auth -> assoc (0)
+I (3556) wifi:state: assoc -> run (10)
+I (3716) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3716) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (3726) wifi:pm start, type: 1
+
+I (3726) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3806) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4726) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1
+I (4736) example: Turn off LCD backlight
+I (4736) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4736) example: Initialize SPI bus
+I (4746) example: Install panel IO
+I (4746) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4756) example: Install ILI9341 panel driver
+I (4756) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (4766) ili9341: LCD panel create success, version: 1.2.0
+I (4806) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+I (4866) MQTT_PROJECT: MQTT_EVENT_CONNECTED
+I (4896) example: Turn on LCD backlight
+I (4896) example: Initialize LVGL library
+I (4896) example: Register display driver to LVGL
+I (4906) example: Install LVGL tick timer
+I (4906) TX_MHZ14A_TASK: Wrote 9 bytes
+I (4906) bmx280: Probing for BMP280/BME280 sensors on I2C 0
+
+Available after enqueue: 9 
+
+I (4916) bmx280: Probe success: address=ec, id=60
+I (4916) wifi:state: run -> init (0)
+I (4926) bmx280: Reading out calibration values...
+I (4926) wifi:pm stop, total sleep time: 366633 us / 1207360 us
+I (4936) bmx280: Read Low Bank.
+
+I (4936) wifi:<ba-del>idx:0, tid:0
+I (4936) bmx280: Read High Bank.
+I (4946) bmx280: Dumping calibration...
+I (4946) bmx280: 4d 6d d0 67 32 00 0a 92 86 d6 d0 0b ca 1d fd ff 
+I (4956) bmx280: f9 ff ac 26 0a d8 bd 10 10 00 84 01 00 00 04 01 
+I (4966) bmx280: 32 00 1e 00 
+I (4966) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4916) main_task: Returned from app_main()
+E (4976) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54
+E (4986) mqtt_client: Poll read error: 119, aborting connection
+I (4996) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (4996) mqtt_client: Client force reconnect requested
+E (5006) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5016) transport_base: Failed to open a new connection: 32772
+E (5016) mqtt_client: Error transport connect
+I (5026) smartconfig: SC version: V3.0.1
+I (5026) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5036) mqtt_client: Client force reconnect requested
+I (5036) smartconfig: scan status 1
+E (5036) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5036) MQTT_PROJECT: WiFi Connected to app
+E (5046) transport_base: Failed to open a new connection: 32772
+
+Available after dequeue: 10 
+
+E (5056) mqtt_client: Error transport connect
+I (5066) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5066) test: Read Values: temp = 27.9500, hum = 46.0801
+I (5076) PMS7003: PM1.0: 16.000000 ┬╡g/m┬│
+I (5076) mqtt_client: Client force reconnect requested
+I (5086) PMS7003: PM2.5: 21.000000 ┬╡g/m┬│
+E (5096) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5096) PMS7003: PM10: 25.000000 ┬╡g/m┬│
+E (5106) transport_base: Failed to open a new connection: 32772
+W (5096) wifi:E (5116) mqtt_client: Error transport connect
+I (5116) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5126) mqtt_client: Client force reconnect requested
+sta_scan: STA is connecting, scan are not allowed!
+E (5136) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5136) smartconfig: promis scan ret 12294
+E (5146) transport_base: Failed to open a new connection: 32772
+I (5146) wifi:E (5156) mqtt_client: Error transport connect
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5156) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5166) wifi:I (5166) mqtt_client: Client force reconnect requested
+state: init -> auth (b0)
+E (5176) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5186) transport_base: Failed to open a new connection: 32772
+E (5186) mqtt_client: Error transport connect
+I (5196) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5196) mqtt_client: Client force reconnect requested
+E (5206) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5216) transport_base: Failed to open a new connection: 32772
+E (5216) mqtt_client: Error transport connect
+I (5226) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5226) ui_Screen1_screen_init: temp:27.95
+I (5226) mqtt_client: Client force reconnect requested
+I (5236) ui_Screen1_screen_init: Buffer: TEMP : 27.95 ┬░C
+E (5246) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5256) transport_base: Failed to open a new connection: 32772
+I (5256) ui_Screen1_screen_init: Co2:0.00
+E (5256) mqtt_client: Error transport connect
+I (5266) wifi:state: auth -> assoc (0)
+I (5266) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5266) ui_Screen1_screen_init: Buffer: Co2 : 0.00 ppm
+I (5276) mqtt_client: Client force reconnect requested
+E (5296) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5296) ui_Screen1_screen_init: Humi:46.08
+E (5296) transport_base: Failed to open a new connection: 32772
+I (5306) ui_Screen1_screen_init: Buffer: HUMI : 46.08 %
+E (5306) mqtt_client: Error transport connect
+I (5316) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5326) mqtt_client: Client force reconnect requested
+E (5336) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5336) transport_base: Failed to open a new connection: 32772
+E (5346) mqtt_client: Error transport connect
+I (5346) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5356) mqtt_client: Client force reconnect requested
+I (5356) wifi:state: assoc -> run (10)
+E (5366) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5366) transport_base: Failed to open a new connection: 32772
+E (5376) mqtt_client: Error transport connect
+I (5376) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5386) mqtt_client: Client force reconnect requested
+E (5396) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5396) transport_base: Failed to open a new connection: 32772
+E (5406) mqtt_client: Error transport connect
+I (5406) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5416) mqtt_client: Client force reconnect requested
+E (5426) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5426) transport_base: Failed to open a new connection: 32772
+E (5436) mqtt_client: Error transport connect
+I (5436) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5446) mqtt_client: Client force reconnect requested
+E (5456) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5456) transport_base: Failed to open a new connection: 32772
+E (5466) mqtt_client: Error transport connect
+I (5466) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5476) mqtt_client: Client force reconnect requested
+I (5486) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+E (5486) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5486) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+E (5496) transport_base: Failed to open a new connection: 32772
+E (5506) mqtt_client: Error transport connect
+I (5506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5516) mqtt_client: Client force reconnect requested
+I (5526) wifi:pm start, type: 1
+
+E (5526) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5536) transport_base: Failed to open a new connection: 32772
+E (5536) mqtt_client: Error transport connect
+I (5546) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5546) mqtt_client: Client force reconnect requested
+E (5556) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5556) transport_base: Failed to open a new connection: 32772
+E (5566) mqtt_client: Error transport connect
+I (5576) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5576) mqtt_client: Client force reconnect requested
+E (5586) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5586) transport_base: Failed to open a new connection: 32772
+E (5596) mqtt_client: Error transport connect
+I (5606) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5606) mqtt_client: Client force reconnect requested
+E (5616) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5616) transport_base: Failed to open a new connection: 32772
+E (5626) mqtt_client: Error transport connect
+I (5626) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5636) mqtt_client: Client force reconnect requested
+E (5646) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5646) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+E (5646) transport_base: Failed to open a new connection: 32772
+E (5656) mqtt_client: Error transport connect
+I (5666) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5666) mqtt_client: Client force reconnect requested
+E (5676) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5686) transport_base: Failed to open a new connection: 32772
+E (5686) mqtt_client: Error transport connect
+I (5696) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5696) mqtt_client: Client force reconnect requested
+E (5706) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5716) transport_base: Failed to open a new connection: 32772
+E (5716) mqtt_client: Error transport connect
+I (5726) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5726) mqtt_client: Client force reconnect requested
+E (5736) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5746) transport_base: Failed to open a new connection: 32772
+E (5746) mqtt_client: Error transport connect
+I (5756) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5756) mqtt_client: Client force reconnect requested
+E (5766) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5776) transport_base: Failed to open a new connection: 32772
+E (5776) mqtt_client: Error transport connect
+I (5786) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5786) mqtt_client: Client force reconnect requested
+E (5796) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5796) transport_base: Failed to open a new connection: 32772
+E (5806) mqtt_client: Error transport connect
+I (5816) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5816) mqtt_client: Client force reconnect requested
+E (5826) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5826) transport_base: Failed to open a new connection: 32772
+E (5836) mqtt_client: Error transport connect
+I (5836) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5846) mqtt_client: Client force reconnect requested
+E (5856) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5856) transport_base: Failed to open a new connection: 32772
+E (5866) mqtt_client: Error transport connect
+I (5866) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5876) mqtt_client: Client force reconnect requested
+E (5886) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5886) transport_base: Failed to open a new connection: 32772
+E (5896) mqtt_client: Error transport connect
+I (5896) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5906) mqtt_client: Client force reconnect requested
+E (5916) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5916) transport_base: Failed to open a new connection: 32772
+E (5926) mqtt_client: Error transport connect
+I (5926) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5936) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (5936) mqtt_client: Client force reconnect requested
+I (5936) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1c 45 00 09 00  0d                       |....E....|
+E (5946) esp-tls: [sock=54] connect() error: Host is unreachable
+I (5956) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 875.60 ppm
+
+
+E (5966) transport_base: Failed to open a new connection: 32772
+E (5976) mqtt_client: Error transport connect
+I (5976) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (5986) mqtt_client: Client force reconnect requested
+E (5996) esp-tls: [sock=54] connect() error: Host is unreachable
+E (5996) transport_base: Failed to open a new connection: 32772
+E (6006) mqtt_client: Error transport connect
+I (6006) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6016) mqtt_client: Client force reconnect requested
+E (6026) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6026) transport_base: Failed to open a new connection: 32772
+E (6036) mqtt_client: Error transport connect
+I (6036) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6046) mqtt_client: Client force reconnect requested
+E (6056) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6056) transport_base: Failed to open a new connection: 32772
+E (6066) mqtt_client: Error transport connect
+I (6066) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6076) mqtt_client: Client force reconnect requested
+E (6076) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6086) transport_base: Failed to open a new connection: 32772
+E (6096) mqtt_client: Error transport connect
+I (6096) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6106) mqtt_client: Client force reconnect requested
+E (6106) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6116) transport_base: Failed to open a new connection: 32772
+E (6126) mqtt_client: Error transport connect
+I (6126) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6136) mqtt_client: Client force reconnect requested
+E (6136) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6146) transport_base: Failed to open a new connection: 32772
+E (6146) mqtt_client: Error transport connect
+I (6156) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6156) mqtt_client: Client force reconnect requested
+E (6166) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6176) transport_base: Failed to open a new connection: 32772
+E (6176) mqtt_client: Error transport connect
+I (6186) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6186) mqtt_client: Client force reconnect requested
+E (6196) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6206) transport_base: Failed to open a new connection: 32772
+E (6206) mqtt_client: Error transport connect
+I (6216) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6216) mqtt_client: Client force reconnect requested
+E (6226) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6236) transport_base: Failed to open a new connection: 32772
+E (6236) mqtt_client: Error transport connect
+I (6246) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6246) mqtt_client: Client force reconnect requested
+E (6256) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6266) transport_base: Failed to open a new connection: 32772
+E (6266) mqtt_client: Error transport connect
+I (6276) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6276) mqtt_client: Client force reconnect requested
+E (6286) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6286) transport_base: Failed to open a new connection: 32772
+E (6296) mqtt_client: Error transport connect
+I (6306) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6306) mqtt_client: Client force reconnect requested
+E (6316) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6316) transport_base: Failed to open a new connection: 32772
+E (6326) mqtt_client: Error transport connect
+I (6336) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6336) mqtt_client: Client force reconnect requested
+E (6346) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6346) transport_base: Failed to open a new connection: 32772
+E (6356) mqtt_client: Error transport connect
+I (6356) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6366) mqtt_client: Client force reconnect requested
+E (6376) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6376) transport_base: Failed to open a new connection: 32772
+E (6386) mqtt_client: Error transport connect
+I (6386) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6396) mqtt_client: Client force reconnect requested
+E (6406) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6406) transport_base: Failed to open a new connection: 32772
+E (6416) mqtt_client: Error transport connect
+I (6416) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6426) mqtt_client: Client force reconnect requested
+E (6436) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6436) transport_base: Failed to open a new connection: 32772
+E (6446) mqtt_client: Error transport connect
+I (6446) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6456) mqtt_client: Client force reconnect requested
+E (6466) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6466) transport_base: Failed to open a new connection: 32772
+E (6476) mqtt_client: Error transport connect
+I (6476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6486) mqtt_client: Client force reconnect requested
+E (6486) esp-tls: [sock=54] connect() error: Host is unreachable
+E (6496) transport_base: Failed to open a new connection: 32772
+E (6506) mqtt_client: Error transport connect
+I (6506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6516) mqtt_client: Client force reconnect requested
+E (6516) esp-tls: [sock=54] connect() error: Host is unreachable
+I (6526) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1
+E (6526) transport_base: Failed to open a new connection: 32772
+E (6536) mqtt_client: Error transport connect
+I (6546) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED
+I (6546) mqtt_client: Client force reconnect requested
+I (6606) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+I (6646) MQTT_PROJECT: MQTT_EVENT_CONNECTED
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+I (6936) ui_Screen1_screen_init: temp:27.95
+I (6936) ui_Screen1_screen_init: Buffer: TEMP : 27.95 ┬░C
+I (6936) ui_Screen1_screen_init: Co2:875.60
+I (6936) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (6946) ui_Screen1_screen_init: Humi:46.08
+I (6956) ui_Screen1_screen_init: Buffer: HUMI : 46.08 %
+I (7176) test: Read Values: temp = 27.9500, hum = 46.1416
+I (7966) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (8936) ui_Screen1_screen_init: temp:27.95
+I (8936) ui_Screen1_screen_init: Buffer: TEMP : 27.95 ┬░C
+I (8946) ui_Screen1_screen_init: Co2:875.60
+I (8946) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (8956) ui_Screen1_screen_init: Humi:46.14
+I (8956) ui_Screen1_screen_init: Buffer: HUMI : 46.14 %
+I (8996) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (8996) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1c 45 00 09 00  0d                       |....E....|
+I (8996) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 875.60 ppm
+
+
+I (9276) test: Read Values: temp = 27.9500, hum = 46.1289
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+I (10936) ui_Screen1_screen_init: temp:27.95
+I (10946) ui_Screen1_screen_init: Buffer: TEMP : 27.95 ┬░C
+I (10946) ui_Screen1_screen_init: Co2:875.60
+I (10946) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (10956) ui_Screen1_screen_init: Humi:46.13
+I (10956) ui_Screen1_screen_init: Buffer: HUMI : 46.13 %
+I (11006) TX_MHZ14A_TASK: Wrote 9 bytes
+I (11376) test: Read Values: temp = 27.9500, hum = 46.1650
+I (12036) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (12036) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1c 45 00 09 00  0d                       |....E....|
+I (12036) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 875.60 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (12946) ui_Screen1_screen_init: temp:27.95
+I (12946) ui_Screen1_screen_init: Buffer: TEMP : 27.95 ┬░C
+I (12946) ui_Screen1_screen_init: Co2:875.60
+I (12946) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (12956) ui_Screen1_screen_init: Humi:46.17
+I (12956) ui_Screen1_screen_init: Buffer: HUMI : 46.17 %
+I (13476) test: Read Values: temp = 27.9600, hum = 46.1172
+I (14046) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (14946) ui_Screen1_screen_init: temp:27.96
+I (14946) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (14956) ui_Screen1_screen_init: Co2:875.60
+I (14956) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (14956) ui_Screen1_screen_init: Humi:46.12
+I (14966) ui_Screen1_screen_init: Buffer: HUMI : 46.12 %
+I (15076) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (15076) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1d 45 00 09 00  0c                       |....E....|
+I (15076) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 876.70 ppm
+
+
+I (15576) test: Read Values: temp = 27.9600, hum = 46.1045
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (16946) ui_Screen1_screen_init: temp:27.96
+I (16946) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (16956) ui_Screen1_screen_init: Co2:876.70
+I (16956) ui_Screen1_screen_init: Buffer: Co2 : 876.70 ppm
+I (16966) ui_Screen1_screen_init: Humi:46.10
+I (16966) ui_Screen1_screen_init: Buffer: HUMI : 46.10 %
+I (17086) TX_MHZ14A_TASK: Wrote 9 bytes
+I (17676) test: Read Values: temp = 27.9600, hum = 46.1045
+I (18116) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (18116) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1d 45 00 09 00  0c                       |....E....|
+I (18116) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 876.70 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (18946) ui_Screen1_screen_init: temp:27.96
+I (18956) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (18956) ui_Screen1_screen_init: Co2:876.70
+I (18956) ui_Screen1_screen_init: Buffer: Co2 : 876.70 ppm
+I (18966) ui_Screen1_screen_init: Humi:46.10
+I (18966) ui_Screen1_screen_init: Buffer: HUMI : 46.10 %
+I (19776) test: Read Values: temp = 27.9600, hum = 46.0801
+I (20126) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (20956) ui_Screen1_screen_init: temp:27.96
+I (20956) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (20956) ui_Screen1_screen_init: Co2:876.70
+I (20956) ui_Screen1_screen_init: Buffer: Co2 : 876.70 ppm
+I (20966) ui_Screen1_screen_init: Humi:46.08
+I (20966) ui_Screen1_screen_init: Buffer: HUMI : 46.08 %
+I (21156) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (21156) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1d 45 00 09 00  0c                       |....E....|
+I (21156) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 876.70 ppm
+
+
+I (21876) test: Read Values: temp = 27.9600, hum = 46.1416
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (22956) ui_Screen1_screen_init: temp:27.96
+I (22956) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (22956) ui_Screen1_screen_init: Co2:876.70
+I (22966) ui_Screen1_screen_init: Buffer: Co2 : 876.70 ppm
+I (22966) ui_Screen1_screen_init: Humi:46.14
+I (22976) ui_Screen1_screen_init: Buffer: HUMI : 46.14 %
+I (23166) TX_MHZ14A_TASK: Wrote 9 bytes
+I (23976) test: Read Values: temp = 27.9600, hum = 46.4697
+I (24196) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (24196) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1c 45 00 09 00  0d                       |....E....|
+I (24196) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 875.60 ppm
+
+
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+I (24966) ui_Screen1_screen_init: temp:27.96
+I (24966) ui_Screen1_screen_init: Buffer: TEMP : 27.96 ┬░C
+I (24966) ui_Screen1_screen_init: Co2:875.60
+I (24966) ui_Screen1_screen_init: Buffer: Co2 : 875.60 ppm
+I (24976) ui_Screen1_screen_init: Humi:46.47
+I (24976) ui_Screen1_screen_init: Buffer: HUMI : 46.47 %
+I (26076) test: Read Values: temp = 27.9500, hum = 46.6758
+I (26206) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after enqueue: 9 
+
+I (27236) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (27236) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 19 45 00 09 00  10                       |....E....|
+I (27236) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 872.30 ppm
+
+
+I (28176) test: Read Values: temp = 27.9500, hum = 48.6699
+
+Available after enqueue: 8 
+
+I (29246) TX_MHZ14A_TASK: Wrote 9 bytes
+I (30276) test: Read Values: temp = 27.9600, hum = 49.3506
+I (30276) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (30276) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 15 45 00 09 00  14                       |....E....|
+I (30286) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 867.90 ppm
+
+
+
+Available after enqueue: 7 
+
+I (32286) TX_MHZ14A_TASK: Wrote 9 bytes
+I (32376) test: Read Values: temp = 27.9600, hum = 49.3262
+
+Available after enqueue: 6 
+
+I (33316) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (33316) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 14 45 00 09 00  15                       |....E....|
+I (33316) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 866.80 ppm
+
+
+I (34476) test: Read Values: temp = 27.9600, hum = 48.5371
+
+Available after enqueue: 5 
+
+I (35326) TX_MHZ14A_TASK: Wrote 9 bytes
+I (36356) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (36356) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 14 45 00 09 00  15                       |....E....|
+I (36356) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 866.80 ppm
+
+
+I (36576) test: Read Values: temp = 27.9600, hum = 47.8564
+
+Available after enqueue: 4 
+
+I (38366) TX_MHZ14A_TASK: Wrote 9 bytes
+I (38676) test: Read Values: temp = 27.9700, hum = 48.5254
+
+Available after enqueue: 3 
+
+I (39396) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (39396) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 14 45 00 09 00  15                       |....E....|
+I (39396) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 866.80 ppm
+
+
+I (40776) test: Read Values: temp = 27.9700, hum = 48.1484
+
+Available after enqueue: 2 
+
+I (41406) TX_MHZ14A_TASK: Wrote 9 bytes
+I (42436) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (42436) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 15 45 00 09 00  14                       |....E....|
+I (42436) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 867.90 ppm
+
+
+I (42876) test: Read Values: temp = 27.9700, hum = 48.3799
+
+Available after enqueue: 1 
+
+I (44446) TX_MHZ14A_TASK: Wrote 9 bytes
+
+Available after enqueue: 0 
+
+I (44976) test: Read Values: temp = 27.9800, hum = 47.9062
+I (45476) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (45476) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 18 45 00 09 00  11                       |....E....|
+I (45476) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 871.20 ppm
+
+
+I (47076) test: Read Values: temp = 27.9800, hum = 47.2500
+I (47486) TX_MHZ14A_TASK: Wrote 9 bytes
+I (48536) RX_MHZ14A_TASK: Read 9 bytes: ' å/E'
+I (48536) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 2f 45 00 09 00  fa                       |.../E....|
+I (48536) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 896.50 ppm
+
+
+I (49176) test: Read Values: temp = 27.9800, hum = 46.8975
+I (50546) TX_MHZ14A_TASK: Wrote 9 bytes
+I (51276) test: Read Values: temp = 27.9800, hum = 46.6055
+I (51576) RX_MHZ14A_TASK: Read 9 bytes: ' åTE'
+I (51576) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 54 45 00 09 00  d5                       |...TE....|
+I (51576) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 937.20 ppm
+
+
+I (53376) test: Read Values: temp = 27.9900, hum = 46.5459
+I (53586) TX_MHZ14A_TASK: Wrote 9 bytes
+I (54616) RX_MHZ14A_TASK: Read 9 bytes: ' åeE'
+I (54616) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 65 45 00 09 00  c4                       |...eE....|
+I (54616) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 955.90 ppm
+
+
+I (55476) test: Read Values: temp = 27.9900, hum = 46.3271
+I (56626) TX_MHZ14A_TASK: Wrote 9 bytes
+I (57576) test: Read Values: temp = 27.9900, hum = 46.4248
+I (57656) RX_MHZ14A_TASK: Read 9 bytes: ' årE'
+I (57656) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 72 45 00 09 00  b7                       |...rE....|
+I (57656) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 970.20 ppm
+
+
+I (59666) TX_MHZ14A_TASK: Wrote 9 bytes
+I (59676) test: Read Values: temp = 27.9900, hum = 46.3027
+I (60696) RX_MHZ14A_TASK: Read 9 bytes: ' å}E'
+I (60696) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 7d 45 00 09 00  ac                       |...}E....|
+I (60696) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 982.30 ppm
+
+
+I (61776) test: Read Values: temp = 27.9900, hum = 46.3027
+I (62706) TX_MHZ14A_TASK: Wrote 9 bytes
+I (63736) RX_MHZ14A_TASK: Read 9 bytes: ' åâE'
+I (63736) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 83 45 00 09 00  a6                       |....E....|
+I (63736) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 988.90 ppm
+
+
+I (63876) test: Read Values: temp = 27.9900, hum = 46.1934
+I (65746) TX_MHZ14A_TASK: Wrote 9 bytes
+I (65976) test: Read Values: temp = 27.9900, hum = 46.1934
+I (66776) RX_MHZ14A_TASK: Read 9 bytes: ' åàE'
+I (66776) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 85 45 00 09 00  a4                       |....E....|
+I (66776) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 991.10 ppm
+
+
+I (68076) test: Read Values: temp = 27.9900, hum = 46.2295
+I (68786) TX_MHZ14A_TASK: Wrote 9 bytes
+I (69816) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (69816) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (69816) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (70176) test: Read Values: temp = 27.9900, hum = 46.2178
+I (71826) TX_MHZ14A_TASK: Wrote 9 bytes
+I (72276) test: Read Values: temp = 27.9900, hum = 46.2178
+I (72856) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (72856) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (72856) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (74376) test: Read Values: temp = 28.0000, hum = 46.2549
+I (74866) TX_MHZ14A_TASK: Wrote 9 bytes
+I (75896) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (75896) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (75896) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (76476) test: Read Values: temp = 28.0000, hum = 46.2432
+I (77906) TX_MHZ14A_TASK: Wrote 9 bytes
+I (78576) test: Read Values: temp = 28.0000, hum = 46.1699
+I (78936) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (78936) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (78936) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (80676) test: Read Values: temp = 28.0000, hum = 46.2061
+I (80946) TX_MHZ14A_TASK: Wrote 9 bytes
+I (81976) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (81976) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (81976) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (82776) test: Read Values: temp = 28.0000, hum = 46.6318
+I (83986) TX_MHZ14A_TASK: Wrote 9 bytes
+I (84876) test: Read Values: temp = 28.0000, hum = 46.5117
+I (85016) RX_MHZ14A_TASK: Read 9 bytes: ' ååE'
+I (85016) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 86 45 00 09 00  a3                       |....E....|
+I (85016) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 992.20 ppm
+
+
+I (86976) test: Read Values: temp = 28.0000, hum = 46.3535
+I (87026) TX_MHZ14A_TASK: Wrote 9 bytes
+I (88056) RX_MHZ14A_TASK: Read 9 bytes: ' ååE'
+I (88056) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 86 45 00 09 00  a3                       |....E....|
+I (88056) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 992.20 ppm
+
+
+I (89076) test: Read Values: temp = 28.0000, hum = 46.3047
+I (90066) TX_MHZ14A_TASK: Wrote 9 bytes
+I (91096) RX_MHZ14A_TASK: Read 9 bytes: ' ååE'
+I (91096) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 86 45 00 09 00  a3                       |....E....|
+I (91096) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 992.20 ppm
+
+
+I (91176) test: Read Values: temp = 28.0000, hum = 46.3047
+I (93106) TX_MHZ14A_TASK: Wrote 9 bytes
+I (93276) test: Read Values: temp = 28.0100, hum = 46.3652
+I (94136) RX_MHZ14A_TASK: Read 9 bytes: ' ååE'
+I (94136) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 86 45 00 09 00  a3                       |....E....|
+I (94136) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 992.20 ppm
+
+
+I (95376) test: Read Values: temp = 28.0100, hum = 46.3779
+I (96146) TX_MHZ14A_TASK: Wrote 9 bytes
+I (97176) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (97176) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 09 00  a2                       |....E....|
+I (97176) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (97476) test: Read Values: temp = 28.0100, hum = 47.0830
+I (99186) TX_MHZ14A_TASK: Wrote 9 bytes
+I (99576) test: Read Values: temp = 28.0100, hum = 47.3623
+I (100216) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (100216) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 0a 00  a1                       |....E....|
+I (100216) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (101676) test: Read Values: temp = 28.0100, hum = 47.1924
+I (102226) TX_MHZ14A_TASK: Wrote 9 bytes
+I (103256) RX_MHZ14A_TASK: Read 9 bytes: ' åêE'
+I (103256) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 88 45 00 0a 00  a0                       |....E....|
+I (103256) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 994.40 ppm
+
+
+I (103776) test: Read Values: temp = 28.0100, hum = 46.9492
+I (105266) TX_MHZ14A_TASK: Wrote 9 bytes
+I (105876) test: Read Values: temp = 28.0100, hum = 46.6816
+I (106296) RX_MHZ14A_TASK: Read 9 bytes: ' åêE'
+I (106296) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 88 45 00 0a 00  a0                       |....E....|
+I (106296) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 994.40 ppm
+
+
+I (107976) test: Read Values: temp = 28.0200, hum = 46.5127
+I (108306) TX_MHZ14A_TASK: Wrote 9 bytes
+I (109336) RX_MHZ14A_TASK: Read 9 bytes: ' åêE'
+I (109336) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 88 45 00 0a 00  a0                       |....E....|
+I (109336) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 994.40 ppm
+
+
+I (110076) test: Read Values: temp = 28.0200, hum = 46.3545
+I (111346) TX_MHZ14A_TASK: Wrote 9 bytes
+I (112176) test: Read Values: temp = 28.0200, hum = 46.3301
+I (112376) RX_MHZ14A_TASK: Read 9 bytes: ' åêE'
+I (112376) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 88 45 00 0a 00  a0                       |....E....|
+I (112376) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 994.40 ppm
+
+
+I (114276) test: Read Values: temp = 28.0200, hum = 46.2822
+I (114386) TX_MHZ14A_TASK: Wrote 9 bytes
+I (115416) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (115416) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 0a 00  a1                       |....E....|
+I (115416) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (116376) test: Read Values: temp = 28.0200, hum = 46.1973
+I (117426) TX_MHZ14A_TASK: Wrote 9 bytes
+I (118456) RX_MHZ14A_TASK: Read 9 bytes: ' åçE'
+I (118456) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 87 45 00 0a 00  a1                       |....E....|
+I (118456) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 993.30 ppm
+
+
+I (118476) test: Read Values: temp = 28.0200, hum = 46.1367
+I (120466) TX_MHZ14A_TASK: Wrote 9 bytes
+I (120576) test: Read Values: temp = 28.0200, hum = 46.0635
+I (121496) RX_MHZ14A_TASK: Read 9 bytes: ' åâE'
+I (121496) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 83 45 00 0a 00  a5                       |....E....|
+I (121496) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 988.90 ppm
+
+
+I (122676) test: Read Values: temp = 28.0200, hum = 46.1973
+I (123506) TX_MHZ14A_TASK: Wrote 9 bytes
+I (124536) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (124536) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 7f 45 00 0a 00  a9                       |....E....|
+I (124536) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 984.50 ppm
+
+
+I (124776) test: Read Values: temp = 28.0300, hum = 46.1738
+I (126546) TX_MHZ14A_TASK: Wrote 9 bytes
+I (126876) test: Read Values: temp = 28.0300, hum = 46.0889
+I (127576) RX_MHZ14A_TASK: Read 9 bytes: ' å{E'
+I (127576) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 7b 45 00 0a 00  ad                       |...{E....|
+I (127576) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 980.10 ppm
+
+
+I (128976) test: Read Values: temp = 28.0300, hum = 46.0889
+I (129586) TX_MHZ14A_TASK: Wrote 9 bytes
+I (130616) RX_MHZ14A_TASK: Read 9 bytes: ' åxE'
+I (130616) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 78 45 00 0a 00  b0                       |...xE....|
+I (130616) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 976.80 ppm
+
+
+I (131076) test: Read Values: temp = 28.0300, hum = 46.0273
+I (132626) TX_MHZ14A_TASK: Wrote 9 bytes
+I (133176) test: Read Values: temp = 28.0300, hum = 46.1133
+I (133656) RX_MHZ14A_TASK: Read 9 bytes: ' åtE'
+I (133656) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 74 45 00 0a 00  b4                       |...tE....|
+I (133656) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 972.40 ppm
+
+
+I (135276) test: Read Values: temp = 28.0300, hum = 46.1611
+I (135666) TX_MHZ14A_TASK: Wrote 9 bytes
+I (136696) RX_MHZ14A_TASK: Read 9 bytes: ' åpE'
+I (136696) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 70 45 00 0a 00  b8                       |...pE....|
+I (136696) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 968.00 ppm
+
+
+I (137376) test: Read Values: temp = 28.0300, hum = 46.2588
+I (138706) TX_MHZ14A_TASK: Wrote 9 bytes
+I (139476) test: Read Values: temp = 28.0300, hum = 46.1367
+I (139736) RX_MHZ14A_TASK: Read 9 bytes: ' ålE'
+I (139736) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 6c 45 00 0a 00  bc                       |...lE....|
+I (139736) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 963.60 ppm
+
+
+I (141576) test: Read Values: temp = 28.0300, hum = 46.1494
+I (141746) TX_MHZ14A_TASK: Wrote 9 bytes
+I (142776) RX_MHZ14A_TASK: Read 9 bytes: ' åfE'
+I (142776) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 66 45 00 0a 00  c2                       |...fE....|
+I (142776) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 957.00 ppm
+
+
+I (143676) test: Read Values: temp = 28.0300, hum = 46.1855
+I (144786) TX_MHZ14A_TASK: Wrote 9 bytes
+I (145776) test: Read Values: temp = 28.0200, hum = 46.2217
+I (145816) RX_MHZ14A_TASK: Read 9 bytes: ' åbE'
+I (145816) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 62 45 00 0a 00  c6                       |...bE....|
+I (145816) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 952.60 ppm
+
+
+I (147826) TX_MHZ14A_TASK: Wrote 9 bytes
+I (147876) test: Read Values: temp = 28.0200, hum = 46.1973
+I (148856) RX_MHZ14A_TASK: Read 9 bytes: ' å^E'
+I (148856) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 5e 45 00 0a 00  ca                       |...^E....|
+I (148856) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 948.20 ppm
+
+
+I (149976) test: Read Values: temp = 28.0200, hum = 46.3672
+I (150866) TX_MHZ14A_TASK: Wrote 9 bytes
+I (151896) RX_MHZ14A_TASK: Read 9 bytes: ' å[E'
+I (151896) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 5b 45 00 0a 00  cd                       |...[E....|
+I (151896) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 944.90 ppm
+
+
+I (152076) test: Read Values: temp = 28.0200, hum = 46.2461
+I (153906) TX_MHZ14A_TASK: Wrote 9 bytes
+I (154176) test: Read Values: temp = 28.0200, hum = 46.2578
+I (154936) RX_MHZ14A_TASK: Read 9 bytes: ' åXE'
+I (154936) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 58 45 00 0a 00  d0                       |...XE....|
+I (154936) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 941.60 ppm
+
+
+I (156276) test: Read Values: temp = 28.0200, hum = 46.3428
+I (156946) TX_MHZ14A_TASK: Wrote 9 bytes
+I (157976) RX_MHZ14A_TASK: Read 9 bytes: ' åUE'
+I (157976) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 55 45 00 0a 00  d3                       |...UE....|
+I (157976) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 938.30 ppm
+
+
+I (158376) test: Read Values: temp = 28.0200, hum = 46.3174
+I (159986) TX_MHZ14A_TASK: Wrote 9 bytes
+I (160476) test: Read Values: temp = 28.0200, hum = 46.2930
+I (161016) RX_MHZ14A_TASK: Read 9 bytes: ' åQE'
+I (161016) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 51 45 00 0a 00  d7                       |...QE....|
+I (161016) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 933.90 ppm
+
+
+I (162576) test: Read Values: temp = 28.0200, hum = 46.3662
+I (163026) TX_MHZ14A_TASK: Wrote 9 bytes
+I (164056) RX_MHZ14A_TASK: Read 9 bytes: ' åKE'
+I (164056) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 4b 45 00 0a 00  dd                       |...KE....|
+I (164056) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 927.30 ppm
+
+
+I (164676) test: Read Values: temp = 28.0200, hum = 46.4512
+I (166066) TX_MHZ14A_TASK: Wrote 9 bytes
+I (166776) test: Read Values: temp = 28.0200, hum = 46.3174
+I (167096) RX_MHZ14A_TASK: Read 9 bytes: ' åGE'
+I (167096) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 47 45 00 0a 00  e1                       |...GE....|
+I (167096) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 922.90 ppm
+
+
+I (168876) test: Read Values: temp = 28.0100, hum = 46.2197
+I (169106) TX_MHZ14A_TASK: Wrote 9 bytes
+I (170136) RX_MHZ14A_TASK: Read 9 bytes: ' åAE'
+I (170136) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 41 45 00 0a 00  e7                       |...AE....|
+I (170136) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 916.30 ppm
+
+
+I (170976) test: Read Values: temp = 28.0100, hum = 46.2197
+I (172146) TX_MHZ14A_TASK: Wrote 9 bytes
+I (173076) test: Read Values: temp = 28.0100, hum = 46.1465
+I (173176) RX_MHZ14A_TASK: Read 9 bytes: ' å9E'
+I (173176) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 39 45 00 0a 00  ef                       |...9E....|
+I (173176) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 907.50 ppm
+
+
+I (175176) test: Read Values: temp = 28.0100, hum = 46.0977
+I (175186) TX_MHZ14A_TASK: Wrote 9 bytes
+I (176216) RX_MHZ14A_TASK: Read 9 bytes: ' å4E'
+I (176216) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 34 45 00 0a 00  f4                       |...4E....|
+I (176216) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 902.00 ppm
+
+
+I (177276) test: Read Values: temp = 28.0100, hum = 46.1826
+I (178226) TX_MHZ14A_TASK: Wrote 9 bytes
+I (179256) RX_MHZ14A_TASK: Read 9 bytes: ' å-E'
+I (179256) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 2d 45 00 0a 00  fb                       |...-E....|
+I (179256) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 894.30 ppm
+
+
+I (179376) test: Read Values: temp = 28.0000, hum = 46.1348
+I (181266) TX_MHZ14A_TASK: Wrote 9 bytes
+I (181476) test: Read Values: temp = 28.0000, hum = 46.1465
+I (182296) RX_MHZ14A_TASK: Read 9 bytes: ' å(E'
+I (182296) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 28 45 00 0a 00  00                       |...(E....|
+I (182296) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 888.80 ppm
+
+
+I (183576) test: Read Values: temp = 28.0000, hum = 46.1348
+I (184306) TX_MHZ14A_TASK: Wrote 9 bytes
+I (185336) RX_MHZ14A_TASK: Read 9 bytes: ' å!E'
+I (185336) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 21 45 00 0a 00  07                       |...!E....|
+I (185336) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 881.10 ppm
+
+
+I (185676) test: Read Values: temp = 28.0000, hum = 45.9033
+I (187346) TX_MHZ14A_TASK: Wrote 9 bytes
+I (187776) test: Read Values: temp = 28.0000, hum = 46.0732
+I (188376) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (188376) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 1d 45 00 0a 00  0b                       |....E....|
+I (188376) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 876.70 ppm
+
+
+I (189876) test: Read Values: temp = 28.0000, hum = 46.0723
+I (190386) TX_MHZ14A_TASK: Wrote 9 bytes
+I (191416) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (191416) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 19 45 00 0a 00  0f                       |....E....|
+I (191416) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 872.30 ppm
+
+
+I (191976) test: Read Values: temp = 28.0000, hum = 46.0488
+I (193426) TX_MHZ14A_TASK: Wrote 9 bytes
+I (194076) test: Read Values: temp = 28.0000, hum = 46.0488
+I (194456) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (194456) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 12 45 00 0a 00  16                       |....E....|
+I (194456) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 864.60 ppm
+
+
+I (196176) test: Read Values: temp = 28.0000, hum = 46.0723
+I (196466) TX_MHZ14A_TASK: Wrote 9 bytes
+I (197496) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (197496) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 0e 45 00 0a 00  1a                       |....E....|
+I (197496) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 860.20 ppm
+
+
+I (198266) test: Read Values: temp = 27.9900, hum = 46.0596
+I (199506) TX_MHZ14A_TASK: Wrote 9 bytes
+I (200376) test: Read Values: temp = 27.9900, hum = 46.0596
+I (200536) RX_MHZ14A_TASK: Read 9 bytes: ' å
+E'
+I (200536) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 0a 45 00 0a 00  1e                       |....E....|
+I (200536) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 855.80 ppm
+
+
+I (202476) test: Read Values: temp = 27.9900, hum = 46.0479
+I (202546) TX_MHZ14A_TASK: Wrote 9 bytes
+I (203576) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (203576) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 06 45 00 0a 00  22                       |....E..."|
+I (203576) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 851.40 ppm
+
+
+I (204576) test: Read Values: temp = 27.9900, hum = 46.1572
+I (205586) TX_MHZ14A_TASK: Wrote 9 bytes
+I (206616) RX_MHZ14A_TASK: Read 9 bytes: ' åE'
+I (206616) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 03 45 00 0a 00  25                       |....E...%|
+I (206616) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 848.10 ppm
+
+
+I (206676) test: Read Values: temp = 27.9900, hum = 46.1572
+I (208626) TX_MHZ14A_TASK: Wrote 9 bytes
+I (208776) test: Read Values: temp = 27.9900, hum = 47.6523
+I (209656) RX_MHZ14A_TASK: Read 9 bytes: ' å'
+I (209656) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 03 00 45 00 0a 00  28                       |....E...(|
+I (209656) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 844.80 ppm
+
+
+I (210876) test: Read Values: temp = 27.9900, hum = 47.8711
+I (211666) TX_MHZ14A_TASK: Wrote 9 bytes
+I (212696) RX_MHZ14A_TASK: Read 9 bytes: ' å■E'
+I (212696) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 02 fe 45 00 0a 00  2b                       |....E...+|
+I (212696) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 842.60 ppm
+
+
+I (212976) test: Read Values: temp = 27.9900, hum = 47.2881
+I (214706) TX_MHZ14A_TASK: Wrote 9 bytes
+I (215076) test: Read Values: temp = 27.9900, hum = 46.8252
+I (215736) RX_MHZ14A_TASK: Read 9 bytes: ' å²E'
+I (215736) RX_MHZ14A_TASK: 0x3ffdc124   ff 86 02 fd 45 00 0a 00  2c                       |....E...,|
+I (215736) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 841.50 ppm
+
+
+I (217176) test: Read Values: temp = 27.9900, hum = 46.6553
+[0/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;-m;esp_idf_monitor -D SERIAL_TOOL_ARGS=--target;esp32;--revision;0;C:/get-started/BTL_VXL/build/main.elf -D WORKING_DIRECTORY=C:/get-started/BTL_VXL/build -P run_serial_tool.cmake"

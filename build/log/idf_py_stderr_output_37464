@@ -1,0 +1,105 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e28e3: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:270
+[0m
+[0;33m0x4000c349: memcpy in ROM
+0x4000c36b: memcpy in ROM
+[0m
+[0;33m0x400e28e0: lv_obj_get_disp at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_tree.c:265
+0x400dc730: lv_scr_load_anim at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:224
+0x400dca91: lv_disp_load_scr at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_disp.c:84
+0x400d7d91: ui_init at C:/get-started/BTL_VXL/main/ui.c:227
+0x400d79ca: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

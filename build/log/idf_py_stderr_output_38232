@@ -1,0 +1,168 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f049a: lv_mem_buf_get at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_mem.c:311
+0x4010088b: draw_bg at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:153
+0x401014a6: lv_draw_sw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/sw/lv_draw_sw_rect.c:75
+0x4019d9db: lv_draw_rect at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/draw/lv_draw_rect.c:66
+0x400dd88e: lv_obj_draw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:561
+0x400de2e2: lv_obj_event at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj.c:874
+0x4019d065: lv_obj_event_base at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:98
+0x400dd17a: event_send_core at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:458
+0x400dd266: lv_event_send at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_event.c:75
+0x400e3a7a: lv_obj_redraw at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:148
+0x400e3b31: refr_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:974
+0x400e3d9d: refr_obj_and_children at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:856
+0x400e3f9e: refr_area_part at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:791
+0x400e4117: refr_area at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:680
+0x400e4225: refr_invalid_areas at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:618
+0x400e43d6: _lv_disp_refr_timer at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_refr.c:325
+0x400f1a09: lv_timer_exec at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x400f1ab6: lv_timer_handler at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x400d7a51: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:315
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

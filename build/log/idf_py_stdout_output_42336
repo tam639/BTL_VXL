@@ -1,0 +1,25 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/BTL_VXL/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/9] Building C object esp-idf/communications/CMakeFiles/__idf_communications.dir/mqtt.c.obj
+[3/9] Linking C static library esp-idf\communications\libcommunications.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/get-started/BTL_VXL/main/main.c: In function 'Send_and_Display_Task':
+C:/get-started/BTL_VXL/main/main.c:457:17: warning: unused variable 'uxBits' [-Wunused-variable]
+  457 |     EventBits_t uxBits;
+      |                 ^~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_LCD':
+C:/get-started/BTL_VXL/main/main.c:648:16: warning: unused variable 'disp' [-Wunused-variable]
+  648 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable main.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/BTL_VXL/build/main.bin
+[9/9] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/BTL_VXL/build/partition_table/partition-table.bin C:/get-started/BTL_VXL/build/main.bin"
+main.bin binary size 0x13b070 bytes. Smallest app partition is 0x177000 bytes. 0x3bf90 bytes (16%) free.

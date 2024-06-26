@@ -1,0 +1,47 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f7a79: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d821b: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d8341: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d7a52: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f7a79: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d821b: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d8341: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d7a52: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f7a79: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d821b: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d8341: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d7a52: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f7a79: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d821b: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d8341: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d7a52: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f7a79: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d821b: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d8341: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d7a52: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:314
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

@@ -1,0 +1,967 @@
+mI (40) boot.esp32:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d3a0h (250784) map[0m
+[0;32mI (191) esp_image: segment 1: paddr=0004d3c8 vaddr=3ffb0000 size=02c50h ( 11344) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=d8ba4h (887716) map[0m
+[0;32mI (501) esp_image: segment 3: paddr=00128bcc vaddr=3ffb2c50 size=0125ch (  4700) load[0m
+[0;32mI (503) esp_image: segment 4: paddr=00129e30 vaddr=40080000 size=18968h (100712) load[0m
+[0;32mI (558) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (558) boot: Disabling RNG early entropy source...[0m
+[0;32mI (570) cpu_start: Multicore app[0m
+[0;32mI (579) cpu_start: Pro cpu start user code[0m
+[0;32mI (579) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (579) cpu_start: Application information:[0m
+[0;32mI (582) cpu_start: Project name:     main[0m
+[0;32mI (586) cpu_start: App version:      1[0m
+[0;32mI (591) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (597) cpu_start: ELF file SHA256:  eebac94e3...[0m
+[0;32mI (602) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (608) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (612) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (617) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (622) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (629) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (635) heap_init: At 3FFC0D48 len 0001F2B8 (124 KiB): DRAM[0m
+[0;32mI (641) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (648) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (654) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (662) spi_flash: detected chip: generic[0m
+[0;32mI (665) spi_flash: flash io: dio[0m
+[0;33mW (669) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (683) main_task: Started on CPU0[0m
+[0;32mI (693) main_task: Calling app_main()[0m
+I (733) wifi:wifi driver task: 3ffc8d48, prio:23, stack:6656, core=0
+I (753) wifi:wifi firmware version: a9f5b59
+I (753) wifi:wifi certification version: v7.0
+I (753) wifi:config NVS flash: enabled
+I (753) wifi:config nano formating: disabled
+I (753) wifi:Init data frame dynamic rx buffer num: 32
+I (763) wifi:Init static rx mgmt buffer num: 5
+I (763) wifi:Init management short buffer num: 32
+I (763) wifi:Init dynamic tx buffer num: 32
+I (773) wifi:Init static rx buffer size: 1600
+I (773) wifi:Init static rx buffer num: 10
+I (783) wifi:Init dynamic rx buffer num: 32
+[0;32mI (783) wifi_init: rx ba win: 6[0m
+[0;32mI (783) wifi_init: tcpip mbox: 32[0m
+[0;32mI (793) wifi_init: udp mbox: 6[0m
+[0;32mI (793) wifi_init: tcp mbox: 6[0m
+[0;32mI (803) wifi_init: tcp tx win: 5760[0m
+[0;32mI (803) wifi_init: tcp rx win: 5760[0m
+[0;32mI (803) wifi_init: tcp mss: 1440[0m
+[0;32mI (813) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (813) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (823) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (913) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (913) wifi:enable tsf
+I (933) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (933) wifi:state: init -> auth (b0)
+I (953) wifi:state: auth -> init (8a0)
+I (953) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3373) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3373) wifi:state: init -> auth (b0)
+I (3423) wifi:state: auth -> assoc (0)
+I (3523) wifi:state: assoc -> run (10)
+I (3643) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3643) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+I (3643) wifi:pm start, type: 1
+
+I (3643) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3713) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4653) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4663) example: Turn off LCD backlight[0m
+[0;32mI (4663) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4663) example: Initialize SPI bus[0m
+[0;32mI (4673) example: Install panel IO[0m
+[0;32mI (4673) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (4683) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (4683) example: Install ILI9341 panel driver[0m
+[0;32mI (4693) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4703) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (4743) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4833) example: Turn on LCD backlight[0m
+[0;32mI (4833) example: Initialize LVGL library[0m
+[0;32mI (4833) example: Register display driver to LVGL[0m
+[0;32mI (4843) example: Install LVGL tick timer[0m
+[0;32mI (4843) main_task: Returned from app_main()[0m
+I (4843) wifi:state: run -> init (0)
+I (4843) wifi:pm stop, total sleep time: 652184 us / 1199067 us
+
+I (4853) wifi:<ba-del>idx:0, tid:0
+I (4853) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (4863) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (4873) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (4883) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4883) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4893) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4893) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4903) mqtt_client: Error transport connect[0m
+[0;32mI (4903) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4913) mqtt_client: Client force reconnect requested[0m
+I (4913) smartconfig: SC version: V3.0.1
+[0;31mE (4923) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (4923) smartconfig: scan status 1
+[0;31mE (4933) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (4923) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (4933) mqtt_client: Error transport connect[0m
+[0;32mI (4953) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4953) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4963) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4963) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4973) mqtt_client: Error transport connect[0m
+[0;32mI (4973) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4983) mqtt_client: Client force reconnect requested[0m
+W (4983) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (4993) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (4993) smartconfig: promis scan ret 12294
+[0;31mE (5003) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5013) mqtt_client: Error transport connect[0m
+[0;32mI (5013) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5023) mqtt_client: Client force reconnect requested[0m
+I (5023) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (5033) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5033) wifi:state: init -> auth (b0)
+[0;31mE (5043) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5053) mqtt_client: Error transport connect[0m
+[0;32mI (5053) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5063) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5063) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (4983) ui_Screen1_screen_init: temp:35.68[0m
+[0;31mE (5073) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5083) mqtt_client: Error transport connect[0m
+I (5083) wifi:[0;32mI (5093) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+state: auth -> assoc (0)[0;32mI (5093) mqtt_client: Client force reconnect requested[0m
+
+[0;32mI (5103) ui_Screen1_screen_init: Buffer: TEMP : 35.68 °C[0m
+[0;31mE (5103) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5113) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5123) mqtt_client: Error transport connect[0m
+[0;32mI (5123) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5133) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5143) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5143) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5153) mqtt_client: Error transport connect[0m
+[0;32mI (5153) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5163) mqtt_client: Client force reconnect requested[0m
+I (5163) wifi:state: assoc -> run (10)
+[0;31mE (5173) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5183) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5183) mqtt_client: Error transport connect[0m
+[0;32mI (5193) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5193) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5203) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5203) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5213) mqtt_client: Error transport connect[0m
+[0;32mI (5223) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5223) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5233) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (5233) ui_Screen1_screen_init: Co2:476.90[0m
+[0;31mE (5233) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5243) mqtt_client: Error transport connect[0m
+[0;32mI (5253) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5263) mqtt_client: Client force reconnect requested[0m
+[0;32mI (5263) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;31mE (5263) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5273) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5283) mqtt_client: Error transport connect[0m
+I (5283) wifi:[0;32mI (5293) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30[0;32mI (5293) mqtt_client: Client force reconnect requested[0m
+
+I (5303) wifi:security: WPA2-PSK, phy: bgn, rssi: -69
+[0;31mE (5313) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5313) wifi:pm start, type: 1
+[0;31mE (5323) transport_base: Failed to open a new connection: 32772[0m
+
+[0;31mE (5333) mqtt_client: Error transport connect[0m
+[0;32mI (5333) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5343) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5343) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5353) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (5353) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5363) mqtt_client: Error transport connect[0m
+[0;32mI (5373) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5373) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5383) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5383) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5393) mqtt_client: Error transport connect[0m
+[0;32mI (5393) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5403) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5413) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5413) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5423) mqtt_client: Error transport connect[0m
+[0;32mI (5423) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5433) mqtt_client: Client force reconnect requested[0m
+[0;32mI (5323) ui_Screen1_screen_init: Humi:54.15[0m
+[0;31mE (5443) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5453) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5453) mqtt_client: Error transport connect[0m
+[0;32mI (5463) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5463) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5473) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5483) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5483) mqtt_client: Error transport connect[0m
+[0;32mI (5493) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5493) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (5503) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;31mE (5513) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5523) mqtt_client: Error transport connect[0m
+[0;32mI (5523) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5533) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5533) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5543) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5553) mqtt_client: Error transport connect[0m
+[0;32mI (5553) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5563) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5563) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5573) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5583) mqtt_client: Error transport connect[0m
+[0;32mI (5583) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5593) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5593) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5603) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5613) mqtt_client: Error transport connect[0m
+[0;32mI (5613) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5623) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5623) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5633) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5633) mqtt_client: Error transport connect[0m
+[0;32mI (5643) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5643) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5653) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5663) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5663) mqtt_client: Error transport connect[0m
+[0;32mI (5673) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5673) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5683) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5693) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5693) mqtt_client: Error transport connect[0m
+[0;32mI (5703) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5703) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5713) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5723) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5723) mqtt_client: Error transport connect[0m
+[0;32mI (5733) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5733) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5743) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5753) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5753) mqtt_client: Error transport connect[0m
+[0;32mI (5763) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5763) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5773) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5773) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5783) mqtt_client: Error transport connect[0m
+[0;32mI (5793) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5793) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5803) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5803) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5813) mqtt_client: Error transport connect[0m
+[0;32mI (5823) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5823) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5833) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5833) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5843) mqtt_client: Error transport connect[0m
+[0;32mI (5843) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5853) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5863) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5863) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5873) mqtt_client: Error transport connect[0m
+[0;32mI (5873) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5883) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5893) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5893) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5903) mqtt_client: Error transport connect[0m
+[0;32mI (5903) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5913) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5923) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5923) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5933) mqtt_client: Error transport connect[0m
+[0;32mI (5933) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5943) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5943) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5953) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5963) mqtt_client: Error transport connect[0m
+[0;32mI (5963) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5973) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5973) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5983) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5993) mqtt_client: Error transport connect[0m
+[0;32mI (5993) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6003) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6003) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6013) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6013) mqtt_client: Error transport connect[0m
+[0;32mI (6023) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6023) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6033) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6043) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6043) mqtt_client: Error transport connect[0m
+[0;32mI (6053) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6053) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6063) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6073) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6073) mqtt_client: Error transport connect[0m
+[0;32mI (6083) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6083) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6093) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6103) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6103) mqtt_client: Error transport connect[0m
+[0;32mI (6113) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6113) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6123) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6133) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6133) mqtt_client: Error transport connect[0m
+[0;32mI (6143) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6143) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6153) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6153) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6163) mqtt_client: Error transport connect[0m
+[0;32mI (6173) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6173) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6183) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6183) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6193) mqtt_client: Error transport connect[0m
+[0;32mI (6203) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6203) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6213) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6213) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6223) mqtt_client: Error transport connect[0m
+[0;32mI (6223) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6233) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6243) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6243) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6253) mqtt_client: Error transport connect[0m
+[0;32mI (6253) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6263) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6273) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6273) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6283) mqtt_client: Error transport connect[0m
+[0;32mI (6283) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6293) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6303) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6303) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6313) mqtt_client: Error transport connect[0m
+[0;32mI (6313) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6323) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6323) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (6333) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;31mE (6333) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6353) mqtt_client: Error transport connect[0m
+[0;32mI (6353) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6363) mqtt_client: Client force reconnect requested[0m
+I (6403) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (6453) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7663) ui_Screen1_screen_init: temp:42.66[0m
+[0;32mI (7663) ui_Screen1_screen_init: Buffer: TEMP : 42.66 °C[0m
+[0;32mI (7673) ui_Screen1_screen_init: Co2:372.58[0m
+[0;32mI (7673) ui_Screen1_screen_init: Buffer: Co2 : 372.58 ppm[0m
+[0;32mI (7683) ui_Screen1_screen_init: Humi:39.02[0m
+[0;32mI (7683) ui_Screen1_screen_init: Buffer: HUMI : 39.02 %[0m
+[0;32mI (9793) ui_Screen1_screen_init: temp:44.71[0m
+[0;32mI (9793) ui_Screen1_screen_init: Buffer: TEMP : 44.71 °C[0m
+[0;32mI (9793) ui_Screen1_screen_init: Co2:443.47[0m
+[0;32mI (9803) ui_Screen1_screen_init: Buffer: Co2 : 443.47 ppm[0m
+[0;32mI (9803) ui_Screen1_screen_init: Humi:32.41[0m
+[0;32mI (9803) ui_Screen1_screen_init: Buffer: HUMI : 32.41 %[0m
+[0;32mI (11923) ui_Screen1_screen_init: temp:37.61[0m
+[0;32mI (11923) ui_Screen1_screen_init: Buffer: TEMP : 37.61 °C[0m
+[0;32mI (11933) ui_Screen1_screen_init: Co2:617.67[0m
+[0;32mI (11933) ui_Screen1_screen_init: Buffer: Co2 : 617.67 ppm[0m
+[0;32mI (11943) ui_Screen1_screen_init: Humi:32.98[0m
+[0;32mI (11943) ui_Screen1_screen_init: Buffer: HUMI : 32.98 %[0m
+[0;32mI (14053) ui_Screen1_screen_init: temp:35.43[0m
+[0;32mI (14063) ui_Screen1_screen_init: Buffer: TEMP : 35.43 °C[0m
+[0;32mI (14063) ui_Screen1_screen_init: Co2:416.64[0m
+[0;32mI (14063) ui_Screen1_screen_init: Buffer: Co2 : 416.64 ppm[0m
+[0;32mI (14073) ui_Screen1_screen_init: Humi:60.53[0m
+[0;32mI (14073) ui_Screen1_screen_init: Buffer: HUMI : 60.53 %[0m
+[0;32mI (16203) ui_Screen1_screen_init: temp:36.74[0m
+[0;32mI (16213) ui_Screen1_screen_init: Buffer: TEMP : 36.74 °C[0m
+[0;32mI (16213) ui_Screen1_screen_init: Co2:600.48[0m
+[0;32mI (16213) ui_Screen1_screen_init: Buffer: Co2 : 600.48 ppm[0m
+[0;32mI (16223) ui_Screen1_screen_init: Humi:31.12[0m
+[0;32mI (16223) ui_Screen1_screen_init: Buffer: HUMI : 31.12 %[0m
+[0;32mI (18353) ui_Screen1_screen_init: temp:35.93[0m
+[0;32mI (18353) ui_Screen1_screen_init: Buffer: TEMP : 35.93 °C[0m
+[0;32mI (18363) ui_Screen1_screen_init: Co2:512.19[0m
+[0;32mI (18363) ui_Screen1_screen_init: Buffer: Co2 : 512.19 ppm[0m
+[0;32mI (18373) ui_Screen1_screen_init: Humi:45.13[0m
+[0;32mI (18373) ui_Screen1_screen_init: Buffer: HUMI : 45.13 %[0m
+[0;32mI (20503) ui_Screen1_screen_init: temp:34.61[0m
+[0;32mI (20503) ui_Screen1_screen_init: Buffer: TEMP : 34.61 °C[0m
+[0;32mI (20513) ui_Screen1_screen_init: Co2:528.24[0m
+[0;32mI (20513) ui_Screen1_screen_init: Buffer: Co2 : 528.24 ppm[0m
+[0;32mI (20523) ui_Screen1_screen_init: Humi:45.35[0m
+[0;32mI (20523) ui_Screen1_screen_init: Buffer: HUMI : 45.35 %[0m
+[0;32mI (22653) ui_Screen1_screen_init: temp:44.13[0m
+[0;32mI (22663) ui_Screen1_screen_init: Buffer: TEMP : 44.13 °C[0m
+[0;32mI (22663) ui_Screen1_screen_init: Co2:574.08[0m
+[0;32mI (22663) ui_Screen1_screen_init: Buffer: Co2 : 574.08 ppm[0m
+[0;32mI (22673) ui_Screen1_screen_init: Humi:50.88[0m
+[0;32mI (22673) ui_Screen1_screen_init: Buffer: HUMI : 50.88 %[0m
+[0;32mI (24823) ui_Screen1_screen_init: temp:38.18[0m
+[0;32mI (24823) ui_Screen1_screen_init: Buffer: TEMP : 38.18 °C[0m
+[0;32mI (24823) ui_Screen1_screen_init: Co2:599.98[0m
+[0;32mI (24823) ui_Screen1_screen_init: Buffer: Co2 : 599.98 ppm[0m
+[0;32mI (24833) ui_Screen1_screen_init: Humi:32.33[0m
+[0;32mI (24833) ui_Screen1_screen_init: Buffer: HUMI : 32.33 %[0m
+[0;32mI (26983) ui_Screen1_screen_init: temp:42.33[0m
+[0;32mI (26983) ui_Screen1_screen_init: Buffer: TEMP : 42.33 °C[0m
+[0;32mI (26993) ui_Screen1_screen_init: Co2:460.22[0m
+[0;32mI (26993) ui_Screen1_screen_init: Buffer: Co2 : 460.22 ppm[0m
+[0;32mI (27003) ui_Screen1_screen_init: Humi:60.25[0m
+[0;32mI (27003) ui_Screen1_screen_init: Buffer: HUMI : 60.25 %[0m
+[0;31mE (34073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (34073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (34073) task_wdt: Tasks currently running:[0m
+[0;31mE (34073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (34073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (34073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (39073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (39073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (39073) task_wdt: Tasks currently running:[0m
+[0;31mE (39073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (39073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (39073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (44073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (44073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (44073) task_wdt: Tasks currently running:[0m
+[0;31mE (44073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (44073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (44073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (49073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (49073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (49073) task_wdt: Tasks currently running:[0m
+[0;31mE (49073) task_wdt: CPU 0: wifi[0m
+[0;31mE (49073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (49073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (54073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (54073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (54073) task_wdt: Tasks currently running:[0m
+[0;31mE (54073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (54073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (54073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (59073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (59073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (59073) task_wdt: Tasks currently running:[0m
+[0;31mE (59073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (59073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (59073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (64073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (64073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (64073) task_wdt: Tasks currently running:[0m
+[0;31mE (64073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (64073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (64073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (69073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (69073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (69073) task_wdt: Tasks currently running:[0m
+[0;31mE (69073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (69073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (69073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (74073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (74073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (74073) task_wdt: Tasks currently running:[0m
+[0;31mE (74073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (74073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (74073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (79073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (79073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (79073) task_wdt: Tasks currently running:[0m
+[0;31mE (79073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (79073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (79073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (84073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (84073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (84073) task_wdt: Tasks currently running:[0m
+[0;31mE (84073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (84073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (84073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (89073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (89073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (89073) task_wdt: Tasks currently running:[0m
+[0;31mE (89073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (89073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (89073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (94073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (94073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (94073) task_wdt: Tasks currently running:[0m
+[0;31mE (94073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (94073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (94073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (99073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (99073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (99073) task_wdt: Tasks currently running:[0m
+[0;31mE (99073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (99073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (99073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (104073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (104073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (104073) task_wdt: Tasks currently running:[0m
+[0;31mE (104073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (104073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (104073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (109073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (109073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (109073) task_wdt: Tasks currently running:[0m
+[0;31mE (109073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (109073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (109073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (114073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (114073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (114073) task_wdt: Tasks currently running:[0m
+[0;31mE (114073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (114073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (114073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (119073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (119073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (119073) task_wdt: Tasks currently running:[0m
+[0;31mE (119073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (119073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (119073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (124073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (124073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (124073) task_wdt: Tasks currently running:[0m
+[0;31mE (124073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (124073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (124073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (129073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (129073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (129073) task_wdt: Tasks currently running:[0m
+[0;31mE (129073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (129073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (129073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (134073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (134073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (134073) task_wdt: Tasks currently running:[0m
+[0;31mE (134073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (134073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (134073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (139073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (139073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (139073) task_wdt: Tasks currently running:[0m
+[0;31mE (139073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (139073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (139073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (144073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (144073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (144073) task_wdt: Tasks currently running:[0m
+[0;31mE (144073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (144073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (144073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (149073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (149073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (149073) task_wdt: Tasks currently running:[0m
+[0;31mE (149073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (149073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (149073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (154073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (154073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (154073) task_wdt: Tasks currently running:[0m
+[0;31mE (154073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (154073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (154073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (159073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (159073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (159073) task_wdt: Tasks currently running:[0m
+[0;31mE (159073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (159073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (159073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (164073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (164073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (164073) task_wdt: Tasks currently running:[0m
+[0;31mE (164073) task_wdt: CPU 0: wifi[0m
+[0;31mE (164073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (164073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (169073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (169073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (169073) task_wdt: Tasks currently running:[0m
+[0;31mE (169073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (169073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (169073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (174073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (174073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (174073) task_wdt: Tasks currently running:[0m
+[0;31mE (174073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (174073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (174073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (179073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (179073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (179073) task_wdt: Tasks currently running:[0m
+[0;31mE (179073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (179073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (179073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (184073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (184073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (184073) task_wdt: Tasks currently running:[0m
+[0;31mE (184073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (184073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (184073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (189073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (189073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (189073) task_wdt: Tasks currently running:[0m
+[0;31mE (189073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (189073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (189073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (194073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (194073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (194073) task_wdt: Tasks currently running:[0m
+[0;31mE (194073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (194073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (194073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (199073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (199073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (199073) task_wdt: Tasks currently running:[0m
+[0;31mE (199073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (199073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (199073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (204073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (204073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (204073) task_wdt: Tasks currently running:[0m
+[0;31mE (204073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (204073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (204073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (209073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (209073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (209073) task_wdt: Tasks currently running:[0m
+[0;31mE (209073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (209073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (209073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (214073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (214073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (214073) task_wdt: Tasks currently running:[0m
+[0;31mE (214073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (214073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (214073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (219073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (219073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (219073) task_wdt: Tasks currently running:[0m
+[0;31mE (219073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (219073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (219073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (224073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (224073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (224073) task_wdt: Tasks currently running:[0m
+[0;31mE (224073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (224073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (224073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (229073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (229073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (229073) task_wdt: Tasks currently running:[0m
+[0;31mE (229073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (229073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (229073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (234073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (234073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (234073) task_wdt: Tasks currently running:[0m
+[0;31mE (234073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (234073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (234073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (239073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (239073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (239073) task_wdt: Tasks currently running:[0m
+[0;31mE (239073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (239073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (239073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (244073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (244073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (244073) task_wdt: Tasks currently running:[0m
+[0;31mE (244073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (244073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (244073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (249073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (249073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (249073) task_wdt: Tasks currently running:[0m
+[0;31mE (249073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (249073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (249073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (254073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (254073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (254073) task_wdt: Tasks currently running:[0m
+[0;31mE (254073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (254073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (254073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (259073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (259073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (259073) task_wdt: Tasks currently running:[0m
+[0;31mE (259073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (259073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (259073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (264073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (264073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (264073) task_wdt: Tasks currently running:[0m
+[0;31mE (264073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (264073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (264073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (269073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (269073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (269073) task_wdt: Tasks currently running:[0m
+[0;31mE (269073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (269073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (269073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (274073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (274073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (274073) task_wdt: Tasks currently running:[0m
+[0;31mE (274073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (274073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (274073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (279073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (279073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (279073) task_wdt: Tasks currently running:[0m
+[0;31mE (279073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (279073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (279073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (284073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (284073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (284073) task_wdt: Tasks currently running:[0m
+[0;31mE (284073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (284073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (284073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (289073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (289073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (289073) task_wdt: Tasks currently running:[0m
+[0;31mE (289073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (289073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (289073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+
+[0;31mE (294073) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (294073) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (294073) task_wdt: Tasks currently running:[0m
+[0;31mE (294073) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (294073) task_wdt: CPU 1: ultrasonic_test[0m
+[0;31mE (294073) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085E52:0x3FFB2500 0x4008357D:0x3FFB2520 0x400DDF3D:0x3FFD8480 0x400DE8A5:0x3FFD84A0 0x400F69E8:0x3FFD84D0 0x400D7F0A:0x3FFD8500 0x400D831F:0x3FFD8570 0x400D7A2E:0x3FFD8590 0x4008AD5D:0x3FFD85C0
+

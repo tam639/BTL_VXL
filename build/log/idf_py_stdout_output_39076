@@ -1,0 +1,1335 @@
+[RB��J��ѹesp32ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 11:41:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f26ch (258668) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0004f294 vaddr=3ffb0000 size=00d84h (  3460) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ddbach (908204) map[0m
+[0;32mI (510) esp_image: segment 3: paddr=0012dbd4 vaddr=3ffb0d84 size=03168h ( 12648) load[0m
+[0;32mI (515) esp_image: segment 4: paddr=00130d44 vaddr=40080000 size=19fd4h (106452) load[0m
+[0;32mI (571) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (571) boot: Disabling RNG early entropy source...[0m
+[0;32mI (582) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     main[0m
+[0;32mI (599) cpu_start: App version:      1[0m
+[0;32mI (603) cpu_start: Compile time:     Jun 26 2024 14:48:54[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  23c3eb75d...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (620) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFC0DA0 len 0001F260 (124 KiB): DRAM[0m
+[0;32mI (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM[0m
+[0;32mI (675) spi_flash: detected chip: generic[0m
+[0;32mI (678) spi_flash: flash io: dio[0m
+[0;33mW (682) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (706) main_task: Started on CPU0[0m
+[0;32mI (716) main_task: Calling app_main()[0m
+I (756) wifi:wifi driver task: 3ffc8dfc, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+[0;32mI (806) wifi_init: rx ba win: 6[0m
+[0;32mI (806) wifi_init: tcpip mbox: 32[0m
+[0;32mI (816) wifi_init: udp mbox: 6[0m
+[0;32mI (816) wifi_init: tcp mbox: 6[0m
+[0;32mI (826) wifi_init: tcp tx win: 5760[0m
+[0;32mI (826) wifi_init: tcp rx win: 5760[0m
+[0;32mI (826) wifi_init: tcp mss: 1440[0m
+[0;32mI (836) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (836) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (956) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (956) wifi:state: init -> auth (b0)
+I (1006) wifi:state: auth -> assoc (0)
+I (1076) wifi:state: assoc -> run (10)
+I (1186) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1186) wifi:security: WPA2-PSK, phy: bgn, rssi: -84
+I (1196) wifi:pm start, type: 1
+
+I (1196) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1206) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2206) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2216) example: Turn off LCD backlight[0m
+[0;32mI (2216) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2216) example: Initialize SPI bus[0m
+[0;32mI (2226) example: Install panel IO[0m
+[0;32mI (2226) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2236) example: Install ILI9341 panel driver[0m
+I (2236) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2246) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2256) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (2296) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2386) example: Turn on LCD backlight[0m
+[0;32mI (2386) example: Initialize LVGL library[0m
+[0;32mI (2386) example: Register display driver to LVGL[0m
+[0;32mI (2396) example: Install LVGL tick timer[0m
+[0;32mI (2396) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (2396) bmx280: Probing for BMP280/BME280 sensors on I2C 0[0m
+
+Available after enqueue: 9 
+
+[0;32mI (2406) bmx280: Probe success: address=ec, id=60[0m
+I (2406) wifi:state: run -> init (0)
+[0;32mI (2416) bmx280: Reading out calibration values...[0m
+
+Available after dequeue: 10 
+
+I (2416) wifi:[0;32mI (2426) bmx280: Read Low Bank.[0m
+pm stop, total sleep time: 572259 us / 1223208 us
+[0;32mI (2426) bmx280: Read High Bank.[0m
+[0;32mI (2436) bmx280: Dumping calibration...[0m
+[0;32mI (2436) ui_Screen1_screen_init: temp:0.00[0m
+[0;32mI (2436) bmx280: 4d 6d d0 67 32 00 0a 92 86 d6 d0 0b ca 1d fd ff [0m
+
+I (2456) wifi:[0;32mI (2456) bmx280: f9 ff ac 26 0a d8 bd 10 10 00 84 01 00 00 04 01 [0m
+[0;32mI (2446) ui_Screen1_screen_init: Buffer: TEMP : 0.00 °C[0m
+[0;32mI (2456) bmx280: 32 00 1e 00 [0m
+<ba-del>idx:0, tid:0
+I (2476) wifi:[0;32mI (2476) ui_Screen1_screen_init: Co2:0.00[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (2476) ui_Screen1_screen_init: Buffer: Co2 : 0.00 ppm[0m
+[0;31mE (2486) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2496) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (2496) ui_Screen1_screen_init: Humi:0.00[0m
+[0;32mI (2506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2516) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2506) ui_Screen1_screen_init: Buffer: HUMI : 0.00 %[0m
+[0;31mE (2526) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2536) smartconfig: SC version: V3.0.1
+[0;31mE (2536) transport_base: Failed to open a new connection: 32772[0m
+I (2546) smartconfig: scan status 1
+[0;31mE (2546) mqtt_client: Error transport connect[0m
+[0;32mI (2546) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2556) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2566) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2566) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2576) test: Read Values: temp = 28.5800, hum = 55.4072[0m
+[0;31mE (2576) mqtt_client: Error transport connect[0m
+[0;32mI (2586) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2596) mqtt_client: Client force reconnect requested[0m
+W (2596) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (2596) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (2606) smartconfig: promis scan ret 12294
+[0;31mE (2606) transport_base: Failed to open a new connection: 32772[0m
+I (2616) wifi:[0;31mE (2616) mqtt_client: Error transport connect[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (2626) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+
+[0;32mI (2636) mqtt_client: Client force reconnect requested[0m
+I (2636) wifi:state: init -> auth (b0)
+[0;31mE (2646) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2656) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2656) mqtt_client: Error transport connect[0m
+[0;32mI (2666) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2666) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2676) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2686) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2686) mqtt_client: Error transport connect[0m
+[0;32mI (2696) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2696) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2406) main_task: Returned from app_main()[0m
+[0;31mE (2706) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2716) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2726) mqtt_client: Error transport connect[0m
+[0;32mI (2726) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2736) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2736) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2746) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2756) mqtt_client: Error transport connect[0m
+[0;32mI (2756) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2766) mqtt_client: Client force reconnect requested[0m
+I (2756) wifi:state: auth -> assoc (0)
+[0;31mE (2776) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2776) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2786) mqtt_client: Error transport connect[0m
+[0;32mI (2786) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2796) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2806) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2806) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2816) mqtt_client: Error transport connect[0m
+[0;32mI (2816) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2826) mqtt_client: Client force reconnect requested[0m
+I (2816) wifi:state: assoc -> run (10)
+[0;31mE (2836) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2836) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2846) mqtt_client: Error transport connect[0m
+[0;32mI (2856) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2856) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2866) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2866) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2876) mqtt_client: Error transport connect[0m
+[0;32mI (2876) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2886) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2896) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2896) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2906) mqtt_client: Error transport connect[0m
+[0;32mI (2906) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2916) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2926) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2926) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2936) mqtt_client: Error transport connect[0m
+[0;32mI (2936) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2946) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2956) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30[0;31mE (2956) transport_base: Failed to open a new connection: 32772[0m
+
+[0;31mE (2966) mqtt_client: Error transport connect[0m
+I (2976) wifi:security: WPA2-PSK, phy: bgn, rssi: -81
+[0;32mI (2976) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2986) mqtt_client: Client force reconnect requested[0m
+I (2996) wifi:pm start, type: 1
+
+[0;31mE (2996) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3006) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3006) mqtt_client: Error transport connect[0m
+[0;32mI (3016) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3016) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3026) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3036) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3036) mqtt_client: Error transport connect[0m
+[0;32mI (3046) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3046) mqtt_client: Client force reconnect requested[0m
+I (3056) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (3066) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3066) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3076) mqtt_client: Error transport connect[0m
+[0;32mI (3076) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3086) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3086) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3096) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3106) mqtt_client: Error transport connect[0m
+[0;32mI (3106) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3116) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3116) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3126) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3126) mqtt_client: Error transport connect[0m
+[0;32mI (3136) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3136) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3146) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3156) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3156) mqtt_client: Error transport connect[0m
+[0;32mI (3166) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3166) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3176) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3186) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3186) mqtt_client: Error transport connect[0m
+[0;32mI (3196) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3196) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3206) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3216) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3216) mqtt_client: Error transport connect[0m
+[0;32mI (3226) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3226) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3236) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3246) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3246) mqtt_client: Error transport connect[0m
+[0;32mI (3256) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3256) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3266) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3266) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3276) mqtt_client: Error transport connect[0m
+[0;32mI (3286) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3286) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3296) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3296) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3306) mqtt_client: Error transport connect[0m
+[0;32mI (3316) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3316) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3326) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3326) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3336) mqtt_client: Error transport connect[0m
+[0;32mI (3336) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3346) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3356) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3356) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3366) mqtt_client: Error transport connect[0m
+[0;32mI (3366) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3376) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3386) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3386) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3396) mqtt_client: Error transport connect[0m
+[0;32mI (3396) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3406) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3416) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3416) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (3426) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;31mE (3426) mqtt_client: Error transport connect[0m
+[0;32mI (3426) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 cd 47 00 05 00  5d                       |....G...]|[0m
+[0;32mI (3436) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3446) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1351.90 ppm
+
+[0m
+[0;32mI (3446) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3466) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3466) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3476) mqtt_client: Error transport connect[0m
+[0;32mI (3476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3486) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3496) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3496) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3506) mqtt_client: Error transport connect[0m
+[0;32mI (3506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3516) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3526) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3526) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3536) mqtt_client: Error transport connect[0m
+[0;32mI (3536) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3546) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3556) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3556) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3566) mqtt_client: Error transport connect[0m
+[0;32mI (3566) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3576) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3576) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3586) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3596) mqtt_client: Error transport connect[0m
+[0;32mI (3596) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3606) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3606) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3616) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3626) mqtt_client: Error transport connect[0m
+[0;32mI (3626) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3636) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3636) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3646) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3646) mqtt_client: Error transport connect[0m
+[0;32mI (3656) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3656) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3666) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3676) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3676) mqtt_client: Error transport connect[0m
+[0;32mI (3686) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3686) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3696) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3706) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3706) mqtt_client: Error transport connect[0m
+[0;32mI (3716) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3716) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3726) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3736) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3736) mqtt_client: Error transport connect[0m
+[0;32mI (3746) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3746) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3756) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3766) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3766) mqtt_client: Error transport connect[0m
+[0;32mI (3776) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3776) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3786) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3786) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3796) mqtt_client: Error transport connect[0m
+[0;32mI (3806) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3806) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3816) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3816) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3826) mqtt_client: Error transport connect[0m
+[0;32mI (3836) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3836) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3846) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3846) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3856) mqtt_client: Error transport connect[0m
+[0;32mI (3856) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3866) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3876) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3876) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3886) mqtt_client: Error transport connect[0m
+[0;32mI (3886) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3896) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3906) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3906) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3916) mqtt_client: Error transport connect[0m
+[0;32mI (3916) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3926) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3936) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3936) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3946) mqtt_client: Error transport connect[0m
+[0;32mI (3946) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3956) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3966) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3976) mqtt_client: Error transport connect[0m
+[0;32mI (3976) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3986) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3986) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (3996) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+I (4006) wifi:[0;31mE (3996) transport_base: Failed to open a new connection: 32772[0m
+<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64[0;31mE (4016) mqtt_client: Error transport connect[0m
+
+[0;32mI (4026) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4026) mqtt_client: Client force reconnect requested[0m
+[0;32mI (4126) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+[0;32mI (4416) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (4416) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (4426) ui_Screen1_screen_init: Co2:1351.90[0m
+[0;32mI (4426) ui_Screen1_screen_init: Buffer: Co2 : 1351.90 ppm[0m
+[0;32mI (4436) ui_Screen1_screen_init: Humi:55.41[0m
+[0;32mI (4436) ui_Screen1_screen_init: Buffer: HUMI : 55.41 %[0m
+[0;32mI (4496) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (4496) PMS7003: PM1.0: 8 ug/m3, PM2.5: 10 ug/m3, PM10: 11 ug/m3[0m
+[0;32mI (4496) PMS7003: Calibrated PM1.0: 8.00 ug/m3, PM2.5: 10.00 ug/m3, PM10: 11.00 ug/m3[0m
+[0;32mI (4676) test: Read Values: temp = 28.5800, hum = 55.6875[0m
+[0;32mI (5456) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (6416) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (6426) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (6426) ui_Screen1_screen_init: Co2:1351.90[0m
+[0;32mI (6426) ui_Screen1_screen_init: Buffer: Co2 : 1351.90 ppm[0m
+[0;32mI (6436) ui_Screen1_screen_init: Humi:55.69[0m
+[0;32mI (6436) ui_Screen1_screen_init: Buffer: HUMI : 55.69 %[0m
+[0;32mI (6486) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (6486) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 cf 47 00 05 00  5b                       |....G...[|[0m
+[0;32mI (6486) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1354.10 ppm
+
+[0m
+[0;32mI (6776) test: Read Values: temp = 28.5900, hum = 55.8818[0m
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+[0;32mI (8426) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (8426) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (8426) ui_Screen1_screen_init: Co2:1354.10[0m
+[0;32mI (8426) ui_Screen1_screen_init: Buffer: Co2 : 1354.10 ppm[0m
+[0;32mI (8436) ui_Screen1_screen_init: Humi:55.88[0m
+[0;32mI (8436) ui_Screen1_screen_init: Buffer: HUMI : 55.88 %[0m
+[0;32mI (8496) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (8506) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (8506) PMS7003: PM1.0: 7 ug/m3, PM2.5: 9 ug/m3, PM10: 10 ug/m3[0m
+[0;32mI (8506) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 9.00 ug/m3, PM10: 10.00 ug/m3[0m
+[0;32mI (8876) test: Read Values: temp = 28.5900, hum = 56.2715[0m
+[0;32mI (9526) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (9526) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 d0 47 00 05 00  5a                       |....G...Z|[0m
+[0;32mI (9526) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1355.20 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (10426) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (10426) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (10426) ui_Screen1_screen_init: Co2:1355.20[0m
+[0;32mI (10436) ui_Screen1_screen_init: Buffer: Co2 : 1355.20 ppm[0m
+[0;32mI (10436) ui_Screen1_screen_init: Humi:56.27[0m
+[0;32mI (10446) ui_Screen1_screen_init: Buffer: HUMI : 56.27 %[0m
+[0;32mI (10976) test: Read Values: temp = 28.5900, hum = 55.7842[0m
+[0;32mI (11536) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (12426) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (12426) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (12436) ui_Screen1_screen_init: Co2:1355.20[0m
+[0;32mI (12436) ui_Screen1_screen_init: Buffer: Co2 : 1355.20 ppm[0m
+[0;32mI (12446) ui_Screen1_screen_init: Humi:55.78[0m
+[0;32mI (12446) ui_Screen1_screen_init: Buffer: HUMI : 55.78 %[0m
+[0;32mI (12516) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (12516) PMS7003: PM1.0: 7 ug/m3, PM2.5: 8 ug/m3, PM10: 10 ug/m3[0m
+[0;32mI (12516) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 8.00 ug/m3, PM10: 10.00 ug/m3[0m
+[0;32mI (12566) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (12566) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 d2 47 00 05 00  58                       |....G...X|[0m
+[0;32mI (12566) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1357.40 ppm
+
+[0m
+[0;32mI (13076) test: Read Values: temp = 28.5900, hum = 55.6748[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (14426) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (14436) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (14436) ui_Screen1_screen_init: Co2:1357.40[0m
+[0;32mI (14436) ui_Screen1_screen_init: Buffer: Co2 : 1357.40 ppm[0m
+[0;32mI (14446) ui_Screen1_screen_init: Humi:55.67[0m
+[0;32mI (14446) ui_Screen1_screen_init: Buffer: HUMI : 55.67 %[0m
+[0;32mI (14576) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (15176) test: Read Values: temp = 28.5900, hum = 55.4805[0m
+[0;32mI (15606) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (15606) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 d4 47 00 05 00  56                       |....G...V|[0m
+[0;32mI (15606) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1359.60 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (16436) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (16436) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (16436) ui_Screen1_screen_init: Co2:1359.60[0m
+[0;32mI (16436) ui_Screen1_screen_init: Buffer: Co2 : 1359.60 ppm[0m
+[0;32mI (16446) ui_Screen1_screen_init: Humi:55.48[0m
+[0;32mI (16446) ui_Screen1_screen_init: Buffer: HUMI : 55.48 %[0m
+[0;32mI (16526) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (16526) PMS7003: PM1.0: 8 ug/m3, PM2.5: 9 ug/m3, PM10: 11 ug/m3[0m
+[0;32mI (16526) PMS7003: Calibrated PM1.0: 8.00 ug/m3, PM2.5: 9.00 ug/m3, PM10: 11.00 ug/m3[0m
+[0;32mI (17276) test: Read Values: temp = 28.5900, hum = 55.6016[0m
+[0;32mI (17616) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (18436) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (18436) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (18446) ui_Screen1_screen_init: Co2:1359.60[0m
+[0;32mI (18446) ui_Screen1_screen_init: Buffer: Co2 : 1359.60 ppm[0m
+[0;32mI (18456) ui_Screen1_screen_init: Humi:55.60[0m
+[0;32mI (18456) ui_Screen1_screen_init: Buffer: HUMI : 55.60 %[0m
+[0;32mI (18646) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (18646) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 d7 47 00 05 00  53                       |....G...S|[0m
+[0;32mI (18646) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1362.90 ppm
+
+[0m
+[0;32mI (19376) test: Read Values: temp = 28.5900, hum = 55.5293[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (20436) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (20436) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (20446) ui_Screen1_screen_init: Co2:1362.90[0m
+[0;32mI (20446) ui_Screen1_screen_init: Buffer: Co2 : 1362.90 ppm[0m
+[0;32mI (20456) ui_Screen1_screen_init: Humi:55.53[0m
+[0;32mI (20456) ui_Screen1_screen_init: Buffer: HUMI : 55.53 %[0m
+[0;32mI (20536) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (20536) PMS7003: PM1.0: 7 ug/m3, PM2.5: 9 ug/m3, PM10: 9 ug/m3[0m
+[0;32mI (20536) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 9.00 ug/m3, PM10: 9.00 ug/m3[0m
+[0;32mI (20656) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (21476) test: Read Values: temp = 28.5900, hum = 55.5654[0m
+[0;32mI (21686) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (21686) RX_MHZ14A_TASK: 0x3ffdc304   ff 86 04 d8 47 00 05 00  52                       |....G...R|[0m
+[0;32mI (21686) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1364.00 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (22446) ui_Screen1_screen_init: temp:28.59[0m
+[0;32mI (22446) ui_Screen1_screen_init: Buffer: TEMP : 28.59 °C[0m
+[0;32mI (22446) ui_Screen1_screen_init: Co2:1364.00[0m
+[0;32mI (22446) ui_Screen1_screen_init: Buffer: Co2 : 1364.00 ppm[0m
+[0;32mI (22456) ui_Screen1_screen_init: Humi:55.57[0m
+[0;32mI (22456) ui_Screen1_screen_init: Buffer: HUMI : 55.57 %[0m
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400dfcf5  PS      : 0x00060930  A0      : 0x800df251  A1      : 0x3ffe1650  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000057  A5      : 0x00000001  
+A6      : 0x00000000  A7      : 0x0000004c  A8      : 0x800f10a8  A9      : 0x3ffe1630  
+A10     : 0x00000000  A11     : 0x0000004c  A12     : 0x3ffb465c  A13     : 0x401a2f88  
+A14     : 0x00000000  A15     : 0x0000004c  SAR     : 0x0000001f  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400013f9  LEND    : 0x4000140d  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x400dfcf2:0x3ffe1650 0x400df24e:0x3ffe1670 0x400f7d97:0x3ffe1690 0x400d8f7a:0x3ffe16b0 0x400d907d:0x3ffe1720 0x400d771b:0x3ffe1740 0x4008c269:0x3ffe1760
+
+
+
+
+ELF file SHA256: 23c3eb75d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 11:41:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f26ch (258668) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0004f294 vaddr=3ffb0000 size=00d84h (  3460) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ddbach (908204) map[0m
+[0;32mI (510) esp_image: segment 3: paddr=0012dbd4 vaddr=3ffb0d84 size=03168h ( 12648) load[0m
+[0;32mI (515) esp_image: segment 4: paddr=00130d44 vaddr=40080000 size=19fd4h (106452) load[0m
+[0;32mI (571) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (571) boot: Disabling RNG early entropy source...[0m
+[0;32mI (582) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     main[0m
+[0;32mI (599) cpu_start: App version:      1[0m
+[0;32mI (603) cpu_start: Compile time:     Jun 26 2024 14:48:54[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  23c3eb75d...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (620) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFC0DA0 len 0001F260 (124 KiB): DRAM[0m
+[0;32mI (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM[0m
+[0;32mI (674) spi_flash: detected chip: generic[0m
+[0;32mI (677) spi_flash: flash io: dio[0m
+[0;33mW (681) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (706) main_task: Started on CPU0[0m
+[0;32mI (716) main_task: Calling app_main()[0m
+I (756) wifi:wifi driver task: 3ffc8dfc, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+[0;32mI (806) wifi_init: rx ba win: 6[0m
+[0;32mI (806) wifi_init: tcpip mbox: 32[0m
+[0;32mI (816) wifi_init: udp mbox: 6[0m
+[0;32mI (816) wifi_init: tcp mbox: 6[0m
+[0;32mI (826) wifi_init: tcp tx win: 5760[0m
+[0;32mI (826) wifi_init: tcp rx win: 5760[0m
+[0;32mI (826) wifi_init: tcp mss: 1440[0m
+[0;32mI (836) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (836) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (956) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (956) wifi:state: init -> auth (b0)
+I (986) wifi:state: auth -> init (8a0)
+I (986) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3436) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3436) wifi:state: init -> auth (b0)
+I (3486) wifi:state: auth -> assoc (0)
+I (4486) wifi:state: assoc -> init (2700)
+I (4486) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (6916) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (6916) wifi:state: init -> auth (b0)
+I (6966) wifi:state: auth -> assoc (0)
+I (7046) wifi:state: assoc -> run (10)
+I (7156) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (7166) wifi:security: WPA2-PSK, phy: bgn, rssi: -82
+I (7166) wifi:pm start, type: 1
+
+I (7166) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7426) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (8176) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8186) example: Turn off LCD backlight[0m
+[0;32mI (8186) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8186) example: Initialize SPI bus[0m
+[0;32mI (8196) example: Install panel IO[0m
+[0;32mI (8196) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8206) example: Install ILI9341 panel driver[0m
+[0;32mI (8206) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8216) ili9341: LCD panel create success, version: 1.2.0[0m
+I (8226) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (8296) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8356) example: Turn on LCD backlight[0m
+[0;32mI (8356) example: Initialize LVGL library[0m
+[0;32mI (8356) example: Register display driver to LVGL[0m
+[0;32mI (8366) example: Install LVGL tick timer[0m
+[0;32mI (8366) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (8366) bmx280: Probing for BMP280/BME280 sensors on I2C 0[0m
+
+Available after enqueue: 9 
+
+[0;32mI (8376) bmx280: Probe success: address=ec, id=60[0m
+I (8376) wifi:state: run -> init (0)
+[0;32mI (8386) bmx280: Reading out calibration values...[0m
+
+Available after dequeue: 10 
+
+[0;32mI (8396) bmx280: Read Low Bank.[0m
+I (8386) wifi:pm stop, total sleep time: 249096 us / 1221406 us
+[0;32mI (8396) bmx280: Read High Bank.[0m
+[0;32mI (8406) bmx280: Dumping calibration...[0m
+[0;32mI (8406) ui_Screen1_screen_init: temp:0.00[0m
+[0;32mI (8406) bmx280: 4d 6d d0 67 32 00 0a 92 86 d6 d0 0b ca 1d fd ff [0m
+
+I (8426) wifi:[0;32mI (8426) bmx280: f9 ff ac 26 0a d8 bd 10 10 00 84 01 00 00 04 01 [0m
+[0;32mI (8416) ui_Screen1_screen_init: Buffer: TEMP : 0.00 °C[0m
+[0;32mI (8426) bmx280: 32 00 1e 00 [0m
+<ba-del>idx:0, tid:0
+[0;32mI (8436) ui_Screen1_screen_init: Co2:0.00[0m
+I (8446) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (8446) ui_Screen1_screen_init: Buffer: Co2 : 0.00 ppm[0m
+
+[0;31mE (8466) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;32mI (8466) ui_Screen1_screen_init: Humi:0.00[0m
+[0;31mE (8466) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (8476) ui_Screen1_screen_init: Buffer: HUMI : 0.00 %[0m
+[0;32mI (8476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8486) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8496) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (8506) smartconfig: SC version: V3.0.1
+[0;31mE (8506) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8516) mqtt_client: Error transport connect[0m
+I (8516) smartconfig: scan status 1
+[0;32mI (8516) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8526) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8536) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8536) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (8546) test: Read Values: temp = 28.5800, hum = 55.5039[0m
+[0;31mE (8546) mqtt_client: Error transport connect[0m
+[0;32mI (8556) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8556) mqtt_client: Client force reconnect requested[0m
+W (8566) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (8566) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (8576) smartconfig: promis scan ret 12294
+[0;31mE (8576) transport_base: Failed to open a new connection: 32772[0m
+I (8586) wifi:[0;31mE (8586) mqtt_client: Error transport connect[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (8596) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+
+[0;32mI (8606) mqtt_client: Client force reconnect requested[0m
+I (8606) wifi:state: init -> auth (b0)
+[0;31mE (8616) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8626) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8626) mqtt_client: Error transport connect[0m
+[0;32mI (8636) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8636) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8646) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8656) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8656) mqtt_client: Error transport connect[0m
+[0;32mI (8666) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8376) main_task: Returned from app_main()[0m
+[0;32mI (8666) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8686) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8686) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8696) mqtt_client: Error transport connect[0m
+[0;32mI (8696) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8706) mqtt_client: Client force reconnect requested[0m
+I (8696) wifi:state: auth -> assoc (0)
+[0;31mE (8716) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8716) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8726) mqtt_client: Error transport connect[0m
+[0;32mI (8726) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8736) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8746) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8746) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8756) mqtt_client: Error transport connect[0m
+[0;32mI (8756) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8766) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8776) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (8776) wifi:state: assoc -> run (10)
+[0;31mE (8776) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8786) mqtt_client: Error transport connect[0m
+[0;32mI (8796) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8796) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8806) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8806) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8816) mqtt_client: Error transport connect[0m
+[0;32mI (8826) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8826) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8836) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8836) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8846) mqtt_client: Error transport connect[0m
+[0;32mI (8846) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8856) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8866) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8866) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8876) mqtt_client: Error transport connect[0m
+[0;32mI (8876) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8886) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8896) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8896) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8906) mqtt_client: Error transport connect[0m
+[0;32mI (8906) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8916) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8916) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8926) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8936) mqtt_client: Error transport connect[0m
+[0;32mI (8936) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8946) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8946) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8956) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8966) mqtt_client: Error transport connect[0m
+[0;32mI (8966) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8976) mqtt_client: Client force reconnect requested[0m
+[0;31mE (8976) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8986) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8996) mqtt_client: Error transport connect[0m
+[0;32mI (8996) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9006) mqtt_client: Client force reconnect requested[0m
+I (8996) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+[0;31mE (9016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (9016) wifi:security: WPA2-PSK, phy: bgn, rssi: -86
+[0;31mE (9026) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9036) mqtt_client: Error transport connect[0m
+[0;32mI (9036) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9046) mqtt_client: Client force reconnect requested[0m
+I (9056) wifi:pm start, type: 1
+
+[0;31mE (9056) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9056) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9066) mqtt_client: Error transport connect[0m
+[0;32mI (9066) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9076) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9086) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9086) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9096) mqtt_client: Error transport connect[0m
+[0;32mI (9096) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9106) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9116) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9116) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9126) mqtt_client: Error transport connect[0m
+[0;32mI (9126) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9136) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9146) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9146) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9156) mqtt_client: Error transport connect[0m
+[0;32mI (9156) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+I (9166) wifi:[0;32mI (9166) mqtt_client: Client force reconnect requested[0m
+AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (9176) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9186) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9186) mqtt_client: Error transport connect[0m
+[0;32mI (9196) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9196) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9206) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9216) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9216) mqtt_client: Error transport connect[0m
+[0;32mI (9226) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9226) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9236) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9236) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9246) mqtt_client: Error transport connect[0m
+[0;32mI (9256) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9256) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9266) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9266) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9276) mqtt_client: Error transport connect[0m
+[0;32mI (9286) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9286) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9296) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9296) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9306) mqtt_client: Error transport connect[0m
+[0;32mI (9306) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9316) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9326) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9326) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9336) mqtt_client: Error transport connect[0m
+[0;32mI (9336) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9346) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9356) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9356) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9366) mqtt_client: Error transport connect[0m
+[0;32mI (9366) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9376) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9386) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9386) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (9396) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;31mE (9396) mqtt_client: Error transport connect[0m
+[0;32mI (9396) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 da 47 00 05 00  50                       |....G...P|[0m
+[0;32mI (9406) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9416) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1366.20 ppm
+
+[0m
+[0;32mI (9416) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9436) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9436) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9446) mqtt_client: Error transport connect[0m
+[0;32mI (9446) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9456) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9466) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9466) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9476) mqtt_client: Error transport connect[0m
+[0;32mI (9476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9486) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9496) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9496) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9506) mqtt_client: Error transport connect[0m
+[0;32mI (9506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9516) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9526) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9526) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9536) mqtt_client: Error transport connect[0m
+[0;32mI (9536) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9546) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9546) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9556) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9566) mqtt_client: Error transport connect[0m
+[0;32mI (9566) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9576) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9576) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9586) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9596) mqtt_client: Error transport connect[0m
+[0;32mI (9596) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9606) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9606) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9616) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9616) mqtt_client: Error transport connect[0m
+[0;32mI (9626) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9626) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9636) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9646) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9646) mqtt_client: Error transport connect[0m
+[0;32mI (9656) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9656) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9666) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9676) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9676) mqtt_client: Error transport connect[0m
+[0;32mI (9686) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9686) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9696) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9706) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9706) mqtt_client: Error transport connect[0m
+[0;32mI (9716) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9716) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9726) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9736) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9736) mqtt_client: Error transport connect[0m
+[0;32mI (9746) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9746) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9756) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9756) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9766) mqtt_client: Error transport connect[0m
+[0;32mI (9776) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9776) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9786) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9786) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9796) mqtt_client: Error transport connect[0m
+[0;32mI (9806) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9806) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9816) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9816) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9826) mqtt_client: Error transport connect[0m
+[0;32mI (9826) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9836) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9846) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9846) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9856) mqtt_client: Error transport connect[0m
+[0;32mI (9856) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9866) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9876) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9876) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9886) mqtt_client: Error transport connect[0m
+[0;32mI (9886) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9896) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9906) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9906) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9916) mqtt_client: Error transport connect[0m
+[0;32mI (9916) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9926) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9926) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9936) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9946) mqtt_client: Error transport connect[0m
+[0;32mI (9946) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9956) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9966) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9976) mqtt_client: Error transport connect[0m
+[0;32mI (9976) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (9986) mqtt_client: Client force reconnect requested[0m
+[0;31mE (9986) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (9996) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (9996) mqtt_client: Error transport connect[0m
+[0;32mI (10006) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (10006) mqtt_client: Client force reconnect requested[0m
+[0;31mE (10016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (10026) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (10026) mqtt_client: Error transport connect[0m
+[0;32mI (10036) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (10036) mqtt_client: Client force reconnect requested[0m
+[0;31mE (10046) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (10056) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (10056) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;31mE (10056) mqtt_client: Error transport connect[0m
+[0;32mI (10076) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (10076) mqtt_client: Client force reconnect requested[0m
+I (10186) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (10356) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+[0;32mI (10386) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (10386) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (10396) ui_Screen1_screen_init: Co2:1366.20[0m
+[0;32mI (10396) ui_Screen1_screen_init: Buffer: Co2 : 1366.20 ppm[0m
+[0;32mI (10406) ui_Screen1_screen_init: Humi:55.50[0m
+[0;32mI (10406) ui_Screen1_screen_init: Buffer: HUMI : 55.50 %[0m
+[0;32mI (10466) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (10466) PMS7003: PM1.0: 7 ug/m3, PM2.5: 8 ug/m3, PM10: 8 ug/m3[0m
+[0;32mI (10466) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 8.00 ug/m3, PM10: 8.00 ug/m3[0m
+[0;32mI (10646) test: Read Values: temp = 28.5800, hum = 55.4912[0m
+[0;32mI (11426) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after enqueue: 9 
+
+
+Available after dequeue: 10 
+
+[0;32mI (12396) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (12396) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (12396) ui_Screen1_screen_init: Co2:1366.20[0m
+[0;32mI (12396) ui_Screen1_screen_init: Buffer: Co2 : 1366.20 ppm[0m
+[0;32mI (12406) ui_Screen1_screen_init: Humi:55.49[0m
+[0;32mI (12406) ui_Screen1_screen_init: Buffer: HUMI : 55.49 %[0m
+[0;32mI (12456) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (12456) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 d9 47 00 05 00  51                       |....G...Q|[0m
+[0;32mI (12456) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1365.10 ppm
+
+[0m
+[0;32mI (12746) test: Read Values: temp = 28.5800, hum = 55.4795[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (14396) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (14406) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (14406) ui_Screen1_screen_init: Co2:1365.10[0m
+[0;32mI (14406) ui_Screen1_screen_init: Buffer: Co2 : 1365.10 ppm[0m
+[0;32mI (14416) ui_Screen1_screen_init: Humi:55.48[0m
+[0;32mI (14416) ui_Screen1_screen_init: Buffer: HUMI : 55.48 %[0m
+[0;32mI (14466) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (14476) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (14476) PMS7003: PM1.0: 6 ug/m3, PM2.5: 7 ug/m3, PM10: 7 ug/m3[0m
+[0;32mI (14476) PMS7003: Calibrated PM1.0: 6.00 ug/m3, PM2.5: 7.00 ug/m3, PM10: 7.00 ug/m3[0m
+[0;32mI (14846) test: Read Values: temp = 28.5800, hum = 55.4551[0m
+[0;32mI (15496) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (15496) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 db 47 00 05 00  4f                       |....G...O|[0m
+[0;32mI (15496) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1367.30 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (16396) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (16396) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (16396) ui_Screen1_screen_init: Co2:1367.30[0m
+[0;32mI (16406) ui_Screen1_screen_init: Buffer: Co2 : 1367.30 ppm[0m
+[0;32mI (16406) ui_Screen1_screen_init: Humi:55.46[0m
+[0;32mI (16416) ui_Screen1_screen_init: Buffer: HUMI : 55.46 %[0m
+[0;32mI (16946) test: Read Values: temp = 28.5800, hum = 55.7100[0m
+[0;32mI (17506) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (18396) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (18396) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (18406) ui_Screen1_screen_init: Co2:1367.30[0m
+[0;32mI (18406) ui_Screen1_screen_init: Buffer: Co2 : 1367.30 ppm[0m
+[0;32mI (18416) ui_Screen1_screen_init: Humi:55.71[0m
+[0;32mI (18416) ui_Screen1_screen_init: Buffer: HUMI : 55.71 %[0m
+[0;32mI (18486) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (18486) PMS7003: PM1.0: 7 ug/m3, PM2.5: 7 ug/m3, PM10: 8 ug/m3[0m
+[0;32mI (18486) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 7.00 ug/m3, PM10: 8.00 ug/m3[0m
+[0;32mI (18536) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (18536) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 dc 47 00 05 00  4e                       |....G...N|[0m
+[0;32mI (18536) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1368.40 ppm
+
+[0m
+[0;32mI (19046) test: Read Values: temp = 28.5800, hum = 55.7832[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (20406) ui_Screen1_screen_init: temp:28.58[0m
+[0;32mI (20406) ui_Screen1_screen_init: Buffer: TEMP : 28.58 °C[0m
+[0;32mI (20406) ui_Screen1_screen_init: Co2:1368.40[0m
+[0;32mI (20406) ui_Screen1_screen_init: Buffer: Co2 : 1368.40 ppm[0m
+[0;32mI (20416) ui_Screen1_screen_init: Humi:55.78[0m
+[0;32mI (20416) ui_Screen1_screen_init: Buffer: HUMI : 55.78 %[0m
+[0;32mI (20546) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (21146) test: Read Values: temp = 28.5700, hum = 55.7949[0m
+[0;32mI (21576) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (21576) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 dd 47 00 05 00  4d                       |....G...M|[0m
+[0;32mI (21576) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1369.50 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (22406) ui_Screen1_screen_init: temp:28.57[0m
+[0;32mI (22406) ui_Screen1_screen_init: Buffer: TEMP : 28.57 °C[0m
+[0;32mI (22406) ui_Screen1_screen_init: Co2:1369.50[0m
+[0;32mI (22406) ui_Screen1_screen_init: Buffer: Co2 : 1369.50 ppm[0m
+[0;32mI (22416) ui_Screen1_screen_init: Humi:55.79[0m
+[0;32mI (22426) ui_Screen1_screen_init: Buffer: HUMI : 55.79 %[0m
+[0;32mI (22496) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (22496) PMS7003: PM1.0: 7 ug/m3, PM2.5: 7 ug/m3, PM10: 8 ug/m3[0m
+[0;32mI (22496) PMS7003: Calibrated PM1.0: 7.00 ug/m3, PM2.5: 7.00 ug/m3, PM10: 8.00 ug/m3[0m
+[0;32mI (23246) test: Read Values: temp = 28.5700, hum = 55.7461[0m
+[0;32mI (23586) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (24406) ui_Screen1_screen_init: temp:28.57[0m
+[0;32mI (24406) ui_Screen1_screen_init: Buffer: TEMP : 28.57 °C[0m
+[0;32mI (24406) ui_Screen1_screen_init: Co2:1369.50[0m
+[0;32mI (24416) ui_Screen1_screen_init: Buffer: Co2 : 1369.50 ppm[0m
+[0;32mI (24426) ui_Screen1_screen_init: Humi:55.75[0m
+[0;32mI (24426) ui_Screen1_screen_init: Buffer: HUMI : 55.75 %[0m
+[0;32mI (24616) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (24616) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 dd 47 00 05 00  4d                       |....G...M|[0m
+[0;32mI (24616) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1369.50 ppm
+
+[0m
+[0;32mI (25346) test: Read Values: temp = 28.5700, hum = 55.8428[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (26406) ui_Screen1_screen_init: temp:28.57[0m
+[0;32mI (26416) ui_Screen1_screen_init: Buffer: TEMP : 28.57 °C[0m
+[0;32mI (26416) ui_Screen1_screen_init: Co2:1369.50[0m
+[0;32mI (26416) ui_Screen1_screen_init: Buffer: Co2 : 1369.50 ppm[0m
+[0;32mI (26426) ui_Screen1_screen_init: Humi:55.84[0m
+[0;32mI (26426) ui_Screen1_screen_init: Buffer: HUMI : 55.84 %[0m
+[0;32mI (26506) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (26506) PMS7003: PM1.0: 6 ug/m3, PM2.5: 6 ug/m3, PM10: 8 ug/m3[0m
+[0;32mI (26506) PMS7003: Calibrated PM1.0: 6.00 ug/m3, PM2.5: 6.00 ug/m3, PM10: 8.00 ug/m3[0m
+[0;32mI (26626) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (27446) test: Read Values: temp = 28.5700, hum = 55.7207[0m
+[0;32mI (27656) RX_MHZ14A_TASK: Read 9 bytes: '���G'[0m
+[0;32mI (27656) RX_MHZ14A_TASK: 0x3ffdc2f4   ff 86 04 dd 47 00 05 00  4d                       |....G...M|[0m
+[0;32mI (27656) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 1369.50 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (28416) ui_Screen1_screen_init: temp:28.57[0m
+[0;32mI (28416) ui_Screen1_screen_init: Buffer: TEMP : 28.57 °C[0m
+[0;32mI (28416) ui_Screen1_screen_init: Co2:1369.50[0m
+[0;32mI (28416) ui_Screen1_screen_init: Buffer: Co2 : 1369.50 ppm[0m
+[0;32mI (28426) ui_Screen1_screen_init: Humi:55.72[0m
+[0;32mI (28436) ui_Screen1_screen_init: Buffer: HUMI : 55.72 %[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400dfcf5  PS      : 0x00060530  A0      : 0x800df251  A1      : 0x3ffe1650  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x00000057  A5      : 0x00000001  
+A6      : 0x00000000  A7      : 0x0000004c  A8      : 0x800f10a8  A9      : 0x3ffe1630  
+A10     : 0x00000000  A11     : 0x0000004c  A12     : 0x3ffb465c  A13     : 0x401a2f88  
+A14     : 0x00000000  A15     : 0x0000004c  SAR     : 0x0000001f  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000022  LBEG    : 0x400013f9  LEND    : 0x4000140d  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x400dfcf2:0x3ffe1650 0x400df24e:0x3ffe1670 0x400f7d97:0x3ffe1690 0x400d8f7a:0x3ffe16b0 0x400d907d:0x3ffe1720 0x400d771b:0x3ffe1740 0x4008c269:0x3ffe1760
+
+
+
+
+ELF file SHA256: 23c3eb75d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 11:41:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f26ch (258668) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0004f294 vaddr=3ffb0000 size=00d84h (  3460) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ddbach (908204) map[0m
+[0;32mI (510) esp_image: segment 3: paddr=0012dbd4 vaddr=3ffb0d84 size=03168h ( 12648) load[0m
+[0;32mI (515) esp_image: segment 4: paddr=00130d44 vaddr=40080000 size=19fd4h (106452) load[0m
+[0;32mI (571) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (571) boot: Disabling RNG early entropy source...[0m
+[0;32mI (582) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     main[0m
+[0;32mI (599) cpu_start: App version:      1[0m
+[0;32mI (603) cpu_start: Compile time:     Jun 26 2024 14:48:54[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  23c3eb75d...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (620) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFC0DA0 len 0001F260 (124 KiB): DRAM[0m
+[0;32mI (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM[0m
+[0;32mI (674) spi_flash: detected chip: generic[0m
+[0;32mI (678) spi_flash: flash io: dio[0m
+[0;33mW (681) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (706) main_task: Started on CPU0[0m
+[0;32mI (716) main_task: Calling app_main()[0m
+I (756) wifi:wifi driver task: 3ffc8dfc, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+[0;32mI (806) wifi_init: rx ba win: 6[0m
+[0;32mI (806) wifi_init: tcpip mbox: 32[0m
+[0;32mI (816) wifi_init: udp mbox: 6[0m
+[0;32mI (816) wifi_init: tcp mbox: 6[0m
+[0;32mI (826) wifi_init: tcp tx win: 5760[0m
+[0;32mI (826) wifi_init: tcp rx win: 5760[0m
+[0;32mI (826) wifi_init: tcp mss: 1440[0m
+[0;32mI (836) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (836) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (956) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (956) wifi:state: init -> auth (b0)
+I (966) wifi:state: auth -> init (8a0)
+I (966) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1

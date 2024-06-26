@@ -1,0 +1,354 @@
+j%�(40) boot.esp32: SPI Spe�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3ba10h (244240) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=0004ba38 vaddr=3ffb0000 size=03e6ch ( 15980) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=0004f8ac vaddr=40080000 size=0076ch (  1900) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c8cech (822508) map[0m
+[0;32mI (484) esp_image: segment 4: paddr=00118d14 vaddr=4008076c size=181fch ( 98812) load[0m
+[0;32mI (536) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (536) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (556) cpu_start: Pro cpu start user code[0m
+[0;32mI (556) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (556) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     main[0m
+[0;32mI (564) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  feaaf7eb5...[0m
+[0;32mI (580) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (585) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (590) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (595) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (600) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (607) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFC0AF8 len 0001F508 (125 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (625) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (647) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (661) main_task: Started on CPU0[0m
+[0;32mI (671) main_task: Calling app_main()[0m
+I (711) wifi:wifi driver task: 3ffc8af8, prio:23, stack:6656, core=0
+I (731) wifi:wifi firmware version: a9f5b59
+I (731) wifi:wifi certification version: v7.0
+I (731) wifi:config NVS flash: enabled
+I (731) wifi:config nano formating: disabled
+I (731) wifi:Init data frame dynamic rx buffer num: 32
+I (741) wifi:Init static rx mgmt buffer num: 5
+I (741) wifi:Init management short buffer num: 32
+I (741) wifi:Init dynamic tx buffer num: 32
+I (751) wifi:Init static rx buffer size: 1600
+I (751) wifi:Init static rx buffer num: 10
+I (761) wifi:Init dynamic rx buffer num: 32
+[0;32mI (761) wifi_init: rx ba win: 6[0m
+[0;32mI (761) wifi_init: tcpip mbox: 32[0m
+[0;32mI (771) wifi_init: udp mbox: 6[0m
+[0;32mI (771) wifi_init: tcp mbox: 6[0m
+[0;32mI (781) wifi_init: tcp tx win: 5760[0m
+[0;32mI (781) wifi_init: tcp rx win: 5760[0m
+[0;32mI (781) wifi_init: tcp mss: 1440[0m
+[0;32mI (791) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (791) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (801) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (891) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (891) wifi:enable tsf
+I (901) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (911) wifi:state: init -> auth (b0)
+I (921) wifi:state: auth -> init (8a0)
+I (921) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3351) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3351) wifi:state: init -> auth (b0)
+I (3471) wifi:state: auth -> assoc (0)
+I (3581) wifi:state: assoc -> run (10)
+I (3731) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3731) wifi:security: WPA2-PSK, phy: bgn, rssi: -74
+I (3741) wifi:pm start, type: 1
+
+I (3741) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3761) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4751) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4751) example: Turn off LCD backlight[0m
+[0;32mI (4761) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4761) example: Initialize SPI bus[0m
+[0;32mI (4761) example: Install panel IO[0m
+[0;32mI (4771) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (4771) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (4781) example: Install ILI9341 panel driver[0m
+[0;32mI (4791) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4801) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (4831) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4921) example: Turn on LCD backlight[0m
+[0;32mI (4921) example: Initialize LVGL library[0m
+[0;32mI (4921) example: Register display driver to LVGL[0m
+[0;32mI (4931) example: Install LVGL tick timer[0m
+[0;32mI (4931) main_task: Returned from app_main()[0m
+[0;32mI (4931) example: Starting LVGL task[0m
+[0;32mI (4971) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (4981) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (4991) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (4991) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (5001) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (5011) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (6281) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (6291) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (6301) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (6301) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (6311) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (6311) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (7631) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (7631) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (7641) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (7651) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (7651) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (7661) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (8961) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (8961) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (8971) ui_Screen1_screen_init: Co2:372.58[0m
+[0;32mI (8971) ui_Screen1_screen_init: Buffer: Co2 : 372.58 ppm[0m
+[0;32mI (8981) ui_Screen1_screen_init: Humi:39.02[0m
+[0;32mI (8991) ui_Screen1_screen_init: Buffer: HUMI : 39.02 %[0m
+[0;32mI (10301) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (10311) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (10321) ui_Screen1_screen_init: Co2:372.58[0m
+[0;32mI (10331) ui_Screen1_screen_init: Buffer: Co2 : 372.58 ppm[0m
+[0;32mI (10331) ui_Screen1_screen_init: Humi:39.02[0m
+[0;32mI (10341) ui_Screen1_screen_init: Buffer: HUMI : 39.02 %[0m
+[0;32mI (11641) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (11651) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (11661) ui_Screen1_screen_init: Co2:443.47[0m
+[0;32mI (11661) ui_Screen1_screen_init: Buffer: Co2 : 443.47 ppm[0m
+[0;32mI (11671) ui_Screen1_screen_init: Humi:32.41[0m
+[0;32mI (11671) ui_Screen1_screen_init: Buffer: HUMI : 32.41 %[0m
+[0;32mI (12981) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (12981) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (12991) ui_Screen1_screen_init: Co2:443.47[0m
+[0;32mI (13001) ui_Screen1_screen_init: Buffer: Co2 : 443.47 ppm[0m
+[0;32mI (13001) ui_Screen1_screen_init: Humi:32.41[0m
+[0;32mI (13011) ui_Screen1_screen_init: Buffer: HUMI : 32.41 %[0m
+[0;32mI (14331) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (14331) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (14341) ui_Screen1_screen_init: Co2:617.67[0m
+[0;32mI (14351) ui_Screen1_screen_init: Buffer: Co2 : 617.67 ppm[0m
+[0;32mI (14351) ui_Screen1_screen_init: Humi:32.98[0m
+[0;32mI (14361) ui_Screen1_screen_init: Buffer: HUMI : 32.98 %[0m
+[0;32mI (15701) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (15701) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (15711) ui_Screen1_screen_init: Co2:617.67[0m
+[0;32mI (15711) ui_Screen1_screen_init: Buffer: Co2 : 617.67 ppm[0m
+[0;32mI (15721) ui_Screen1_screen_init: Humi:32.98[0m
+[0;32mI (15721) ui_Screen1_screen_init: Buffer: HUMI : 32.98 %[0m
+[0;32mI (17061) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (17071) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (17081) ui_Screen1_screen_init: Co2:416.64[0m
+[0;32mI (17081) ui_Screen1_screen_init: Buffer: Co2 : 416.64 ppm[0m
+[0;32mI (17091) ui_Screen1_screen_init: Humi:60.53[0m
+[0;32mI (17091) ui_Screen1_screen_init: Buffer: HUMI : 60.53 %[0m
+[0;32mI (18441) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (18451) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (18461) ui_Screen1_screen_init: Co2:416.64[0m
+[0;32mI (18461) ui_Screen1_screen_init: Buffer: Co2 : 416.64 ppm[0m
+[0;32mI (18471) ui_Screen1_screen_init: Humi:60.53[0m
+[0;32mI (18471) ui_Screen1_screen_init: Buffer: HUMI : 60.53 %[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3ba10h (244240) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=0004ba38 vaddr=3ffb0000 size=03e6ch ( 15980) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=0004f8ac vaddr=40080000 size=0076ch (  1900) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c8cech (822508) map[0m
+[0;32mI (484) esp_image: segment 4: paddr=00118d14 vaddr=4008076c size=181fch ( 98812) load[0m
+[0;32mI (536) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (536) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (556) cpu_start: Pro cpu start user code[0m
+[0;32mI (556) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (556) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     main[0m
+[0;32mI (564) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  feaaf7eb5...[0m
+[0;32mI (580) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (585) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (590) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (595) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (600) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (607) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFC0AF8 len 0001F508 (125 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (625) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (647) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (661) main_task: Started on CPU0[0m
+[0;32mI (671) main_task: Calling app_main()[0m
+I (711) wifi:wifi driver task: 3ffc8af8, prio:23, stack:6656, core=0
+I (731) wifi:wifi firmware version: a9f5b59
+I (731) wifi:wifi certification version: v7.0
+I (731) wifi:config NVS flash: enabled
+I (731) wifi:config nano formating: disabled
+I (731) wifi:Init data frame dynamic rx buffer num: 32
+I (741) wifi:Init static rx mgmt buffer num: 5
+I (741) wifi:Init management short buffer num: 32
+I (741) wifi:Init dynamic tx buffer num: 32
+I (751) wifi:Init static rx buffer size: 1600
+I (751) wifi:Init static rx buffer num: 10
+I (761) wifi:Init dynamic rx buffer num: 32
+[0;32mI (761) wifi_init: rx ba win: 6[0m
+[0;32mI (761) wifi_init: tcpip mbox: 32[0m
+[0;32mI (771) wifi_init: udp mbox: 6[0m
+[0;32mI (771) wifi_init: tcp mbox: 6[0m
+[0;32mI (781) wifi_init: tcp tx win: 5760[0m
+[0;32mI (781) wifi_init: tcp rx win: 5760[0m
+[0;32mI (781) wifi_init: tcp mss: 1440[0m
+[0;32mI (791) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (791) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (801) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (891) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (891) wifi:enable tsf
+I (921) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (921) wifi:state: init -> auth (b0)
+I (931) wifi:state: auth -> init (8a0)
+I (931) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3361) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3361) wifi:state: init -> auth (b0)
+I (3411) wifi:state: auth -> assoc (0)
+I (3491) wifi:state: assoc -> run (10)
+I (3621) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3621) wifi:security: WPA2-PSK, phy: bgn, rssi: -68
+I (3621) wifi:pm start, type: 1
+
+I (3621) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3721) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4631) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4641) example: Turn off LCD backlight[0m
+[0;32mI (4641) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4641) example: Initialize SPI bus[0m
+[0;32mI (4651) example: Install panel IO[0m
+[0;32mI (4651) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4661) example: Install ILI9341 panel driver[0m
+[0;32mI (4661) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (4671) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (4681) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (4741) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4811) example: Turn on LCD backlight[0m
+[0;32mI (4811) example: Initialize LVGL library[0m
+[0;32mI (4811) example: Register display driver to LVGL[0m
+[0;32mI (4821) example: Install LVGL tick timer[0m
+[0;32mI (4821) main_task: Returned from app_main()[0m
+[0;32mI (4821) example: Starting LVGL task[0m
+[0;32mI (4871) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (4871) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (4891) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (4901) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (4901) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (4911) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (6171) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (6171) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (6181) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (6181) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (6191) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (6191) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (7471) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (7481) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (7481) ui_Screen1_screen_init: Co2:476.90[0m
+[0;32mI (7491) ui_Screen1_screen_init: Buffer: Co2 : 476.90 ppm[0m
+[0;32mI (7491) ui_Screen1_screen_init: Humi:54.15[0m
+[0;32mI (7491) ui_Screen1_screen_init: Buffer: HUMI : 54.15 %[0m
+[0;32mI (8831) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (8831) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (8841) ui_Screen1_screen_init: Co2:372.58[0m
+[0;32mI (8851) ui_Screen1_screen_init: Buffer: Co2 : 372.58 ppm[0m
+[0;32mI (8851) ui_Screen1_screen_init: Humi:39.02[0m
+[0;32mI (8861) ui_Screen1_screen_init: Buffer: HUMI : 39.02 %[0m
+[0;32mI (10151) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (10161) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (10171) ui_Screen1_screen_init: Co2:372.58[0m
+[0;32mI (10171) ui_Screen1_screen_init: Buffer: Co2 : 372.58 ppm[0m
+[0;32mI (10181) ui_Screen1_screen_init: Humi:39.02[0m
+[0;32mI (10181) ui_Screen1_screen_init: Buffer: HUMI : 39.02 %[0m
+[0;32mI (11491) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (11501) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (11511) ui_Screen1_screen_init: Co2:443.47[0m
+[0;32mI (11511) ui_Screen1_screen_init: Buffer: Co2 : 443.47 ppm[0m
+[0;32mI (11521) ui_Screen1_screen_init: Humi:32.41[0m
+[0;32mI (11521) ui_Screen1_screen_init: Buffer: HUMI : 32.41 %[0m
+[0;32mI (12851) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (12851) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (12861) ui_Screen1_screen_init: Co2:443.47[0m
+[0;32mI (12861) ui_Screen1_screen_init: Buffer: Co2 : 443.47 ppm[0m
+[0;32mI (12871) ui_Screen1_screen_init: Humi:32.41[0m
+[0;32mI (12871) ui_Screen1_screen_init: Buffer: HUMI : 32.41 %[0m
+[0;32mI (14181) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (14191) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (14201) ui_Screen1_screen_init: Co2:617.67[0m
+[0;32mI (14201) ui_Screen1_screen_init: Buffer: Co2 : 617.67 ppm[0m
+[0;32mI (14211) ui_Screen1_screen_init: Humi:32.98[0m
+[0;32mI (14211) ui_Screen1_screen_init: Buffer: HUMI : 32.98 %[0m
+[0;32mI (15531) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (15541) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (15551) ui_Screen1_screen_init: Co2:617.67[0m
+[0;32mI (15551) ui_Screen1_screen_init: Buffer: Co2 : 617.67 ppm[0m
+[0;32mI (15561) ui_Screen1_screen_init: Humi:32.98[0m
+[0;32mI (15561) ui_Screen1_screen_init: Buffer: HUMI : 32.98 %[0m
+[0;32mI (16881) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (16891) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (16901) ui_Screen1_screen_init: Co2:416.64[0m
+[0;32mI (16901) ui_Screen1_screen_init: Buffer: Co2 : 416.64 ppm[0m
+[0;32mI (16911) ui_Screen1_screen_init: Humi:60.53[0m
+[0;32mI (16911) ui_Screen1_screen_init: Buffer: HUMI : 60.53 %[0m
+[0;32mI (18271) ui_Screen1_screen_init: temp:100.00[0m
+[0;32mI (18271) ui_Screen1_screen_init: Buffer: TEMP : 100.00 °C[0m
+[0;32mI (18281) ui_Screen1_screen_init: Co2:416.64[0m
+[0;32mI (18281) ui_Screen1_screen_init: Buffer: Co2 : 416.64 ppm[0m
+[0;32mI (18291) ui_Screen1_screen_init: Humi:60.53[0m
+[0;32mI (18291) ui_Screen1_screen_init: Buffer: HUMI : 60.53 %[0m

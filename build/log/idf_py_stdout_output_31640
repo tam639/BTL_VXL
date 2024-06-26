@@ -1,0 +1,125 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/BTL_VXL/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/get-started/BTL_VXL/main/main.c: In function 'rx_pms7003_task':
+C:/get-started/BTL_VXL/main/main.c:228:42: warning: passing argument 1 of 'pms7003_readData' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         esp_err_t err = pms7003_readData(&sensorData.pm1_0, &sensorData.pm2_5, &sensorData.pm10);
+      |                                          ^~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          float *
+C:/get-started/BTL_VXL/main/main.c:160:38: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'float *'
+  160 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                            ~~~~~~~~~~^~~~~
+C:/get-started/BTL_VXL/main/main.c:228:61: warning: passing argument 2 of 'pms7003_readData' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         esp_err_t err = pms7003_readData(&sensorData.pm1_0, &sensorData.pm2_5, &sensorData.pm10);
+      |                                                             ^~~~~~~~~~~~~~~~~
+      |                                                             |
+      |                                                             float *
+C:/get-started/BTL_VXL/main/main.c:160:55: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'float *'
+  160 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                                             ~~~~~~~~~~^~~~~
+C:/get-started/BTL_VXL/main/main.c:228:80: warning: passing argument 3 of 'pms7003_readData' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         esp_err_t err = pms7003_readData(&sensorData.pm1_0, &sensorData.pm2_5, &sensorData.pm10);
+      |                                                                                ^~~~~~~~~~~~~~~~
+      |                                                                                |
+      |                                                                                float *
+C:/get-started/BTL_VXL/main/main.c:160:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'float *'
+  160 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                                                              ~~~~~~~~~~^~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_LCD':
+C:/get-started/BTL_VXL/main/main.c:628:16: warning: unused variable 'disp' [-Wunused-variable]
+  628 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:137:12: warning: 's_retry_num' defined but not used [-Wunused-variable]
+  137 | static int s_retry_num = 0;
+      |            ^~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable main.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/BTL_VXL/build/main.bin
+[7/8] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/BTL_VXL/build/partition_table/partition-table.bin C:/get-started/BTL_VXL/build/main.bin"
+main.bin binary size 0x11afe0 bytes. Smallest app partition is 0x177000 bytes. 0x5c020 bytes (25%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/get-started/BTL_VXL/build -Pesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:b2:1c:a7:ba:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0012afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.9 seconds (effective 238.6 kbit/s)...
+Hash of data verified.
+Compressed 1159136 bytes to 724226...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001dae6... (4 %)
+Writing at 0x000290fb... (6 %)
+Writing at 0x0002f9bb... (8 %)
+Writing at 0x0003491c... (11 %)
+Writing at 0x0003e0ae... (13 %)
+Writing at 0x00048228... (15 %)
+Writing at 0x0004d9eb... (17 %)
+Writing at 0x0005359d... (20 %)
+Writing at 0x00058f9d... (22 %)
+Writing at 0x0005edb0... (24 %)
+Writing at 0x00064d33... (26 %)
+Writing at 0x0006af49... (28 %)
+Writing at 0x00070bc7... (31 %)
+Writing at 0x000768a2... (33 %)
+Writing at 0x0007ca4f... (35 %)
+Writing at 0x0008270a... (37 %)
+Writing at 0x00088f60... (40 %)
+Writing at 0x0008f159... (42 %)
+Writing at 0x00094fe1... (44 %)
+Writing at 0x0009acec... (46 %)
+Writing at 0x000a0d0f... (48 %)
+Writing at 0x000a7207... (51 %)
+Writing at 0x000aceba... (53 %)
+Writing at 0x000b290d... (55 %)
+Writing at 0x000b7af2... (57 %)
+Writing at 0x000bcf88... (60 %)
+Writing at 0x000c24ea... (62 %)
+Writing at 0x000c7964... (64 %)
+Writing at 0x000ccfb3... (66 %)
+Writing at 0x000d27a5... (68 %)
+Writing at 0x000d8678... (71 %)
+Writing at 0x000de173... (73 %)
+Writing at 0x000e3df0... (75 %)
+Writing at 0x000e9a52... (77 %)
+Writing at 0x000ef461... (80 %)
+Writing at 0x000f4ec3... (82 %)
+Writing at 0x000fab95... (84 %)
+Writing at 0x001003e1... (86 %)
+Writing at 0x0010677f... (88 %)
+Writing at 0x00111cd7... (91 %)
+Writing at 0x001182b3... (93 %)
+Writing at 0x0011e2df... (95 %)
+Writing at 0x00124766... (97 %)
+Writing at 0x00129a0d... (100 %)
+Wrote 1159136 bytes (724226 compressed) at 0x00010000 in 17.5 seconds (effective 529.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 290.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

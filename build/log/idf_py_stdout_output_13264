@@ -1,0 +1,125 @@
+[1/27] Linking C static library esp-idf\communications\libcommunications.a
+[2/27] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/BTL_VXL/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_temp_png.c.obj
+[4/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_airsense_png.c.obj
+[5/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_humirz1_png.c.obj
+[6/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ui.c.obj
+[7/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ui_helpers.c.obj
+[8/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_batterry_png.c.obj
+[9/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_humi_png.c.obj
+[10/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_co2_png.c.obj
+[11/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/images/ui_img_wwifi1_png.c.obj
+[12/25] Building C object esp-idf/sensors/CMakeFiles/__idf_sensors.dir/bme280.c.obj
+[13/25] Building C object esp-idf/sensors/CMakeFiles/__idf_sensors.dir/pms7003.c.obj
+[14/25] Linking C static library esp-idf\sensors\libsensors.a
+[15/25] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ili9341.c.obj
+C:/get-started/BTL_VXL/components/display/ili9341.c: In function 'init_ili9341':
+C:/get-started/BTL_VXL/components/display/ili9341.c:119:16: warning: unused variable 'disp' [-Wunused-variable]
+  119 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[16/25] Linking C static library esp-idf\display\libdisplay.a
+[17/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/__/components/display/ili9341.c.obj
+C:/get-started/BTL_VXL/components/display/ili9341.c: In function 'init_ili9341':
+C:/get-started/BTL_VXL/components/display/ili9341.c:119:16: warning: unused variable 'disp' [-Wunused-variable]
+  119 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+[18/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/get-started/BTL_VXL/main/main.c: In function 'mqtt_task':
+C:/get-started/BTL_VXL/main/main.c:220:17: warning: unused variable 'uxBits' [-Wunused-variable]
+  220 |     EventBits_t uxBits;
+      |                 ^~~~~~
+[19/25] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/process.c.obj
+[20/25] Linking C static library esp-idf\main\libmain.a
+[21/25] Generating ld/sections.ld
+[22/25] Linking CXX executable main.elf
+[23/25] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/BTL_VXL/build/main.bin
+[24/25] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/BTL_VXL/build/partition_table/partition-table.bin C:/get-started/BTL_VXL/build/main.bin"
+main.bin binary size 0x13aca0 bytes. Smallest app partition is 0x177000 bytes. 0x3c360 bytes (16%) free.
+[24/25] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting...................................
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:b2:1c:a7:ba:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0014afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.9 seconds (effective 238.4 kbit/s)...
+Hash of data verified.
+Compressed 1289376 bytes to 786539...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001da07... (4 %)
+Writing at 0x0002f456... (6 %)
+Writing at 0x0003744c... (8 %)
+Writing at 0x0003d886... (10 %)
+Writing at 0x00042af6... (12 %)
+Writing at 0x0004dbc0... (14 %)
+Writing at 0x00054f83... (16 %)
+Writing at 0x0005aac2... (18 %)
+Writing at 0x0006095d... (20 %)
+Writing at 0x00066939... (22 %)
+Writing at 0x0006cb53... (24 %)
+Writing at 0x000727d4... (26 %)
+Writing at 0x000784d1... (28 %)
+Writing at 0x0007e6ba... (30 %)
+Writing at 0x000843ad... (32 %)
+Writing at 0x0008abfe... (34 %)
+Writing at 0x00090e43... (36 %)
+Writing at 0x00096cab... (38 %)
+Writing at 0x0009c9fc... (40 %)
+Writing at 0x000a2a10... (42 %)
+Writing at 0x000a904e... (44 %)
+Writing at 0x000aeca1... (46 %)
+Writing at 0x000b484c... (48 %)
+Writing at 0x000b9bb8... (51 %)
+Writing at 0x000bef91... (53 %)
+Writing at 0x000c44df... (55 %)
+Writing at 0x000c9915... (57 %)
+Writing at 0x000cef1e... (59 %)
+Writing at 0x000d47e0... (61 %)
+Writing at 0x000da5b4... (63 %)
+Writing at 0x000dfda5... (65 %)
+Writing at 0x000e59bb... (67 %)
+Writing at 0x000eb43f... (69 %)
+Writing at 0x000f10b1... (71 %)
+Writing at 0x000f6d6d... (73 %)
+Writing at 0x000fc57e... (75 %)
+Writing at 0x00102248... (77 %)
+Writing at 0x00107db3... (79 %)
+Writing at 0x0010d775... (81 %)
+Writing at 0x00113526... (83 %)
+Writing at 0x0011dd04... (85 %)
+Writing at 0x00126097... (87 %)
+Writing at 0x0012bfa7... (89 %)
+Writing at 0x00133bb6... (91 %)
+Writing at 0x00139516... (93 %)
+Writing at 0x0013f591... (95 %)
+Writing at 0x0014542d... (97 %)
+Writing at 0x0014ac16... (100 %)
+Wrote 1289376 bytes (786539 compressed) at 0x00010000 in 18.6 seconds (effective 555.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 290.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/get-started/BTL_VXL/build -P C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

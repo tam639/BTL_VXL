@@ -1,0 +1,41 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dfd29: lv_obj_mark_layout_as_dirty at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:290
+[0m
+[0;33m0x401a2fbc: lv_style_set_prop_helper at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m0x400013f9: strcpy in ROM
+0x4000140d: strcpy in ROM
+[0m
+[0;33m0x400dfd26: lv_obj_mark_layout_as_dirty at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:289
+0x400df282: lv_obj_class_init_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:106
+0x400f7dcb: lv_label_create at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:77
+0x400d8fae: ui_Screen1_screen_init at C:/get-started/BTL_VXL/components/display/ui.c:193
+0x400d90b1: ui_init at C:/get-started/BTL_VXL/components/display/ui.c:225
+0x400d7e97: display_task at C:/get-started/BTL_VXL/components/display/ili9341.c:134
+0x4008c269: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dfd29: lv_obj_mark_layout_as_dirty at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:290
+[0m
+[0;33m0x401a2fbc: lv_style_set_prop_helper at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m0x400013f9: strcpy in ROM
+0x4000140d: strcpy in ROM
+[0m
+[0;33m0x400dfd26: lv_obj_mark_layout_as_dirty at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:289
+0x400df282: lv_obj_class_init_obj at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:106
+0x400f7dcb: lv_label_create at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:77
+0x400d8fae: ui_Screen1_screen_init at C:/get-started/BTL_VXL/components/display/ui.c:193
+0x400d90b1: ui_init at C:/get-started/BTL_VXL/components/display/ui.c:225
+0x400d7e97: display_task at C:/get-started/BTL_VXL/components/display/ili9341.c:134
+0x4008c269: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

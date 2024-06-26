@@ -1,0 +1,913 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app.c.obj
+[2/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\BTL_VXL\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/BTL_VXL/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/get-started/BTL_VXL/build/config -IC:/get-started/BTL_VXL/main -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -IC:/get-started/BTL_VXL/managed_components/espressif__esp_lcd_gc9a01/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/analog_comparator/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/dac/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2s/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/ledc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/parlio/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/rmt/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdio_slave/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sigma_delta/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/spi/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/temperature_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/interface -IC:/get-started/BTL_VXL/managed_components/espressif__esp_lcd_ili9341/include -IC:/get-started/BTL_VXL/managed_components/espressif__esp_lcd_touch_stmpe610/include -IC:/get-started/BTL_VXL/managed_components/espressif__esp_lcd_touch/include -IC:/get-started/BTL_VXL/managed_components/lvgl__lvgl -IC:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src -IC:/get-started/BTL_VXL/managed_components -IC:/get-started/BTL_VXL/managed_components/lvgl__lvgl/examples -IC:/get-started/BTL_VXL/managed_components/lvgl__lvgl/demos -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/console -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include/port/xtensa -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning/include -IC:/get-started/BTL_VXL/components/communications -IC:/get-started/BTL_VXL/components/display -IC:/get-started/BTL_VXL/components/sensors -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/get-started/BTL_VXL=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -DESP_LCD_GC9A01_VER_MAJOR=1 -DESP_LCD_GC9A01_VER_MINOR=2 -DESP_LCD_GC9A01_VER_PATCH=0 -DESP_LCD_ILI9341_VER_MAJOR=1 -DESP_LCD_ILI9341_VER_MINOR=2 -DESP_LCD_ILI9341_VER_PATCH=0 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/get-started/BTL_VXL/main/main.c
+C:/get-started/BTL_VXL/main/main.c:23:1: error: unknown type name 'QueueHandle_t'
+   23 | QueueHandle_t sensorDataQueue;
+      | ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:62:8: error: unknown type name 'SemaphoreHandle_t'
+   62 | static SemaphoreHandle_t lvgl_mux = NULL;
+      |        ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:62:37: error: 'NULL' undeclared here (not in a function)
+   62 | static SemaphoreHandle_t lvgl_mux = NULL;
+      |                                     ^~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+    6 | #include "app.h"
+  +++ |+#include <stddef.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:92:1: error: unknown type name 'SensorData'
+   92 | SensorData sensorData;
+      | ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:112:1: error: unknown type name 'esp_err_t'
+  112 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      | ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:112:28: error: unknown type name 'uint32_t'
+  112 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                            ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+    6 | #include "app.h"
+  +++ |+#include <stdint.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:112:45: error: unknown type name 'uint32_t'
+  112 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                                             ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:112:45: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:112:62: error: unknown type name 'uint32_t'
+  112 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10);
+      |                                                              ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:112:62: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:114:16: error: unknown type name 'uart_port_t'
+  114 | void uart_init(uart_port_t uart_num, int tx_io_num, int rx_io_num, int baudrate) {
+      |                ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_Peripherals':
+C:/get-started/BTL_VXL/main/main.c:129:5: error: implicit declaration of function 'uart_init' [-Werror=implicit-function-declaration]
+  129 |     uart_init(UART_MHZ14A_NUM, UART_MHZ14A_TXD_PIN, UART_MHZ14A_RXD_PIN, UART_MHZ14A_BAUDRATE);
+      |     ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:72:33: error: 'UART_NUM_1' undeclared (first use in this function)
+   72 | #define UART_MHZ14A_NUM         UART_NUM_1
+      |                                 ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:129:15: note: in expansion of macro 'UART_MHZ14A_NUM'
+  129 |     uart_init(UART_MHZ14A_NUM, UART_MHZ14A_TXD_PIN, UART_MHZ14A_RXD_PIN, UART_MHZ14A_BAUDRATE);
+      |               ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:72:33: note: each undeclared identifier is reported only once for each function it appears in
+   72 | #define UART_MHZ14A_NUM         UART_NUM_1
+      |                                 ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:129:15: note: in expansion of macro 'UART_MHZ14A_NUM'
+  129 |     uart_init(UART_MHZ14A_NUM, UART_MHZ14A_TXD_PIN, UART_MHZ14A_RXD_PIN, UART_MHZ14A_BAUDRATE);
+      |               ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:73:33: error: 'GPIO_NUM_23' undeclared (first use in this function)
+   73 | #define UART_MHZ14A_TXD_PIN     GPIO_NUM_23
+      |                                 ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:129:32: note: in expansion of macro 'UART_MHZ14A_TXD_PIN'
+  129 |     uart_init(UART_MHZ14A_NUM, UART_MHZ14A_TXD_PIN, UART_MHZ14A_RXD_PIN, UART_MHZ14A_BAUDRATE);
+      |                                ^~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:74:33: error: 'GPIO_NUM_5' undeclared (first use in this function)
+   74 | #define UART_MHZ14A_RXD_PIN     GPIO_NUM_5
+      |                                 ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:129:53: note: in expansion of macro 'UART_MHZ14A_RXD_PIN'
+  129 |     uart_init(UART_MHZ14A_NUM, UART_MHZ14A_TXD_PIN, UART_MHZ14A_RXD_PIN, UART_MHZ14A_BAUDRATE);
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:83:33: error: 'UART_NUM_2' undeclared (first use in this function)
+   83 | #define UART_PMS7003_NUM        UART_NUM_2
+      |                                 ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:130:15: note: in expansion of macro 'UART_PMS7003_NUM'
+  130 |     uart_init(UART_PMS7003_NUM, UART_PMS7003_TXD_PIN, UART_PMS7003_RXD_PIN, UART_PMS7003_BAUDRATE);
+      |               ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:84:33: error: 'GPIO_NUM_17' undeclared (first use in this function)
+   84 | #define UART_PMS7003_TXD_PIN    GPIO_NUM_17
+      |                                 ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:130:33: note: in expansion of macro 'UART_PMS7003_TXD_PIN'
+  130 |     uart_init(UART_PMS7003_NUM, UART_PMS7003_TXD_PIN, UART_PMS7003_RXD_PIN, UART_PMS7003_BAUDRATE);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:85:33: error: 'GPIO_NUM_16' undeclared (first use in this function)
+   85 | #define UART_PMS7003_RXD_PIN    GPIO_NUM_16
+      |                                 ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:130:55: note: in expansion of macro 'UART_PMS7003_RXD_PIN'
+  130 |     uart_init(UART_PMS7003_NUM, UART_PMS7003_TXD_PIN, UART_PMS7003_RXD_PIN, UART_PMS7003_BAUDRATE);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:133:40: error: unknown type name 'uart_port_t'
+  133 | int uart_transmit(const char* logName, uart_port_t uart_num, const char* data, const int len) {
+      |                                        ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'rx_mhz14a_task':
+C:/get-started/BTL_VXL/main/main.c:141:5: error: implicit declaration of function 'esp_log_level_set' [-Werror=implicit-function-declaration]
+  141 |     esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
+      |     ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:141:36: error: 'ESP_LOG_INFO' undeclared (first use in this function)
+  141 |     esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
+      |                                    ^~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:147:5: error: unknown type name 'uint8_t'
+  147 |     uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE + 1);
+      |     ^~~~~~~
+C:/get-started/BTL_VXL/main/main.c:147:5: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:147:22: error: 'uint8_t' undeclared (first use in this function)
+  147 |     uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE + 1);
+      |                      ^~~~~~~
+C:/get-started/BTL_VXL/main/main.c:147:22: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:147:30: error: expected expression before ')' token
+  147 |     uint8_t* data = (uint8_t*) malloc(RX_BUF_SIZE + 1);
+      |                              ^
+C:/get-started/BTL_VXL/main/main.c:149:9: error: implicit declaration of function 'uart_transmit' [-Werror=implicit-function-declaration]
+  149 |         uart_transmit(TX_TASK_TAG, UART_MHZ14A_NUM, mhz14a_query_co2_cmd, cmd_len);
+      |         ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:72:33: error: 'UART_NUM_1' undeclared (first use in this function)
+   72 | #define UART_MHZ14A_NUM         UART_NUM_1
+      |                                 ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:149:36: note: in expansion of macro 'UART_MHZ14A_NUM'
+  149 |         uart_transmit(TX_TASK_TAG, UART_MHZ14A_NUM, mhz14a_query_co2_cmd, cmd_len);
+      |                                    ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:151:29: error: implicit declaration of function 'uart_read_bytes' [-Werror=implicit-function-declaration]
+  151 |         const int rxBytes = uart_read_bytes(UART_MHZ14A_NUM, data, RX_BUF_SIZE, 1000 / portTICK_PERIOD_MS);
+      |                             ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:151:88: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+  151 |         const int rxBytes = uart_read_bytes(UART_MHZ14A_NUM, data, RX_BUF_SIZE, 1000 / portTICK_PERIOD_MS);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:154:13: error: implicit declaration of function 'ESP_LOGI' [-Werror=implicit-function-declaration]
+  154 |             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
+      |             ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:155:13: error: implicit declaration of function 'ESP_LOG_BUFFER_HEXDUMP' [-Werror=implicit-function-declaration]
+  155 |             ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:157:13: error: unknown type name 'uint16_t'
+  157 |             uint16_t raw_co2 = data[2] * 0x100 + data[3];
+      |             ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:157:13: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:158:23: error: request for member 'CO2' in something not a structure or union
+  158 |             sensorData.CO2 = calibrate_co2((float)raw_co2);
+      |                       ^
+C:/get-started/BTL_VXL/main/main.c:159:97: error: request for member 'CO2' in something not a structure or union
+  159 |             ESP_LOGI(RX_TASK_TAG, "\n\n\tCalibrated CO2 Concentration: %.2f ppm\n\n", sensorData.CO2);
+      |                                                                                                 ^
+C:/get-started/BTL_VXL/main/main.c:161:13: error: implicit declaration of function 'vTaskDelay' [-Werror=implicit-function-declaration]
+  161 |             vTaskDelay(2000 / portTICK_PERIOD_MS);
+      |             ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:164:5: error: implicit declaration of function 'free' [-Werror=implicit-function-declaration]
+  164 |     free(data);
+      |     ^~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+    6 | #include "app.h"
+  +++ |+#include <stdlib.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:164:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  164 |     free(data);
+      |     ^~~~
+C:/get-started/BTL_VXL/main/main.c:164:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+C:/get-started/BTL_VXL/main/main.c: In function 'rx_pms7003_task':
+C:/get-started/BTL_VXL/main/main.c:168:5: error: unknown type name 'uint32_t'
+  168 |     uint32_t pm1_0, pm2_5, pm10;
+      |     ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:168:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:170:9: error: unknown type name 'esp_err_t'
+  170 |         esp_err_t err = pms7003_readData(&pm1_0, &pm2_5, &pm10);
+      |         ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:170:25: error: implicit declaration of function 'pms7003_readData' [-Werror=implicit-function-declaration]
+  170 |         esp_err_t err = pms7003_readData(&pm1_0, &pm2_5, &pm10);
+      |                         ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:171:20: error: 'ESP_OK' undeclared (first use in this function)
+  171 |         if (err == ESP_OK) {
+      |                    ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:173:23: error: request for member 'pm1_0' in something not a structure or union
+  173 |             sensorData.pm1_0 = (float)pm1_0;
+      |                       ^
+C:/get-started/BTL_VXL/main/main.c:174:23: error: request for member 'pm2_5' in something not a structure or union
+  174 |             sensorData.pm2_5 = (float)pm2_5;
+      |                       ^
+C:/get-started/BTL_VXL/main/main.c:175:23: error: request for member 'pm10' in something not a structure or union
+  175 |             sensorData.pm10 = (float)pm10;
+      |                       ^
+C:/get-started/BTL_VXL/main/main.c:176:114: error: request for member 'pm1_0' in something not a structure or union
+  176 |             ESP_LOGI(TAG_PMS7003, "Calibrated PM1.0: %.2f ug/m3, PM2.5: %.2f ug/m3, PM10: %.2f ug/m3", sensorData.pm1_0, sensorData.pm2_5, sensorData.pm10);
+      |                                                                                                                  ^
+C:/get-started/BTL_VXL/main/main.c:176:132: error: request for member 'pm2_5' in something not a structure or union
+  176 |             ESP_LOGI(TAG_PMS7003, "Calibrated PM1.0: %.2f ug/m3, PM2.5: %.2f ug/m3, PM10: %.2f ug/m3", sensorData.pm1_0, sensorData.pm2_5, sensorData.pm10);
+      |                                                                                                                                    ^
+C:/get-started/BTL_VXL/main/main.c:176:150: error: request for member 'pm10' in something not a structure or union
+  176 |             ESP_LOGI(TAG_PMS7003, "Calibrated PM1.0: %.2f ug/m3, PM2.5: %.2f ug/m3, PM10: %.2f ug/m3", sensorData.pm1_0, sensorData.pm2_5, sensorData.pm10);
+      |                                                                                                                                                      ^
+C:/get-started/BTL_VXL/main/main.c:178:13: error: implicit declaration of function 'ESP_LOGE' [-Werror=implicit-function-declaration]
+  178 |             ESP_LOGE(TAG_PMS7003, "Failed to read data from PMS7003");
+      |             ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:180:27: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+  180 |         vTaskDelay(2000 / portTICK_PERIOD_MS);
+      |                           ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:184:1: error: unknown type name 'esp_err_t'
+  184 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10) {
+      | ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:184:28: error: unknown type name 'uint32_t'
+  184 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10) {
+      |                            ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:184:28: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:184:45: error: unknown type name 'uint32_t'
+  184 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10) {
+      |                                             ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:184:45: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:184:62: error: unknown type name 'uint32_t'
+  184 | esp_err_t pms7003_readData(uint32_t *pm1_0, uint32_t *pm2_5, uint32_t *pm10) {
+      |                                                              ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:184:62: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c: In function 'i2c_bme280_task':
+C:/get-started/BTL_VXL/main/main.c:217:5: error: unknown type name 'i2c_config_t'
+  217 |     i2c_config_t i2c_cfg = {
+      |     ^~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:218:9: error: field name not in record or union initializer
+  218 |         .mode = I2C_MODE_MASTER,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:218:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:218:17: error: 'I2C_MODE_MASTER' undeclared (first use in this function)
+  218 |         .mode = I2C_MODE_MASTER,
+      |                 ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:219:9: error: field name not in record or union initializer
+  219 |         .sda_io_num = GPIO_NUM_25,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:219:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:219:23: error: 'GPIO_NUM_25' undeclared (first use in this function)
+  219 |         .sda_io_num = GPIO_NUM_25,
+      |                       ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:219:23: warning: excess elements in scalar initializer
+C:/get-started/BTL_VXL/main/main.c:219:23: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:220:9: error: field name not in record or union initializer
+  220 |         .scl_io_num = GPIO_NUM_22,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:220:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:220:23: error: 'GPIO_NUM_22' undeclared (first use in this function)
+  220 |         .scl_io_num = GPIO_NUM_22,
+      |                       ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:220:23: warning: excess elements in scalar initializer
+C:/get-started/BTL_VXL/main/main.c:220:23: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:221:9: error: field name not in record or union initializer
+  221 |         .sda_pullup_en = false,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:221:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:221:26: error: 'false' undeclared (first use in this function)
+  221 |         .sda_pullup_en = false,
+      |                          ^~~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: 'false' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+    6 | #include "app.h"
+  +++ |+#include <stdbool.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:221:26: warning: excess elements in scalar initializer
+  221 |         .sda_pullup_en = false,
+      |                          ^~~~~
+C:/get-started/BTL_VXL/main/main.c:221:26: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:222:9: error: field name not in record or union initializer
+  222 |         .scl_pullup_en = false,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:222:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:222:26: warning: excess elements in scalar initializer
+  222 |         .scl_pullup_en = false,
+      |                          ^~~~~
+C:/get-started/BTL_VXL/main/main.c:222:26: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:224:9: error: field name not in record or union initializer
+  224 |         .master = {
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:224:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:224:9: warning: braces around scalar initializer
+C:/get-started/BTL_VXL/main/main.c:224:9: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:225:13: error: field name not in record or union initializer
+  225 |             .clk_speed = 100000
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:225:13: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:224:19: warning: excess elements in scalar initializer
+  224 |         .master = {
+      |                   ^
+C:/get-started/BTL_VXL/main/main.c:224:19: note: (near initialization for 'i2c_cfg')
+C:/get-started/BTL_VXL/main/main.c:229:5: error: implicit declaration of function 'ESP_ERROR_CHECK' [-Werror=implicit-function-declaration]
+  229 |     ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &i2c_cfg));
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:229:21: error: implicit declaration of function 'i2c_param_config' [-Werror=implicit-function-declaration]
+  229 |     ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &i2c_cfg));
+      |                     ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:229:38: error: 'I2C_NUM_0' undeclared (first use in this function)
+  229 |     ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &i2c_cfg));
+      |                                      ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:230:21: error: implicit declaration of function 'i2c_driver_install' [-Werror=implicit-function-declaration]
+  230 |     ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
+      |                     ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:232:5: error: unknown type name 'bmx280_t'
+  232 |     bmx280_t* bmx280 = bmx280_create(I2C_NUM_0);
+      |     ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:232:24: error: implicit declaration of function 'bmx280_create' [-Werror=implicit-function-declaration]
+  232 |     bmx280_t* bmx280 = bmx280_create(I2C_NUM_0);
+      |                        ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:239:21: error: implicit declaration of function 'bmx280_init' [-Werror=implicit-function-declaration]
+  239 |     ESP_ERROR_CHECK(bmx280_init(bmx280));
+      |                     ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:241:5: error: unknown type name 'bmx280_config_t'
+  241 |     bmx280_config_t bmx_cfg = BMX280_DEFAULT_CONFIG;
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:241:31: error: 'BMX280_DEFAULT_CONFIG' undeclared (first use in this function)
+  241 |     bmx280_config_t bmx_cfg = BMX280_DEFAULT_CONFIG;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:242:21: error: implicit declaration of function 'bmx280_configure' [-Werror=implicit-function-declaration]
+  242 |     ESP_ERROR_CHECK(bmx280_configure(bmx280, &bmx_cfg));
+      |                     ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:246:25: error: implicit declaration of function 'bmx280_setMode' [-Werror=implicit-function-declaration]
+  246 |         ESP_ERROR_CHECK(bmx280_setMode(bmx280, BMX280_MODE_FORCE));
+      |                         ^~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:246:48: error: 'BMX280_MODE_FORCE' undeclared (first use in this function)
+  246 |         ESP_ERROR_CHECK(bmx280_setMode(bmx280, BMX280_MODE_FORCE));
+      |                                                ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:248:24: error: implicit declaration of function 'pdMS_TO_TICKS' [-Werror=implicit-function-declaration]
+  248 |             vTaskDelay(pdMS_TO_TICKS(1));
+      |                        ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:249:17: error: implicit declaration of function 'bmx280_isSampling' [-Werror=implicit-function-declaration]
+  249 |         } while(bmx280_isSampling(bmx280));
+      |                 ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:251:25: error: implicit declaration of function 'bmx280_readoutFloat' [-Werror=implicit-function-declaration]
+  251 |         ESP_ERROR_CHECK(bmx280_readoutFloat(bmx280, &sensorData.temperature, &sensorData.humidity));
+      |                         ^~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:251:64: error: request for member 'temperature' in something not a structure or union
+  251 |         ESP_ERROR_CHECK(bmx280_readoutFloat(bmx280, &sensorData.temperature, &sensorData.humidity));
+      |                                                                ^
+C:/get-started/BTL_VXL/main/main.c:251:89: error: request for member 'humidity' in something not a structure or union
+  251 |         ESP_ERROR_CHECK(bmx280_readoutFloat(bmx280, &sensorData.temperature, &sensorData.humidity));
+      |                                                                                         ^
+C:/get-started/BTL_VXL/main/main.c:253:76: error: request for member 'temperature' in something not a structure or union
+  253 |         ESP_LOGI("test", "Read Values: temp = %.4f, hum = %.4f", sensorData.temperature, sensorData.humidity);
+      |                                                                            ^
+C:/get-started/BTL_VXL/main/main.c:253:100: error: request for member 'humidity' in something not a structure or union
+  253 |         ESP_LOGI("test", "Read Values: temp = %.4f, hum = %.4f", sensorData.temperature, sensorData.humidity);
+      |                                                                                                    ^
+C:/get-started/BTL_VXL/main/main.c:254:27: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+  254 |         vTaskDelay(2000 / portTICK_PERIOD_MS); // Add a delay to allow other tasks to run
+      |                           ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:260:1: error: unknown type name 'SensorData'
+  260 | SensorData *Get_Data_Sensor(void)
+      | ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:268:8: error: unknown type name 'bool'
+  268 | static bool example_notify_lvgl_flush_ready(esp_lcd_panel_io_handle_t panel_io, esp_lcd_panel_io_event_data_t *edata, void *user_ctx)
+      |        ^~~~
+C:/get-started/BTL_VXL/main/main.c:268:45: error: unknown type name 'esp_lcd_panel_io_handle_t'
+  268 | static bool example_notify_lvgl_flush_ready(esp_lcd_panel_io_handle_t panel_io, esp_lcd_panel_io_event_data_t *edata, void *user_ctx)
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:268:81: error: unknown type name 'esp_lcd_panel_io_event_data_t'
+  268 | static bool example_notify_lvgl_flush_ready(esp_lcd_panel_io_handle_t panel_io, esp_lcd_panel_io_event_data_t *edata, void *user_ctx)
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:275:35: error: unknown type name 'lv_disp_drv_t'
+  275 | static void example_lvgl_flush_cb(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_map)
+      |                                   ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:275:61: error: unknown type name 'lv_area_t'
+  275 | static void example_lvgl_flush_cb(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_map)
+      |                                                             ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:275:78: error: unknown type name 'lv_color_t'
+  275 | static void example_lvgl_flush_cb(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_map)
+      |                                                                              ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'example_increase_lvgl_tick':
+C:/get-started/BTL_VXL/main/main.c:290:5: error: implicit declaration of function 'lv_tick_inc' [-Werror=implicit-function-declaration]
+  290 |     lv_tick_inc(EXAMPLE_LVGL_TICK_PERIOD_MS);
+      |     ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: At top level:
+C:/get-started/BTL_VXL/main/main.c:393:33: error: unknown type name 'cJSON'
+  393 | void addFormattedNumberToObject(cJSON *object, const char *name, float value) {
+      |                                 ^~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Send_and_Display_Task':
+C:/get-started/BTL_VXL/main/main.c:400:5: error: unknown type name 'EventBits_t'
+  400 |     EventBits_t uxBits;
+      |     ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:401:21: error: implicit declaration of function 'esp_smartconfig_set_type' [-Werror=implicit-function-declaration]
+  401 |     ESP_ERROR_CHECK(esp_smartconfig_set_type(SC_TYPE_ESPTOUCH));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:401:46: error: 'SC_TYPE_ESPTOUCH' undeclared (first use in this function)
+  401 |     ESP_ERROR_CHECK(esp_smartconfig_set_type(SC_TYPE_ESPTOUCH));
+      |                                              ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:402:5: error: unknown type name 'smartconfig_start_config_t'
+  402 |     smartconfig_start_config_t cfg = SMARTCONFIG_START_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:402:38: error: implicit declaration of function 'SMARTCONFIG_START_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+  402 |     smartconfig_start_config_t cfg = SMARTCONFIG_START_CONFIG_DEFAULT();
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:403:21: error: implicit declaration of function 'esp_smartconfig_start' [-Werror=implicit-function-declaration]
+  403 |     ESP_ERROR_CHECK(esp_smartconfig_start(&cfg));
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:451:16: error: 'true' undeclared (first use in this function)
+  451 |         while (true) {
+      |                ^~~~
+C:/get-started/BTL_VXL/main/main.c:451:16: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+C:/get-started/BTL_VXL/main/main.c:452:13: error: implicit declaration of function 'xQueueReceive' [-Werror=implicit-function-declaration]
+  452 |         if (xQueueReceive(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |             ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:452:57: error: 'portMAX_DELAY' undeclared (first use in this function)
+  452 |         if (xQueueReceive(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |                                                         ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:452:75: error: 'pdPASS' undeclared (first use in this function)
+  452 |         if (xQueueReceive(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |                                                                           ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:454:13: error: implicit declaration of function 'printf' [-Werror=implicit-function-declaration]
+  454 |             printf("\nAvailable after dequeue: %d \n\n", uxQueueSpacesAvailable(sensorDataQueue));
+      |             ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    6 | #include "app.h"
+  +++ |+#include <stdio.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:454:13: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  454 |             printf("\nAvailable after dequeue: %d \n\n", uxQueueSpacesAvailable(sensorDataQueue));
+      |             ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:454:13: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/get-started/BTL_VXL/main/main.c:454:58: error: implicit declaration of function 'uxQueueSpacesAvailable' [-Werror=implicit-function-declaration]
+  454 |             printf("\nAvailable after dequeue: %d \n\n", uxQueueSpacesAvailable(sensorDataQueue));
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:456:13: error: unknown type name 'cJSON'
+  456 |             cJSON *root = cJSON_CreateObject();
+      |             ^~~~~
+C:/get-started/BTL_VXL/main/main.c:456:27: error: implicit declaration of function 'cJSON_CreateObject' [-Werror=implicit-function-declaration]
+  456 |             cJSON *root = cJSON_CreateObject();
+      |                           ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:456:27: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/get-started/BTL_VXL/main/main.c:458:9: error: implicit declaration of function 'addFormattedNumberToObject' [-Werror=implicit-function-declaration]
+  458 |         addFormattedNumberToObject(root, "timestamp", sensorData.timestamp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:458:65: error: request for member 'timestamp' in something not a structure or union
+  458 |         addFormattedNumberToObject(root, "timestamp", sensorData.timestamp);
+      |                                                                 ^
+C:/get-started/BTL_VXL/main/main.c:459:67: error: request for member 'temperature' in something not a structure or union
+  459 |         addFormattedNumberToObject(root, "temperature", sensorData.temperature);
+      |                                                                   ^
+C:/get-started/BTL_VXL/main/main.c:460:64: error: request for member 'humidity' in something not a structure or union
+  460 |         addFormattedNumberToObject(root, "humidity", sensorData.humidity);
+      |                                                                ^
+C:/get-started/BTL_VXL/main/main.c:461:61: error: request for member 'pm1_0' in something not a structure or union
+  461 |         addFormattedNumberToObject(root, "pm1_0", sensorData.pm1_0);
+      |                                                             ^
+C:/get-started/BTL_VXL/main/main.c:462:61: error: request for member 'pm2_5' in something not a structure or union
+  462 |         addFormattedNumberToObject(root, "pm2_5", sensorData.pm2_5);
+      |                                                             ^
+C:/get-started/BTL_VXL/main/main.c:463:60: error: request for member 'pm10' in something not a structure or union
+  463 |         addFormattedNumberToObject(root, "pm10", sensorData.pm10);
+      |                                                            ^
+C:/get-started/BTL_VXL/main/main.c:464:59: error: request for member 'CO2' in something not a structure or union
+  464 |         addFormattedNumberToObject(root, "CO2", sensorData.CO2);
+      |                                                           ^
+C:/get-started/BTL_VXL/main/main.c:466:33: error: implicit declaration of function 'cJSON_Print' [-Werror=implicit-function-declaration]
+  466 |             char *json_string = cJSON_Print(root);
+      |                                 ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:466:33: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/get-started/BTL_VXL/main/main.c:467:13: error: implicit declaration of function 'esp_mqtt_client_publish' [-Werror=implicit-function-declaration]
+  467 |             esp_mqtt_client_publish(client, MQTT_PUB_VALUE_1, json_string, 0, 1, 0);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:467:37: error: 'client' undeclared (first use in this function)
+  467 |             esp_mqtt_client_publish(client, MQTT_PUB_VALUE_1, json_string, 0, 1, 0);
+      |                                     ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:467:45: error: 'MQTT_PUB_VALUE_1' undeclared (first use in this function)
+  467 |             esp_mqtt_client_publish(client, MQTT_PUB_VALUE_1, json_string, 0, 1, 0);
+      |                                             ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:468:13: error: implicit declaration of function 'cJSON_Delete' [-Werror=implicit-function-declaration]
+  468 |             cJSON_Delete(root);
+      |             ^~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:469:13: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  469 |             free(json_string);
+      |             ^~~~
+C:/get-started/BTL_VXL/main/main.c:469:13: note: include '<stdlib.h>' or provide a declaration of 'free'
+C:/get-started/BTL_VXL/main/main.c:472:13: error: implicit declaration of function 'lv_timer_handler' [-Werror=implicit-function-declaration]
+  472 |             lv_timer_handler();
+      |             ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:479:13: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  479 |             printf("Error Transfer!\n");
+      |             ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:479:13: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/get-started/BTL_VXL/main/main.c:400:17: warning: unused variable 'uxBits' [-Wunused-variable]
+  400 |     EventBits_t uxBits;
+      |                 ^~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_Queues':
+C:/get-started/BTL_VXL/main/main.c:488:22: error: implicit declaration of function 'xQueueCreate' [-Werror=implicit-function-declaration]
+  488 |    sensorDataQueue = xQueueCreate(10, sizeof(SensorData));
+      |                      ^~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:488:46: error: 'SensorData' undeclared (first use in this function); did you mean 'sensorData'?
+  488 |    sensorDataQueue = xQueueCreate(10, sizeof(SensorData));
+      |                                              ^~~~~~~~~~
+      |                                              sensorData
+C:/get-started/BTL_VXL/main/main.c:492:7: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  492 |       printf("\nError!\n");
+      |       ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:492:7: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/get-started/BTL_VXL/main/main.c: In function 'Sensor_Task':
+C:/get-started/BTL_VXL/main/main.c:498:5: error: implicit declaration of function 'xTaskCreate' [-Werror=implicit-function-declaration]
+  498 |     xTaskCreate(rx_mhz14a_task, "uart_rx_mhz14a_task", 1024 * 2, NULL, configMAX_PRIORITIES - 1, NULL);
+      |     ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:498:72: error: 'configMAX_PRIORITIES' undeclared (first use in this function)
+  498 |     xTaskCreate(rx_mhz14a_task, "uart_rx_mhz14a_task", 1024 * 2, NULL, configMAX_PRIORITIES - 1, NULL);
+      |                                                                        ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:503:11: error: implicit declaration of function 'xQueueSend' [-Werror=implicit-function-declaration]
+  503 |       if (xQueueSend(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |           ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:503:52: error: 'portMAX_DELAY' undeclared (first use in this function)
+  503 |       if (xQueueSend(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |                                                    ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:503:70: error: 'pdPASS' undeclared (first use in this function)
+  503 |       if (xQueueSend(sensorDataQueue, &sensorData, portMAX_DELAY) == pdPASS)
+      |                                                                      ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:506:10: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  506 |          printf("\nAvailable after enqueue: %d \n\n", uxQueueSpacesAvailable(sensorDataQueue));
+      |          ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:506:10: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/get-started/BTL_VXL/main/main.c: In function 'Init_LCD':
+C:/get-started/BTL_VXL/main/main.c:515:12: error: unknown type name 'lv_disp_draw_buf_t'
+  515 |     static lv_disp_draw_buf_t disp_buf; // contains internal graphic buffer(s) called draw buffer(s)
+      |            ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:516:12: error: unknown type name 'lv_disp_drv_t'
+  516 |     static lv_disp_drv_t disp_drv;      // contains callback functions
+      |            ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:519:5: error: unknown type name 'gpio_config_t'
+  519 |     gpio_config_t bk_gpio_config = {
+      |     ^~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:520:9: error: field name not in record or union initializer
+  520 |         .mode = GPIO_MODE_OUTPUT,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:520:9: note: (near initialization for 'bk_gpio_config')
+C:/get-started/BTL_VXL/main/main.c:520:17: error: 'GPIO_MODE_OUTPUT' undeclared (first use in this function)
+  520 |         .mode = GPIO_MODE_OUTPUT,
+      |                 ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:521:9: error: field name not in record or union initializer
+  521 |         .pin_bit_mask = 1ULL << EXAMPLE_PIN_NUM_BK_LIGHT
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:521:9: note: (near initialization for 'bk_gpio_config')
+C:/get-started/BTL_VXL/main/main.c:521:25: warning: excess elements in scalar initializer
+  521 |         .pin_bit_mask = 1ULL << EXAMPLE_PIN_NUM_BK_LIGHT
+      |                         ^~~~
+C:/get-started/BTL_VXL/main/main.c:521:25: note: (near initialization for 'bk_gpio_config')
+C:/get-started/BTL_VXL/main/main.c:523:21: error: implicit declaration of function 'gpio_config' [-Werror=implicit-function-declaration]
+  523 |     ESP_ERROR_CHECK(gpio_config(&bk_gpio_config));
+      |                     ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:526:5: error: unknown type name 'spi_bus_config_t'
+  526 |     spi_bus_config_t buscfg = {
+      |     ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:527:9: error: field name not in record or union initializer
+  527 |         .sclk_io_num = EXAMPLE_PIN_NUM_SCLK,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:527:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:528:9: error: field name not in record or union initializer
+  528 |         .mosi_io_num = EXAMPLE_PIN_NUM_MOSI,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:528:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:39:40: warning: excess elements in scalar initializer
+   39 | #define EXAMPLE_PIN_NUM_MOSI           13
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:528:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_MOSI'
+  528 |         .mosi_io_num = EXAMPLE_PIN_NUM_MOSI,
+      |                        ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:39:40: note: (near initialization for 'buscfg')
+   39 | #define EXAMPLE_PIN_NUM_MOSI           13
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:528:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_MOSI'
+  528 |         .mosi_io_num = EXAMPLE_PIN_NUM_MOSI,
+      |                        ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:529:9: error: field name not in record or union initializer
+  529 |         .miso_io_num = EXAMPLE_PIN_NUM_MISO,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:529:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:40:40: warning: excess elements in scalar initializer
+   40 | #define EXAMPLE_PIN_NUM_MISO           12
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:529:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_MISO'
+  529 |         .miso_io_num = EXAMPLE_PIN_NUM_MISO,
+      |                        ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:40:40: note: (near initialization for 'buscfg')
+   40 | #define EXAMPLE_PIN_NUM_MISO           12
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:529:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_MISO'
+  529 |         .miso_io_num = EXAMPLE_PIN_NUM_MISO,
+      |                        ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:530:9: error: field name not in record or union initializer
+  530 |         .quadwp_io_num = -1,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:530:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:530:26: warning: excess elements in scalar initializer
+  530 |         .quadwp_io_num = -1,
+      |                          ^
+C:/get-started/BTL_VXL/main/main.c:530:26: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:531:9: error: field name not in record or union initializer
+  531 |         .quadhd_io_num = -1,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:531:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:531:26: warning: excess elements in scalar initializer
+  531 |         .quadhd_io_num = -1,
+      |                          ^
+C:/get-started/BTL_VXL/main/main.c:531:26: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:532:9: error: field name not in record or union initializer
+  532 |         .max_transfer_sz = EXAMPLE_LCD_H_RES * 80 * sizeof(uint16_t),
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:532:9: note: (near initialization for 'buscfg')
+C:/get-started/BTL_VXL/main/main.c:532:60: error: 'uint16_t' undeclared (first use in this function)
+  532 |         .max_transfer_sz = EXAMPLE_LCD_H_RES * 80 * sizeof(uint16_t),
+      |                                                            ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:532:60: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+C:/get-started/BTL_VXL/main/main.c:49:40: warning: excess elements in scalar initializer
+   49 | #define EXAMPLE_LCD_H_RES              240
+      |                                        ^~~
+C:/get-started/BTL_VXL/main/main.c:532:28: note: in expansion of macro 'EXAMPLE_LCD_H_RES'
+  532 |         .max_transfer_sz = EXAMPLE_LCD_H_RES * 80 * sizeof(uint16_t),
+      |                            ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:49:40: note: (near initialization for 'buscfg')
+   49 | #define EXAMPLE_LCD_H_RES              240
+      |                                        ^~~
+C:/get-started/BTL_VXL/main/main.c:532:28: note: in expansion of macro 'EXAMPLE_LCD_H_RES'
+  532 |         .max_transfer_sz = EXAMPLE_LCD_H_RES * 80 * sizeof(uint16_t),
+      |                            ^~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:534:21: error: implicit declaration of function 'spi_bus_initialize' [-Werror=implicit-function-declaration]
+  534 |     ESP_ERROR_CHECK(spi_bus_initialize(LCD_HOST, &buscfg, SPI_DMA_CH_AUTO));
+      |                     ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:34:19: error: 'SPI2_HOST' undeclared (first use in this function)
+   34 | #define LCD_HOST  SPI2_HOST
+      |                   ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:534:40: note: in expansion of macro 'LCD_HOST'
+  534 |     ESP_ERROR_CHECK(spi_bus_initialize(LCD_HOST, &buscfg, SPI_DMA_CH_AUTO));
+      |                                        ^~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:534:59: error: 'SPI_DMA_CH_AUTO' undeclared (first use in this function)
+  534 |     ESP_ERROR_CHECK(spi_bus_initialize(LCD_HOST, &buscfg, SPI_DMA_CH_AUTO));
+      |                                                           ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:537:5: error: unknown type name 'esp_lcd_panel_io_handle_t'
+  537 |     esp_lcd_panel_io_handle_t io_handle = NULL;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:538:5: error: unknown type name 'esp_lcd_panel_io_spi_config_t'
+  538 |     esp_lcd_panel_io_spi_config_t io_config = {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:539:9: error: field name not in record or union initializer
+  539 |         .dc_gpio_num = EXAMPLE_PIN_NUM_LCD_DC,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:539:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:540:9: error: field name not in record or union initializer
+  540 |         .cs_gpio_num = EXAMPLE_PIN_NUM_LCD_CS,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:540:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:43:40: warning: excess elements in scalar initializer
+   43 | #define EXAMPLE_PIN_NUM_LCD_CS         15
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:540:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_LCD_CS'
+  540 |         .cs_gpio_num = EXAMPLE_PIN_NUM_LCD_CS,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:43:40: note: (near initialization for 'io_config')
+   43 | #define EXAMPLE_PIN_NUM_LCD_CS         15
+      |                                        ^~
+C:/get-started/BTL_VXL/main/main.c:540:24: note: in expansion of macro 'EXAMPLE_PIN_NUM_LCD_CS'
+  540 |         .cs_gpio_num = EXAMPLE_PIN_NUM_LCD_CS,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:541:9: error: field name not in record or union initializer
+  541 |         .pclk_hz = EXAMPLE_LCD_PIXEL_CLOCK_HZ,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:541:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:35:40: warning: excess elements in scalar initializer
+   35 | #define EXAMPLE_LCD_PIXEL_CLOCK_HZ     (20 * 1000 * 1000)
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:541:20: note: in expansion of macro 'EXAMPLE_LCD_PIXEL_CLOCK_HZ'
+  541 |         .pclk_hz = EXAMPLE_LCD_PIXEL_CLOCK_HZ,
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:35:40: note: (near initialization for 'io_config')
+   35 | #define EXAMPLE_LCD_PIXEL_CLOCK_HZ     (20 * 1000 * 1000)
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:541:20: note: in expansion of macro 'EXAMPLE_LCD_PIXEL_CLOCK_HZ'
+  541 |         .pclk_hz = EXAMPLE_LCD_PIXEL_CLOCK_HZ,
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:542:9: error: field name not in record or union initializer
+  542 |         .lcd_cmd_bits = EXAMPLE_LCD_CMD_BITS,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:542:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:53:40: warning: excess elements in scalar initializer
+   53 | #define EXAMPLE_LCD_CMD_BITS           8
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:542:25: note: in expansion of macro 'EXAMPLE_LCD_CMD_BITS'
+  542 |         .lcd_cmd_bits = EXAMPLE_LCD_CMD_BITS,
+      |                         ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:53:40: note: (near initialization for 'io_config')
+   53 | #define EXAMPLE_LCD_CMD_BITS           8
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:542:25: note: in expansion of macro 'EXAMPLE_LCD_CMD_BITS'
+  542 |         .lcd_cmd_bits = EXAMPLE_LCD_CMD_BITS,
+      |                         ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:543:9: error: field name not in record or union initializer
+  543 |         .lcd_param_bits = EXAMPLE_LCD_PARAM_BITS,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:543:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:54:40: warning: excess elements in scalar initializer
+   54 | #define EXAMPLE_LCD_PARAM_BITS         8
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:543:27: note: in expansion of macro 'EXAMPLE_LCD_PARAM_BITS'
+  543 |         .lcd_param_bits = EXAMPLE_LCD_PARAM_BITS,
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:54:40: note: (near initialization for 'io_config')
+   54 | #define EXAMPLE_LCD_PARAM_BITS         8
+      |                                        ^
+C:/get-started/BTL_VXL/main/main.c:543:27: note: in expansion of macro 'EXAMPLE_LCD_PARAM_BITS'
+  543 |         .lcd_param_bits = EXAMPLE_LCD_PARAM_BITS,
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:544:9: error: field name not in record or union initializer
+  544 |         .spi_mode = 0,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:544:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:544:21: warning: excess elements in scalar initializer
+  544 |         .spi_mode = 0,
+      |                     ^
+C:/get-started/BTL_VXL/main/main.c:544:21: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:545:9: error: field name not in record or union initializer
+  545 |         .trans_queue_depth = 10,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:545:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:545:30: warning: excess elements in scalar initializer
+  545 |         .trans_queue_depth = 10,
+      |                              ^~
+C:/get-started/BTL_VXL/main/main.c:545:30: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:546:9: error: field name not in record or union initializer
+  546 |         .on_color_trans_done = example_notify_lvgl_flush_ready,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:546:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:546:32: error: 'example_notify_lvgl_flush_ready' undeclared (first use in this function)
+  546 |         .on_color_trans_done = example_notify_lvgl_flush_ready,
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:546:32: warning: excess elements in scalar initializer
+C:/get-started/BTL_VXL/main/main.c:546:32: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:547:9: error: field name not in record or union initializer
+  547 |         .user_ctx = &disp_drv,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:547:9: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:547:21: warning: excess elements in scalar initializer
+  547 |         .user_ctx = &disp_drv,
+      |                     ^
+C:/get-started/BTL_VXL/main/main.c:547:21: note: (near initialization for 'io_config')
+C:/get-started/BTL_VXL/main/main.c:550:21: error: implicit declaration of function 'esp_lcd_new_panel_io_spi' [-Werror=implicit-function-declaration]
+  550 |     ESP_ERROR_CHECK(esp_lcd_new_panel_io_spi((esp_lcd_spi_bus_handle_t)LCD_HOST, &io_config, &io_handle));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:550:47: error: 'esp_lcd_spi_bus_handle_t' undeclared (first use in this function)
+  550 |     ESP_ERROR_CHECK(esp_lcd_new_panel_io_spi((esp_lcd_spi_bus_handle_t)LCD_HOST, &io_config, &io_handle));
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:550:72: error: expected ')' before 'SPI2_HOST'
+  550 |     ESP_ERROR_CHECK(esp_lcd_new_panel_io_spi((esp_lcd_spi_bus_handle_t)LCD_HOST, &io_config, &io_handle));
+      |                                             ~                          ^
+      |                                                                        )
+C:/get-started/BTL_VXL/main/main.c:552:5: error: unknown type name 'esp_lcd_panel_handle_t'
+  552 |     esp_lcd_panel_handle_t panel_handle = NULL;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:553:5: error: unknown type name 'esp_lcd_panel_dev_config_t'
+  553 |     esp_lcd_panel_dev_config_t panel_config = {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:554:9: error: field name not in record or union initializer
+  554 |         .reset_gpio_num = EXAMPLE_PIN_NUM_LCD_RST,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:554:9: note: (near initialization for 'panel_config')
+C:/get-started/BTL_VXL/main/main.c:555:9: error: field name not in record or union initializer
+  555 |         .rgb_ele_order = LCD_RGB_ELEMENT_ORDER_BGR,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:555:9: note: (near initialization for 'panel_config')
+C:/get-started/BTL_VXL/main/main.c:555:26: error: 'LCD_RGB_ELEMENT_ORDER_BGR' undeclared (first use in this function)
+  555 |         .rgb_ele_order = LCD_RGB_ELEMENT_ORDER_BGR,
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:555:26: warning: excess elements in scalar initializer
+C:/get-started/BTL_VXL/main/main.c:555:26: note: (near initialization for 'panel_config')
+C:/get-started/BTL_VXL/main/main.c:556:9: error: field name not in record or union initializer
+  556 |         .bits_per_pixel = 16,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:556:9: note: (near initialization for 'panel_config')
+C:/get-started/BTL_VXL/main/main.c:556:27: warning: excess elements in scalar initializer
+  556 |         .bits_per_pixel = 16,
+      |                           ^~
+C:/get-started/BTL_VXL/main/main.c:556:27: note: (near initialization for 'panel_config')
+C:/get-started/BTL_VXL/main/main.c:560:21: error: implicit declaration of function 'esp_lcd_new_panel_ili9341' [-Werror=implicit-function-declaration]
+  560 |     ESP_ERROR_CHECK(esp_lcd_new_panel_ili9341(io_handle, &panel_config, &panel_handle));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:563:21: error: implicit declaration of function 'esp_lcd_panel_reset' [-Werror=implicit-function-declaration]
+  563 |     ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
+      |                     ^~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:564:21: error: implicit declaration of function 'esp_lcd_panel_init' [-Werror=implicit-function-declaration]
+  564 |     ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
+      |                     ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:565:21: error: implicit declaration of function 'esp_lcd_panel_mirror' [-Werror=implicit-function-declaration]
+  565 |     ESP_ERROR_CHECK(esp_lcd_panel_mirror(panel_handle, true, false));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:565:56: error: 'true' undeclared (first use in this function)
+  565 |     ESP_ERROR_CHECK(esp_lcd_panel_mirror(panel_handle, true, false));
+      |                                                        ^~~~
+C:/get-started/BTL_VXL/main/main.c:565:56: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+C:/get-started/BTL_VXL/main/main.c:565:62: error: 'false' undeclared (first use in this function)
+  565 |     ESP_ERROR_CHECK(esp_lcd_panel_mirror(panel_handle, true, false));
+      |                                                              ^~~~~
+C:/get-started/BTL_VXL/main/main.c:565:62: note: 'false' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+C:/get-started/BTL_VXL/main/main.c:568:21: error: implicit declaration of function 'esp_lcd_panel_disp_on_off' [-Werror=implicit-function-declaration]
+  568 |     ESP_ERROR_CHECK(esp_lcd_panel_disp_on_off(panel_handle, true));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:571:5: error: implicit declaration of function 'gpio_set_level' [-Werror=implicit-function-declaration]
+  571 |     gpio_set_level(EXAMPLE_PIN_NUM_BK_LIGHT, EXAMPLE_LCD_BK_LIGHT_ON_LEVEL);
+      |     ^~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:574:5: error: implicit declaration of function 'lv_init'; did you mean 'ui_init'? [-Werror=implicit-function-declaration]
+  574 |     lv_init();
+      |     ^~~~~~~
+      |     ui_init
+C:/get-started/BTL_VXL/main/main.c:577:5: error: unknown type name 'lv_color_t'
+  577 |     lv_color_t *buf1 = heap_caps_malloc(EXAMPLE_LCD_H_RES * 20 * sizeof(lv_color_t), MALLOC_CAP_DMA);
+      |     ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:577:24: error: implicit declaration of function 'heap_caps_malloc' [-Werror=implicit-function-declaration]
+  577 |     lv_color_t *buf1 = heap_caps_malloc(EXAMPLE_LCD_H_RES * 20 * sizeof(lv_color_t), MALLOC_CAP_DMA);
+      |                        ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:577:73: error: 'lv_color_t' undeclared (first use in this function)
+  577 |     lv_color_t *buf1 = heap_caps_malloc(EXAMPLE_LCD_H_RES * 20 * sizeof(lv_color_t), MALLOC_CAP_DMA);
+      |                                                                         ^~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:577:86: error: 'MALLOC_CAP_DMA' undeclared (first use in this function)
+  577 |     lv_color_t *buf1 = heap_caps_malloc(EXAMPLE_LCD_H_RES * 20 * sizeof(lv_color_t), MALLOC_CAP_DMA);
+      |                                                                                      ^~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:578:5: error: implicit declaration of function 'assert' [-Werror=implicit-function-declaration]
+  578 |     assert(buf1);
+      |     ^~~~~~
+C:/get-started/BTL_VXL/main/main.c:7:1: note: 'assert' is defined in header '<assert.h>'; did you forget to '#include <assert.h>'?
+    6 | #include "app.h"
+  +++ |+#include <assert.h>
+    7 | 
+C:/get-started/BTL_VXL/main/main.c:579:17: error: 'buf2' undeclared (first use in this function); did you mean 'buf1'?
+  579 |     lv_color_t *buf2 = heap_caps_malloc(EXAMPLE_LCD_H_RES * 20 * sizeof(lv_color_t), MALLOC_CAP_DMA);
+      |                 ^~~~
+      |                 buf1
+C:/get-started/BTL_VXL/main/main.c:582:5: error: implicit declaration of function 'lv_disp_draw_buf_init' [-Werror=implicit-function-declaration]
+  582 |     lv_disp_draw_buf_init(&disp_buf, buf1, buf2, EXAMPLE_LCD_H_RES * 20);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:585:5: error: implicit declaration of function 'lv_disp_drv_init' [-Werror=implicit-function-declaration]
+  585 |     lv_disp_drv_init(&disp_drv);
+      |     ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:586:13: error: request for member 'hor_res' in something not a structure or union
+  586 |     disp_drv.hor_res = EXAMPLE_LCD_H_RES;
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:587:13: error: request for member 'ver_res' in something not a structure or union
+  587 |     disp_drv.ver_res = EXAMPLE_LCD_V_RES;
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:588:13: error: request for member 'flush_cb' in something not a structure or union
+  588 |     disp_drv.flush_cb = example_lvgl_flush_cb;
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:588:25: error: 'example_lvgl_flush_cb' undeclared (first use in this function)
+  588 |     disp_drv.flush_cb = example_lvgl_flush_cb;
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:589:13: error: request for member 'draw_buf' in something not a structure or union
+  589 |     disp_drv.draw_buf = &disp_buf;
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:590:13: error: request for member 'user_data' in something not a structure or union
+  590 |     disp_drv.user_data = panel_handle;
+      |             ^
+C:/get-started/BTL_VXL/main/main.c:591:5: error: unknown type name 'lv_disp_t'
+  591 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |     ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:591:23: error: implicit declaration of function 'lv_disp_drv_register' [-Werror=implicit-function-declaration]
+  591 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                       ^~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:591:23: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/get-started/BTL_VXL/main/main.c:595:11: error: unknown type name 'esp_timer_create_args_t'
+  595 |     const esp_timer_create_args_t lvgl_tick_timer_args = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:596:9: error: field name not in record or union initializer
+  596 |         .callback = &example_increase_lvgl_tick,
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:596:9: note: (near initialization for 'lvgl_tick_timer_args')
+C:/get-started/BTL_VXL/main/main.c:596:21: warning: initialization of 'int' from 'void (*)(void *)' makes integer from pointer without a cast [-Wint-conversion]
+  596 |         .callback = &example_increase_lvgl_tick,
+      |                     ^
+C:/get-started/BTL_VXL/main/main.c:596:21: note: (near initialization for 'lvgl_tick_timer_args')
+C:/get-started/BTL_VXL/main/main.c:597:9: error: field name not in record or union initializer
+  597 |         .name = "lvgl_tick"
+      |         ^
+C:/get-started/BTL_VXL/main/main.c:597:9: note: (near initialization for 'lvgl_tick_timer_args')
+C:/get-started/BTL_VXL/main/main.c:597:17: warning: excess elements in scalar initializer
+  597 |         .name = "lvgl_tick"
+      |                 ^~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:597:17: note: (near initialization for 'lvgl_tick_timer_args')
+C:/get-started/BTL_VXL/main/main.c:599:5: error: unknown type name 'esp_timer_handle_t'
+  599 |     esp_timer_handle_t lvgl_tick_timer = NULL;
+      |     ^~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:600:21: error: implicit declaration of function 'esp_timer_create' [-Werror=implicit-function-declaration]
+  600 |     ESP_ERROR_CHECK(esp_timer_create(&lvgl_tick_timer_args, &lvgl_tick_timer));
+      |                     ^~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:601:21: error: implicit declaration of function 'esp_timer_start_periodic' [-Werror=implicit-function-declaration]
+  601 |     ESP_ERROR_CHECK(esp_timer_start_periodic(lvgl_tick_timer, EXAMPLE_LVGL_TICK_PERIOD_MS * 1000));
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:603:16: error: implicit declaration of function 'xSemaphoreCreateRecursiveMutex' [-Werror=implicit-function-declaration]
+  603 |     lvgl_mux = xSemaphoreCreateRecursiveMutex();
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:591:16: warning: unused variable 'disp' [-Wunused-variable]
+  591 |     lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
+      |                ^~~~
+C:/get-started/BTL_VXL/main/main.c:538:35: warning: unused variable 'io_config' [-Wunused-variable]
+  538 |     esp_lcd_panel_io_spi_config_t io_config = {
+      |                                   ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c: In function 'app_main':
+C:/get-started/BTL_VXL/main/main.c:610:5: error: unknown type name 'esp_err_t'
+  610 |     esp_err_t ret = nvs_flash_init();
+      |     ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:610:21: error: implicit declaration of function 'nvs_flash_init' [-Werror=implicit-function-declaration]
+  610 |     esp_err_t ret = nvs_flash_init();
+      |                     ^~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:611:16: error: 'ESP_ERR_NVS_NO_FREE_PAGES' undeclared (first use in this function)
+  611 |     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:611:52: error: 'ESP_ERR_NVS_NEW_VERSION_FOUND' undeclared (first use in this function)
+  611 |     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:612:25: error: implicit declaration of function 'nvs_flash_erase' [-Werror=implicit-function-declaration]
+  612 |         ESP_ERROR_CHECK(nvs_flash_erase());
+      |                         ^~~~~~~~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:618:5: error: implicit declaration of function 'Init_WiFi' [-Werror=implicit-function-declaration]
+  618 |     Init_WiFi(); // Initialize and connect to Wi-Fi
+      |     ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:619:5: error: implicit declaration of function 'Init_MQTT' [-Werror=implicit-function-declaration]
+  619 |     Init_MQTT(); // Start the MQTT client
+      |     ^~~~~~~~~
+C:/get-started/BTL_VXL/main/main.c:627:65: error: 'configMINIMAL_STACK_SIZE' undeclared (first use in this function)
+  627 |     xTaskCreate(Send_and_Display_Task, "Send_and_Display_Task", configMINIMAL_STACK_SIZE * 3, NULL, 1U, NULL);
+      |                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

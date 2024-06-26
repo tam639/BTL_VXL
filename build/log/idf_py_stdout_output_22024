@@ -1,0 +1,1545 @@
+e�&�+
+B��J��ѹesp�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2024 11:41:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3f1dch (258524) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0004f204 vaddr=3ffb0000 size=00e14h (  3604) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ddb04h (908036) map[0m
+[0;32mI (510) esp_image: segment 3: paddr=0012db2c vaddr=3ffb0e14 size=030c8h ( 12488) load[0m
+[0;32mI (515) esp_image: segment 4: paddr=00130bfc vaddr=40080000 size=19fd4h (106452) load[0m
+[0;32mI (571) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (571) boot: Disabling RNG early entropy source...[0m
+[0;32mI (582) cpu_start: Multicore app[0m
+[0;32mI (591) cpu_start: Pro cpu start user code[0m
+[0;32mI (591) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (591) cpu_start: Application information:[0m
+[0;32mI (594) cpu_start: Project name:     main[0m
+[0;32mI (599) cpu_start: App version:      1[0m
+[0;32mI (603) cpu_start: Compile time:     Jun 25 2024 15:24:10[0m
+[0;32mI (609) cpu_start: ELF file SHA256:  03be7e50b...[0m
+[0;32mI (615) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (620) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (625) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (630) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (635) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (642) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (648) heap_init: At 3FFC0D90 len 0001F270 (124 KiB): DRAM[0m
+[0;32mI (654) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (660) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (667) heap_init: At 40099FD4 len 0000602C (24 KiB): IRAM[0m
+[0;32mI (674) spi_flash: detected chip: generic[0m
+[0;32mI (677) spi_flash: flash io: dio[0m
+[0;33mW (681) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (695) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (706) main_task: Started on CPU0[0m
+[0;32mI (716) main_task: Calling app_main()[0m
+I (756) wifi:wifi driver task: 3ffc8d68, prio:23, stack:6656, core=0
+I (776) wifi:wifi firmware version: a9f5b59
+I (776) wifi:wifi certification version: v7.0
+I (776) wifi:config NVS flash: enabled
+I (776) wifi:config nano formating: disabled
+I (776) wifi:Init data frame dynamic rx buffer num: 32
+I (786) wifi:Init static rx mgmt buffer num: 5
+I (786) wifi:Init management short buffer num: 32
+I (786) wifi:Init dynamic tx buffer num: 32
+I (796) wifi:Init static rx buffer size: 1600
+I (796) wifi:Init static rx buffer num: 10
+I (806) wifi:Init dynamic rx buffer num: 32
+[0;32mI (806) wifi_init: rx ba win: 6[0m
+[0;32mI (806) wifi_init: tcpip mbox: 32[0m
+[0;32mI (816) wifi_init: udp mbox: 6[0m
+[0;32mI (816) wifi_init: tcp mbox: 6[0m
+[0;32mI (826) wifi_init: tcp tx win: 5760[0m
+[0;32mI (826) wifi_init: tcp rx win: 5760[0m
+[0;32mI (826) wifi_init: tcp mss: 1440[0m
+[0;32mI (836) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (836) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (846) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (936) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (936) wifi:enable tsf
+I (1046) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1046) wifi:state: init -> auth (b0)
+I (1116) wifi:state: auth -> assoc (0)
+I (1206) wifi:state: assoc -> run (10)
+I (1326) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1326) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (1326) wifi:pm start, type: 1
+
+I (1326) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1356) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2336) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2346) example: Turn off LCD backlight[0m
+[0;32mI (2346) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2346) example: Initialize SPI bus[0m
+[0;32mI (2346) example: Install panel IO[0m
+[0;32mI (2356) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2366) example: Install ILI9341 panel driver[0m
+[0;32mI (2366) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2376) ili9341: LCD panel create success, version: 1.2.0[0m
+I (2456) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2506) example: Turn on LCD backlight[0m
+[0;32mI (2506) example: Initialize LVGL library[0m
+[0;32mI (2506) example: Register display driver to LVGL[0m
+[0;32mI (2516) example: Install LVGL tick timer[0m
+[0;32mI (2516) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (2516) bmx280: Probing for BMP280/BME280 sensors on I2C 0[0m
+
+Available after enqueue: 9 
+
+[0;32mI (2526) bmx280: Probe success: address=ec, id=60[0m
+I (2526) wifi:state: run -> init (0)
+[0;32mI (2536) bmx280: Reading out calibration values...[0m
+I (2536) wifi:pm stop, total sleep time: 367194 us / 1208868 us
+[0;32mI (2546) bmx280: Read Low Bank.[0m
+
+I (2546) wifi:<ba-del>idx:0, tid:0
+[0;32mI (2546) bmx280: Read High Bank.[0m
+[0;32mI (2556) bmx280: Dumping calibration...[0m
+[0;32mI (2556) bmx280: 4d 6d d0 67 32 00 0a 92 86 d6 d0 0b ca 1d fd ff [0m
+[0;32mI (2566) bmx280: f9 ff ac 26 0a d8 bd 10 10 00 84 01 00 00 04 01 [0m
+[0;32mI (2576) bmx280: 32 00 1e 00 [0m
+I (2576) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (2526) main_task: Returned from app_main()[0m
+[0;31mE (2586) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2596) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=119[0m
+[0;31mE (2606) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (2616) mqtt_client: MQTT connect failed[0m
+[0;32mI (2616) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2626) mqtt_client: Client force reconnect requested[0m
+I (2636) smartconfig: SC version: V3.0.1
+[0;31mE (2636) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2636) smartconfig: scan status 1
+[0;31mE (2646) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2646) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (2646) mqtt_client: Error transport connect[0m
+
+Available after dequeue: 10 
+
+[0;32mI (2656) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2666) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2676) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (2676) test: Read Values: temp = 27.6700, hum = 47.4248[0m
+[0;31mE (2686) transport_base: Failed to open a new connection: 32772[0m
+W (2696) wifi:[0;31mE (2696) mqtt_client: Error transport connect[0m
+[0;32mI (2696) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (2696) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+sta_scan: STA is connecting, scan are not allowed![0;32mI (2706) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (2706) mqtt_client: Client force reconnect requested[0m
+
+E (2726) smartconfig: promis scan ret 12294
+[0;31mE (2726) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (2726) ui_Screen1_screen_init: Co2:0.00[0m
+[0;31mE (2736) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2746) mqtt_client: Error transport connect[0m
+I (2746) wifi:[0;32mI (2756) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (2756) mqtt_client: Client force reconnect requested[0m
+
+I (2776) wifi:state: init -> auth (b0)
+[0;31mE (2776) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (2746) ui_Screen1_screen_init: Buffer: Co2 : 0.00 ppm[0m
+[0;31mE (2776) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2796) mqtt_client: Error transport connect[0m
+[0;32mI (2796) ui_Screen1_screen_init: Humi:47.42[0m
+[0;32mI (2796) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2806) ui_Screen1_screen_init: Buffer: HUMI : 47.42 %[0m
+I (2816) wifi:[0;32mI (2806) mqtt_client: Client force reconnect requested[0m
+state: auth -> assoc (0)
+[0;31mE (2826) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2826) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2836) mqtt_client: Error transport connect[0m
+[0;32mI (2846) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2846) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2856) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2856) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2866) mqtt_client: Error transport connect[0m
+[0;32mI (2876) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2876) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2886) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2886) wifi:state: assoc -> run (10)
+[0;31mE (2886) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2896) mqtt_client: Error transport connect[0m
+[0;32mI (2906) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2906) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2916) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2926) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2926) mqtt_client: Error transport connect[0m
+[0;32mI (2936) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2936) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2946) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2956) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2956) mqtt_client: Error transport connect[0m
+[0;32mI (2966) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2966) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2976) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2976) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2986) mqtt_client: Error transport connect[0m
+[0;32mI (2996) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2996) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3006) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3006) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3016) mqtt_client: Error transport connect[0m
+[0;32mI (3016) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3026) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3036) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3036) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3046) mqtt_client: Error transport connect[0m
+[0;32mI (3046) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3056) mqtt_client: Client force reconnect requested[0m
+I (3066) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3066) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+[0;31mE (3066) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (3076) wifi:pm start, type: 1
+[0;31mE (3076) transport_base: Failed to open a new connection: 32772[0m
+
+[0;31mE (3086) mqtt_client: Error transport connect[0m
+[0;32mI (3096) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3096) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3106) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3116) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3116) mqtt_client: Error transport connect[0m
+[0;32mI (3126) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3126) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3136) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3146) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3146) mqtt_client: Error transport connect[0m
+[0;32mI (3156) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3156) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3166) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3176) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3176) mqtt_client: Error transport connect[0m
+[0;32mI (3186) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3186) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3196) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (3196) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (3196) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3216) mqtt_client: Error transport connect[0m
+[0;32mI (3216) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3226) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3226) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3236) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3246) mqtt_client: Error transport connect[0m
+[0;32mI (3246) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3256) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3256) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3266) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3266) mqtt_client: Error transport connect[0m
+[0;32mI (3276) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3276) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3286) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3296) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3296) mqtt_client: Error transport connect[0m
+[0;32mI (3306) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3306) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3316) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3326) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3326) mqtt_client: Error transport connect[0m
+[0;32mI (3336) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3336) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3346) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3356) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3356) mqtt_client: Error transport connect[0m
+[0;32mI (3366) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3366) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3376) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3386) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3386) mqtt_client: Error transport connect[0m
+[0;32mI (3396) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3396) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3406) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3416) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3416) mqtt_client: Error transport connect[0m
+[0;32mI (3426) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3426) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3436) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3436) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3446) mqtt_client: Error transport connect[0m
+[0;32mI (3456) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3456) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3466) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3466) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3476) mqtt_client: Error transport connect[0m
+[0;32mI (3476) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3486) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3496) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3496) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3506) mqtt_client: Error transport connect[0m
+[0;32mI (3506) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3516) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3526) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3526) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3536) mqtt_client: Error transport connect[0m
+[0;32mI (3536) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3546) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (3546) mqtt_client: Client force reconnect requested[0m
+[0;32mI (3546) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f7 45 00 10 00  2c                       |....E...,|[0m
+[0;31mE (3556) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (3566) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 834.90 ppm
+
+[0m
+[0;31mE (3576) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3586) mqtt_client: Error transport connect[0m
+[0;32mI (3596) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3596) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3606) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3606) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3616) mqtt_client: Error transport connect[0m
+[0;32mI (3616) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3626) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3636) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3636) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3646) mqtt_client: Error transport connect[0m
+[0;32mI (3646) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3656) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3666) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3666) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3676) mqtt_client: Error transport connect[0m
+[0;32mI (3676) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3686) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3696) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3696) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3706) mqtt_client: Error transport connect[0m
+[0;32mI (3706) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3716) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3716) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3726) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3736) mqtt_client: Error transport connect[0m
+[0;32mI (3736) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3746) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3746) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3756) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3766) mqtt_client: Error transport connect[0m
+[0;32mI (3766) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3776) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3776) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3786) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3786) mqtt_client: Error transport connect[0m
+[0;32mI (3796) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3796) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3806) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3816) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3816) mqtt_client: Error transport connect[0m
+[0;32mI (3826) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3826) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3836) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3846) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3846) mqtt_client: Error transport connect[0m
+[0;32mI (3856) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3856) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3866) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3876) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3876) mqtt_client: Error transport connect[0m
+[0;32mI (3886) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3886) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3896) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3906) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3906) mqtt_client: Error transport connect[0m
+[0;32mI (3916) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3916) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3926) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3926) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3936) mqtt_client: Error transport connect[0m
+[0;32mI (3946) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3946) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3956) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3966) mqtt_client: Error transport connect[0m
+[0;32mI (3976) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (3976) mqtt_client: Client force reconnect requested[0m
+[0;31mE (3986) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3986) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3996) mqtt_client: Error transport connect[0m
+[0;32mI (3996) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4006) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4016) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4026) mqtt_client: Error transport connect[0m
+[0;32mI (4026) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4036) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4046) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4046) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4056) mqtt_client: Error transport connect[0m
+[0;32mI (4056) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4066) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4076) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4076) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4086) mqtt_client: Error transport connect[0m
+[0;32mI (4086) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4096) mqtt_client: Client force reconnect requested[0m
+[0;32mI (4096) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+I (4206) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (4346) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (4546) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (4546) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (4546) ui_Screen1_screen_init: Co2:834.90[0m
+[0;32mI (4546) ui_Screen1_screen_init: Buffer: Co2 : 834.90 ppm[0m
+[0;32mI (4556) ui_Screen1_screen_init: Humi:47.42[0m
+[0;32mI (4566) ui_Screen1_screen_init: Buffer: HUMI : 47.42 %[0m
+[0;32mI (4616) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (4616) PMS7003: PM1.0: 15 ug/m3, PM2.5: 23 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (4616) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 23.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (4786) test: Read Values: temp = 27.6700, hum = 47.4854[0m
+[0;32mI (5576) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (6546) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (6546) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (6556) ui_Screen1_screen_init: Co2:834.90[0m
+[0;32mI (6556) ui_Screen1_screen_init: Buffer: Co2 : 834.90 ppm[0m
+[0;32mI (6556) ui_Screen1_screen_init: Humi:47.49[0m
+[0;32mI (6566) ui_Screen1_screen_init: Buffer: HUMI : 47.49 %[0m
+[0;32mI (6606) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (6606) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f6 45 00 10 00  2d                       |....E...-|[0m
+[0;32mI (6606) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 833.80 ppm
+
+[0m
+[0;32mI (6886) test: Read Values: temp = 27.6700, hum = 47.4121[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (8546) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (8556) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (8556) ui_Screen1_screen_init: Co2:833.80[0m
+[0;32mI (8556) ui_Screen1_screen_init: Buffer: Co2 : 833.80 ppm[0m
+[0;32mI (8566) ui_Screen1_screen_init: Humi:47.41[0m
+[0;32mI (8566) ui_Screen1_screen_init: Buffer: HUMI : 47.41 %[0m
+[0;32mI (8616) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (8626) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (8626) PMS7003: PM1.0: 15 ug/m3, PM2.5: 23 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (8626) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 23.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (8986) test: Read Values: temp = 27.6700, hum = 47.4365[0m
+[0;32mI (9646) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (9646) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f6 45 00 10 00  2d                       |....E...-|[0m
+[0;32mI (9646) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 833.80 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (10546) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (10556) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (10556) ui_Screen1_screen_init: Co2:833.80[0m
+[0;32mI (10556) ui_Screen1_screen_init: Buffer: Co2 : 833.80 ppm[0m
+[0;32mI (10566) ui_Screen1_screen_init: Humi:47.44[0m
+[0;32mI (10566) ui_Screen1_screen_init: Buffer: HUMI : 47.44 %[0m
+[0;32mI (11086) test: Read Values: temp = 27.6700, hum = 47.4248[0m
+[0;32mI (11656) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (12556) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (12556) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (12556) ui_Screen1_screen_init: Co2:833.80[0m
+[0;32mI (12566) ui_Screen1_screen_init: Buffer: Co2 : 833.80 ppm[0m
+[0;32mI (12566) ui_Screen1_screen_init: Humi:47.42[0m
+[0;32mI (12576) ui_Screen1_screen_init: Buffer: HUMI : 47.42 %[0m
+[0;32mI (12636) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (12636) PMS7003: PM1.0: 15 ug/m3, PM2.5: 22 ug/m3, PM10: 26 ug/m3[0m
+[0;32mI (12636) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 26.00 ug/m3[0m
+[0;32mI (12686) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (12686) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f6 45 00 10 00  2d                       |....E...-|[0m
+[0;32mI (12686) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 833.80 ppm
+
+[0m
+[0;32mI (13186) test: Read Values: temp = 27.6600, hum = 47.4844[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (14556) ui_Screen1_screen_init: temp:27.66[0m
+[0;32mI (14556) ui_Screen1_screen_init: Buffer: TEMP : 27.66 °C[0m
+[0;32mI (14566) ui_Screen1_screen_init: Co2:833.80[0m
+[0;32mI (14566) ui_Screen1_screen_init: Buffer: Co2 : 833.80 ppm[0m
+[0;32mI (14576) ui_Screen1_screen_init: Humi:47.48[0m
+[0;32mI (14576) ui_Screen1_screen_init: Buffer: HUMI : 47.48 %[0m
+[0;32mI (14696) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (15286) test: Read Values: temp = 27.6600, hum = 47.5811[0m
+[0;32mI (15726) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (15726) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f7 45 00 10 00  2c                       |....E...,|[0m
+[0;32mI (15726) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 834.90 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (16566) ui_Screen1_screen_init: temp:27.66[0m
+[0;32mI (16566) ui_Screen1_screen_init: Buffer: TEMP : 27.66 °C[0m
+[0;32mI (16566) ui_Screen1_screen_init: Co2:834.90[0m
+[0;32mI (16566) ui_Screen1_screen_init: Buffer: Co2 : 834.90 ppm[0m
+[0;32mI (16576) ui_Screen1_screen_init: Humi:47.58[0m
+[0;32mI (16576) ui_Screen1_screen_init: Buffer: HUMI : 47.58 %[0m
+[0;32mI (16646) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (16646) PMS7003: PM1.0: 16 ug/m3, PM2.5: 22 ug/m3, PM10: 26 ug/m3[0m
+[0;32mI (16646) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 26.00 ug/m3[0m
+[0;32mI (17386) test: Read Values: temp = 27.6700, hum = 49.6602[0m
+[0;32mI (17736) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (18566) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (18566) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (18566) ui_Screen1_screen_init: Co2:834.90[0m
+[0;32mI (18576) ui_Screen1_screen_init: Buffer: Co2 : 834.90 ppm[0m
+[0;32mI (18576) ui_Screen1_screen_init: Humi:49.66[0m
+[0;32mI (18586) ui_Screen1_screen_init: Buffer: HUMI : 49.66 %[0m
+[0;32mI (18766) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (18766) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f5 45 00 10 00  2e                       |....E....|[0m
+[0;32mI (18766) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 832.70 ppm
+
+[0m
+[0;32mI (19486) test: Read Values: temp = 27.6700, hum = 49.0889[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (20566) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (20566) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (20576) ui_Screen1_screen_init: Co2:832.70[0m
+[0;32mI (20576) ui_Screen1_screen_init: Buffer: Co2 : 832.70 ppm[0m
+[0;32mI (20586) ui_Screen1_screen_init: Humi:49.09[0m
+[0;32mI (20586) ui_Screen1_screen_init: Buffer: HUMI : 49.09 %[0m
+[0;32mI (20656) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (20656) PMS7003: PM1.0: 16 ug/m3, PM2.5: 22 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (20656) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (20776) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (21586) test: Read Values: temp = 27.6700, hum = 48.8701[0m
+[0;32mI (21806) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (21806) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f3 45 00 10 00  30                       |....E...0|[0m
+[0;32mI (21806) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 830.50 ppm
+
+[0m
+
+Available after dequeue: 10 
+
+
+Available after enqueue: 9 
+
+[0;32mI (22566) ui_Screen1_screen_init: temp:27.67[0m
+[0;32mI (22566) ui_Screen1_screen_init: Buffer: TEMP : 27.67 °C[0m
+[0;32mI (22576) ui_Screen1_screen_init: Co2:830.50[0m
+[0;32mI (22576) ui_Screen1_screen_init: Buffer: Co2 : 830.50 ppm[0m
+[0;32mI (22586) ui_Screen1_screen_init: Humi:48.87[0m
+[0;32mI (22586) ui_Screen1_screen_init: Buffer: HUMI : 48.87 %[0m
+[0;32mI (23686) test: Read Values: temp = 27.6700, hum = 48.3838[0m
+[0;32mI (23816) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after enqueue: 9 
+
+[0;32mI (24666) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (24666) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 26 ug/m3[0m
+[0;32mI (24666) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 26.00 ug/m3[0m
+[0;32mI (24846) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (24846) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f3 45 00 10 00  30                       |....E...0|[0m
+[0;32mI (24846) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 830.50 ppm
+
+[0m
+[0;32mI (25786) test: Read Values: temp = 27.6700, hum = 47.9590[0m
+
+Available after enqueue: 8 
+
+[0;32mI (26856) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (27876) test: Read Values: temp = 27.6700, hum = 47.7158[0m
+[0;32mI (27886) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (27886) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f3 45 00 10 00  30                       |....E...0|[0m
+[0;32mI (27896) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 830.50 ppm
+
+[0m
+
+Available after enqueue: 7 
+
+[0;32mI (28676) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (28676) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (28676) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (29896) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (29976) test: Read Values: temp = 27.6700, hum = 47.6191[0m
+
+Available after enqueue: 6 
+
+[0;32mI (30926) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (30926) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f3 45 00 10 00  30                       |....E...0|[0m
+[0;32mI (30926) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 830.50 ppm
+
+[0m
+[0;32mI (32086) test: Read Values: temp = 27.6600, hum = 47.5449[0m
+
+Available after enqueue: 5 
+
+[0;32mI (32686) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (32686) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (32686) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (32936) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (33966) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (33966) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f2 45 00 10 00  31                       |....E...1|[0m
+[0;32mI (33966) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 829.40 ppm
+
+[0m
+[0;32mI (34186) test: Read Values: temp = 27.6600, hum = 47.4355[0m
+
+Available after enqueue: 4 
+
+[0;32mI (35976) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (36286) test: Read Values: temp = 27.6600, hum = 47.4473[0m
+
+Available after enqueue: 3 
+
+[0;32mI (36696) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (36696) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 22 ug/m3[0m
+[0;32mI (36696) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 22.00 ug/m3[0m
+[0;32mI (37006) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (37006) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 f0 45 00 10 00  33                       |....E...3|[0m
+[0;32mI (37006) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 827.20 ppm
+
+[0m
+[0;32mI (38386) test: Read Values: temp = 27.6600, hum = 47.4346[0m
+
+Available after enqueue: 2 
+
+[0;32mI (39016) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (40046) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (40046) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ef 45 00 10 00  34                       |....E...4|[0m
+[0;32mI (40046) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 826.10 ppm
+
+[0m
+[0;32mI (40486) test: Read Values: temp = 27.6500, hum = 47.4229[0m
+
+Available after enqueue: 1 
+
+[0;32mI (40706) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (40706) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (40706) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (42056) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+
+Available after enqueue: 0 
+
+[0;32mI (42586) test: Read Values: temp = 27.6500, hum = 47.3496[0m
+[0;32mI (43086) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (43086) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ed 45 00 10 00  36                       |....E...6|[0m
+[0;32mI (43086) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 823.90 ppm
+
+[0m
+[0;32mI (44686) test: Read Values: temp = 27.6500, hum = 47.2764[0m
+[0;32mI (44716) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (44716) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (44716) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (45096) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (46126) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (46126) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ec 45 00 10 00  37                       |....E...7|[0m
+[0;32mI (46126) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 822.80 ppm
+
+[0m
+[0;32mI (46786) test: Read Values: temp = 27.6400, hum = 47.3369[0m
+[0;32mI (48136) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (48726) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (48726) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 22 ug/m3[0m
+[0;32mI (48726) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 22.00 ug/m3[0m
+[0;32mI (48886) test: Read Values: temp = 27.6400, hum = 47.4697[0m
+[0;32mI (49166) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (49166) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ea 45 00 10 00  39                       |....E...9|[0m
+[0;32mI (49166) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 820.60 ppm
+
+[0m
+[0;32mI (50986) test: Read Values: temp = 27.6300, hum = 47.6143[0m
+[0;32mI (51176) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (52206) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (52206) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 e6 45 00 10 00  3d                       |....E...=|[0m
+[0;32mI (52206) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 816.20 ppm
+
+[0m
+[0;32mI (52736) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (52736) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (52736) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (53086) test: Read Values: temp = 27.6300, hum = 47.4932[0m
+[0;32mI (54216) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (55186) test: Read Values: temp = 27.6200, hum = 47.5410[0m
+[0;32mI (55246) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (55246) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 e4 45 00 10 00  3f                       |....E...?|[0m
+[0;32mI (55246) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 814.00 ppm
+
+[0m
+[0;32mI (56746) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (56746) PMS7003: PM1.0: 16 ug/m3, PM2.5: 22 ug/m3, PM10: 24 ug/m3[0m
+[0;32mI (56746) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 24.00 ug/m3[0m
+[0;32mI (57256) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (57286) test: Read Values: temp = 27.6200, hum = 47.5527[0m
+[0;32mI (58286) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (58286) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 e1 45 00 10 00  42                       |....E...B|[0m
+[0;32mI (58286) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 810.70 ppm
+
+[0m
+[0;32mI (59386) test: Read Values: temp = 27.6100, hum = 47.5156[0m
+[0;32mI (60296) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (60756) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (60756) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 27 ug/m3[0m
+[0;32mI (60756) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 27.00 ug/m3[0m
+[0;32mI (61326) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (61326) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 df 45 00 10 00  44                       |....E...D|[0m
+[0;32mI (61326) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 808.50 ppm
+
+[0m
+[0;32mI (61486) test: Read Values: temp = 27.6100, hum = 47.4785[0m
+[0;32mI (63336) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (63586) test: Read Values: temp = 27.6000, hum = 47.5264[0m
+[0;32mI (64366) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (64366) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 dc 45 00 10 00  47                       |....E...G|[0m
+[0;32mI (64366) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 805.20 ppm
+
+[0m
+[0;32mI (64766) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (64766) PMS7003: PM1.0: 16 ug/m3, PM2.5: 22 ug/m3, PM10: 26 ug/m3[0m
+[0;32mI (64766) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 26.00 ug/m3[0m
+[0;32mI (65686) test: Read Values: temp = 27.6000, hum = 47.5020[0m
+[0;32mI (66376) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (67406) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (67406) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 da 45 00 10 00  49                       |....E...I|[0m
+[0;32mI (67406) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 803.00 ppm
+
+[0m
+[0;32mI (67786) test: Read Values: temp = 27.5900, hum = 47.5381[0m
+[0;32mI (68776) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (68776) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 26 ug/m3[0m
+[0;32mI (68776) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 26.00 ug/m3[0m
+[0;32mI (69416) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (69886) test: Read Values: temp = 27.5900, hum = 47.5986[0m
+[0;32mI (70446) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (70446) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d8 45 00 10 00  4b                       |....E...K|[0m
+[0;32mI (70446) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 800.80 ppm
+
+[0m
+[0;32mI (71986) test: Read Values: temp = 27.5800, hum = 47.7432[0m
+[0;32mI (72456) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (72786) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (72786) PMS7003: PM1.0: 16 ug/m3, PM2.5: 22 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (72786) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (73486) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (73486) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d7 45 00 10 00  4c                       |....E...L|[0m
+[0;32mI (73486) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 799.70 ppm
+
+[0m
+[0;32mI (74086) test: Read Values: temp = 27.5800, hum = 47.9492[0m
+[0;32mI (75496) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (76186) test: Read Values: temp = 27.5800, hum = 48.0713[0m
+[0;32mI (76526) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (76526) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d5 45 00 10 00  4e                       |....E...N|[0m
+[0;32mI (76526) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 797.50 ppm
+
+[0m
+[0;32mI (76796) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (76796) PMS7003: PM1.0: 15 ug/m3, PM2.5: 21 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (76796) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (78286) test: Read Values: temp = 27.5800, hum = 47.9736[0m
+[0;32mI (78536) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (79566) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (79566) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d5 45 00 10 00  4e                       |....E...N|[0m
+[0;32mI (79566) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 797.50 ppm
+
+[0m
+[0;32mI (80386) test: Read Values: temp = 27.5800, hum = 47.6826[0m
+[0;32mI (80806) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (80806) PMS7003: PM1.0: 15 ug/m3, PM2.5: 21 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (80806) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (81576) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (82486) test: Read Values: temp = 27.5800, hum = 47.6094[0m
+[0;32mI (82606) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (82606) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d4 45 00 10 00  4f                       |....E...O|[0m
+[0;32mI (82606) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 796.40 ppm
+
+[0m
+[0;32mI (84586) test: Read Values: temp = 27.5800, hum = 47.5977[0m
+[0;32mI (84616) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (84816) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (84816) PMS7003: PM1.0: 15 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (84816) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (85646) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (85646) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d3 45 00 10 00  50                       |....E...P|[0m
+[0;32mI (85646) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 795.30 ppm
+
+[0m
+[0;32mI (86686) test: Read Values: temp = 27.5800, hum = 47.6221[0m
+[0;32mI (87656) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (88686) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (88686) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d1 45 00 10 00  52                       |....E...R|[0m
+[0;32mI (88686) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 793.10 ppm
+
+[0m
+[0;32mI (88786) test: Read Values: temp = 27.5800, hum = 47.5605[0m
+[0;32mI (88826) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (88826) PMS7003: PM1.0: 14 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (88826) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (90696) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (90886) test: Read Values: temp = 27.5800, hum = 47.7676[0m
+[0;32mI (91726) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (91726) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (91726) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (92836) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (92836) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (92836) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (92986) test: Read Values: temp = 27.5800, hum = 48.0225[0m
+[0;32mI (93736) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (94766) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (94766) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cf 45 00 10 00  54                       |....E...T|[0m
+[0;32mI (94766) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 790.90 ppm
+
+[0m
+[0;32mI (95086) test: Read Values: temp = 27.5800, hum = 47.7910[0m
+[0;32mI (96776) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (96846) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (96846) PMS7003: PM1.0: 16 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (96846) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (97186) test: Read Values: temp = 27.5800, hum = 47.7061[0m
+[0;32mI (97806) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (97806) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cd 45 00 10 00  56                       |....E...V|[0m
+[0;32mI (97806) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 788.70 ppm
+
+[0m
+[0;32mI (99286) test: Read Values: temp = 27.5800, hum = 47.6572[0m
+[0;32mI (99816) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (100846) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (100846) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ce 45 00 10 00  55                       |....E...U|[0m
+[0;32mI (100846) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 789.80 ppm
+
+[0m
+[0;32mI (100856) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (100856) PMS7003: PM1.0: 15 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (100866) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (101386) test: Read Values: temp = 27.5700, hum = 47.7295[0m
+[0;32mI (102856) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (103486) test: Read Values: temp = 27.5700, hum = 47.8994[0m
+[0;32mI (103886) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (103886) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cd 45 00 10 00  56                       |....E...V|[0m
+[0;32mI (103886) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 788.70 ppm
+
+[0m
+[0;32mI (104876) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (104876) PMS7003: PM1.0: 15 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (104876) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (105586) test: Read Values: temp = 27.5700, hum = 48.0088[0m
+[0;32mI (105896) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (106926) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (106926) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cc 45 00 10 00  57                       |....E...W|[0m
+[0;32mI (106926) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 787.60 ppm
+
+[0m
+[0;32mI (107686) test: Read Values: temp = 27.5600, hum = 48.1543[0m
+[0;32mI (108886) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (108886) PMS7003: PM1.0: 15 ug/m3, PM2.5: 18 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (108886) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (108936) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (109786) test: Read Values: temp = 27.5600, hum = 48.2031[0m
+[0;32mI (109966) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (109966) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ca 45 00 10 00  59                       |....E...Y|[0m
+[0;32mI (109966) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 785.40 ppm
+
+[0m
+[0;32mI (111886) test: Read Values: temp = 27.5600, hum = 48.1895[0m
+[0;32mI (111976) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (112896) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (112896) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (112896) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (113006) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (113006) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ca 45 00 10 00  59                       |....E...Y|[0m
+[0;32mI (113006) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 785.40 ppm
+
+[0m
+[0;32mI (113986) test: Read Values: temp = 27.5600, hum = 48.2871[0m
+[0;32mI (115016) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (116046) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (116046) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c9 45 00 10 00  5a                       |....E...Z|[0m
+[0;32mI (116046) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 784.30 ppm
+
+[0m
+[0;32mI (116086) test: Read Values: temp = 27.5600, hum = 48.1777[0m
+[0;32mI (116906) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (116906) PMS7003: PM1.0: 14 ug/m3, PM2.5: 18 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (116906) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (118056) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (118186) test: Read Values: temp = 27.5500, hum = 47.9697[0m
+[0;32mI (119086) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (119086) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c7 45 00 10 00  5c                       |....E...\|[0m
+[0;32mI (119086) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 782.10 ppm
+
+[0m
+[0;32mI (120286) test: Read Values: temp = 27.5500, hum = 47.8975[0m
+[0;32mI (120916) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (120916) PMS7003: PM1.0: 15 ug/m3, PM2.5: 20 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (120916) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (121096) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (122126) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (122126) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c4 45 00 10 00  5f                       |....E..._|[0m
+[0;32mI (122126) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 778.80 ppm
+
+[0m
+[0;32mI (122386) test: Read Values: temp = 27.5500, hum = 47.7021[0m
+[0;32mI (124136) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (124486) test: Read Values: temp = 27.5500, hum = 47.6777[0m
+[0;32mI (124926) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (124926) PMS7003: PM1.0: 15 ug/m3, PM2.5: 21 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (124926) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (125166) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (125166) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c1 45 00 10 00  62                       |....E...b|[0m
+[0;32mI (125166) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 775.50 ppm
+
+[0m
+[0;32mI (126586) test: Read Values: temp = 27.5400, hum = 47.6660[0m
+[0;32mI (127176) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (128206) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (128206) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 be 45 00 10 00  65                       |....E...e|[0m
+[0;32mI (128206) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 772.20 ppm
+
+[0m
+[0;32mI (128686) test: Read Values: temp = 27.5400, hum = 47.6289[0m
+[0;32mI (128936) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (128936) PMS7003: PM1.0: 16 ug/m3, PM2.5: 23 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (128936) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 23.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (130216) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (130786) test: Read Values: temp = 27.5400, hum = 47.5195[0m
+[0;32mI (131246) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (131246) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 bb 45 00 10 00  68                       |....E...h|[0m
+[0;32mI (131246) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 768.90 ppm
+
+[0m
+[0;32mI (132886) test: Read Values: temp = 27.5300, hum = 47.7500[0m
+[0;32mI (132946) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (132946) PMS7003: PM1.0: 16 ug/m3, PM2.5: 25 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (132946) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 25.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (133256) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (134286) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (134286) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b9 45 00 10 00  6a                       |....E...j|[0m
+[0;32mI (134286) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 766.70 ppm
+
+[0m
+[0;32mI (134986) test: Read Values: temp = 27.5300, hum = 47.8467[0m
+[0;32mI (136296) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (136956) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (136956) PMS7003: PM1.0: 16 ug/m3, PM2.5: 25 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (136956) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 25.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (137076) test: Read Values: temp = 27.5300, hum = 48.9385[0m
+[0;32mI (137326) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (137326) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b6 45 00 10 00  6d                       |....E...m|[0m
+[0;32mI (137326) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 763.40 ppm
+
+[0m
+[0;32mI (139186) test: Read Values: temp = 27.5200, hum = 48.2949[0m
+[0;32mI (139336) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (140366) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (140366) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (140366) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (140966) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (140966) PMS7003: PM1.0: 17 ug/m3, PM2.5: 25 ug/m3, PM10: 25 ug/m3[0m
+[0;32mI (140966) PMS7003: Calibrated PM1.0: 17.00 ug/m3, PM2.5: 25.00 ug/m3, PM10: 25.00 ug/m3[0m
+[0;32mI (141286) test: Read Values: temp = 27.5200, hum = 48.0879[0m
+[0;32mI (142376) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (143386) test: Read Values: temp = 27.5100, hum = 48.0029[0m
+[0;32mI (143406) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (143406) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (143406) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (144976) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (144976) PMS7003: PM1.0: 16 ug/m3, PM2.5: 23 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (144976) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 23.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (145416) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (145486) test: Read Values: temp = 27.5100, hum = 47.9785[0m
+[0;32mI (146446) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (146446) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (146446) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (147586) test: Read Values: temp = 27.5100, hum = 47.9414[0m
+[0;32mI (148456) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (148986) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (148986) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (148986) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (149486) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (149486) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (149486) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (149686) test: Read Values: temp = 27.5000, hum = 47.9287[0m
+[0;32mI (151496) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (151786) test: Read Values: temp = 27.5000, hum = 48.0869[0m
+[0;32mI (152526) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (152526) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (152526) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (152996) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (152996) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (152996) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (153886) test: Read Values: temp = 27.5000, hum = 48.1230[0m
+[0;32mI (154536) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (155566) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (155566) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (155566) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (155986) test: Read Values: temp = 27.5000, hum = 48.1963[0m
+[0;32mI (157006) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (157006) PMS7003: PM1.0: 15 ug/m3, PM2.5: 18 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (157006) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (157576) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (158086) test: Read Values: temp = 27.5000, hum = 48.0020[0m
+[0;32mI (158606) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (158606) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (158606) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (160186) test: Read Values: temp = 27.5000, hum = 47.9658[0m
+[0;32mI (160616) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (161016) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (161016) PMS7003: PM1.0: 14 ug/m3, PM2.5: 17 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (161016) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 17.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (161646) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (161646) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (161646) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (162286) test: Read Values: temp = 27.5000, hum = 47.7959[0m
+[0;32mI (163656) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (164386) test: Read Values: temp = 27.5100, hum = 48.0508[0m
+[0;32mI (164686) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (164686) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b5 45 00 10 00  6e                       |....E...n|[0m
+[0;32mI (164686) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 762.30 ppm
+
+[0m
+[0;32mI (165026) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (165026) PMS7003: PM1.0: 14 ug/m3, PM2.5: 18 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (165026) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (166486) test: Read Values: temp = 27.5100, hum = 48.2930[0m
+[0;32mI (166696) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (167726) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (167726) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b6 45 00 10 00  6d                       |....E...m|[0m
+[0;32mI (167726) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 763.40 ppm
+
+[0m
+[0;32mI (168586) test: Read Values: temp = 27.5100, hum = 48.1729[0m
+[0;32mI (169036) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (169036) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (169036) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (169736) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (170686) test: Read Values: temp = 27.5100, hum = 47.9541[0m
+[0;32mI (170766) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (170766) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b7 45 00 10 00  6c                       |....E...l|[0m
+[0;32mI (170766) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 764.50 ppm
+
+[0m
+[0;32mI (172776) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (172786) test: Read Values: temp = 27.5100, hum = 47.7236[0m
+[0;32mI (173046) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (173046) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (173046) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (173806) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (173806) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b7 45 00 10 00  6c                       |....E...l|[0m
+[0;32mI (173806) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 764.50 ppm
+
+[0m
+[0;32mI (174886) test: Read Values: temp = 27.5100, hum = 47.5898[0m
+[0;32mI (175816) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (176846) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (176846) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b7 45 00 10 00  6c                       |....E...l|[0m
+[0;32mI (176846) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 764.50 ppm
+
+[0m
+[0;32mI (176986) test: Read Values: temp = 27.5100, hum = 47.6875[0m
+[0;32mI (177056) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (177056) PMS7003: PM1.0: 14 ug/m3, PM2.5: 20 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (177056) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (178856) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (179086) test: Read Values: temp = 27.5100, hum = 47.8447[0m
+[0;32mI (179886) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (179886) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b8 45 00 10 00  6b                       |....E...k|[0m
+[0;32mI (179886) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 765.60 ppm
+
+[0m
+[0;32mI (181066) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (181066) PMS7003: PM1.0: 15 ug/m3, PM2.5: 21 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (181066) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (181186) test: Read Values: temp = 27.5100, hum = 47.8574[0m
+[0;32mI (181896) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (182926) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (182926) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b8 45 00 10 00  6b                       |....E...k|[0m
+[0;32mI (182926) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 765.60 ppm
+
+[0m
+[0;32mI (183276) test: Read Values: temp = 27.5100, hum = 47.9180[0m
+[0;32mI (184936) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (185076) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (185076) PMS7003: PM1.0: 15 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (185076) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (185386) test: Read Values: temp = 27.5100, hum = 47.9785[0m
+[0;32mI (185966) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (185966) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b8 45 00 10 00  6b                       |....E...k|[0m
+[0;32mI (185966) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 765.60 ppm
+
+[0m
+[0;32mI (187486) test: Read Values: temp = 27.5100, hum = 48.0146[0m
+[0;32mI (187976) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (189006) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (189006) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 b9 45 00 10 00  6a                       |....E...j|[0m
+[0;32mI (189006) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 766.70 ppm
+
+[0m
+[0;32mI (189086) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (189086) PMS7003: PM1.0: 15 ug/m3, PM2.5: 21 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (189086) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (189586) test: Read Values: temp = 27.5100, hum = 47.8574[0m
+[0;32mI (191016) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (191676) test: Read Values: temp = 27.5100, hum = 47.7842[0m
+[0;32mI (192046) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (192046) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 bc 45 00 10 00  67                       |....E...g|[0m
+[0;32mI (192046) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 770.00 ppm
+
+[0m
+[0;32mI (193096) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (193096) PMS7003: PM1.0: 15 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (193096) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (193786) test: Read Values: temp = 27.5100, hum = 47.7842[0m
+[0;32mI (194056) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (195086) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (195086) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 be 45 00 10 00  65                       |....E...e|[0m
+[0;32mI (195086) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 772.20 ppm
+
+[0m
+[0;32mI (195886) test: Read Values: temp = 27.5200, hum = 47.9424[0m
+[0;32mI (197096) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (197106) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (197106) PMS7003: PM1.0: 14 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (197106) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (197986) test: Read Values: temp = 27.5200, hum = 47.8936[0m
+[0;32mI (198126) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (198126) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c0 45 00 10 00  63                       |....E...c|[0m
+[0;32mI (198126) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 774.40 ppm
+
+[0m
+[0;32mI (200086) test: Read Values: temp = 27.5200, hum = 47.7109[0m
+[0;32mI (200136) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (201116) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (201116) PMS7003: PM1.0: 14 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (201116) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (201166) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (201166) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c2 45 00 10 00  61                       |....E...a|[0m
+[0;32mI (201166) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 776.60 ppm
+
+[0m
+[0;32mI (202186) test: Read Values: temp = 27.5200, hum = 47.6504[0m
+[0;32mI (203176) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (204206) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (204206) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c6 45 00 10 00  5d                       |....E...]|[0m
+[0;32mI (204206) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 781.00 ppm
+
+[0m
+[0;32mI (204286) test: Read Values: temp = 27.5200, hum = 47.6260[0m
+[0;32mI (205126) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (205126) PMS7003: PM1.0: 14 ug/m3, PM2.5: 18 ug/m3, PM10: 18 ug/m3[0m
+[0;32mI (205126) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 18.00 ug/m3, PM10: 18.00 ug/m3[0m
+[0;32mI (206216) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (206386) test: Read Values: temp = 27.5200, hum = 47.6260[0m
+[0;32mI (207246) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (207246) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 c8 45 00 10 00  5b                       |....E...[|[0m
+[0;32mI (207246) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 783.20 ppm
+
+[0m
+[0;32mI (208486) test: Read Values: temp = 27.5200, hum = 47.3838[0m
+[0;32mI (209136) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (209136) PMS7003: PM1.0: 16 ug/m3, PM2.5: 19 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (209136) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (209256) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (210286) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (210286) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cb 45 00 10 00  58                       |....E...X|[0m
+[0;32mI (210286) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 786.50 ppm
+
+[0m
+[0;32mI (210586) test: Read Values: temp = 27.5200, hum = 47.5781[0m
+[0;32mI (212296) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (212676) test: Read Values: temp = 27.5200, hum = 47.5781[0m
+[0;32mI (213146) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (213146) PMS7003: PM1.0: 17 ug/m3, PM2.5: 21 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (213146) PMS7003: Calibrated PM1.0: 17.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (213326) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (213326) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cc 45 00 10 00  57                       |....E...W|[0m
+[0;32mI (213326) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 787.60 ppm
+
+[0m
+[0;32mI (214786) test: Read Values: temp = 27.5200, hum = 47.6748[0m
+[0;32mI (215336) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (216366) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (216366) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cd 45 00 10 00  56                       |....E...V|[0m
+[0;32mI (216366) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 788.70 ppm
+
+[0m
+[0;32mI (216886) test: Read Values: temp = 27.5200, hum = 47.7842[0m
+[0;32mI (217156) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (217156) PMS7003: PM1.0: 18 ug/m3, PM2.5: 21 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (217156) PMS7003: Calibrated PM1.0: 18.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (218376) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (218986) test: Read Values: temp = 27.5200, hum = 47.8818[0m
+[0;32mI (219406) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (219406) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ce 45 00 10 00  55                       |....E...U|[0m
+[0;32mI (219406) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 789.80 ppm
+
+[0m
+[0;32mI (221086) test: Read Values: temp = 27.5200, hum = 47.6387[0m
+[0;32mI (221166) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (221166) PMS7003: PM1.0: 18 ug/m3, PM2.5: 22 ug/m3, PM10: 22 ug/m3[0m
+[0;32mI (221166) PMS7003: Calibrated PM1.0: 18.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 22.00 ug/m3[0m
+[0;32mI (221416) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (222446) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (222446) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cf 45 00 10 00  54                       |....E...T|[0m
+[0;32mI (222446) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 790.90 ppm
+
+[0m
+[0;32mI (223186) test: Read Values: temp = 27.5200, hum = 47.7354[0m
+[0;32mI (224456) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (225176) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (225176) PMS7003: PM1.0: 18 ug/m3, PM2.5: 22 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (225176) PMS7003: Calibrated PM1.0: 18.00 ug/m3, PM2.5: 22.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (225286) test: Read Values: temp = 27.5200, hum = 47.6875[0m
+[0;32mI (225486) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (225486) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cf 45 00 10 00  54                       |....E...T|[0m
+[0;32mI (225486) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 790.90 ppm
+
+[0m
+[0;32mI (227386) test: Read Values: temp = 27.5200, hum = 47.9053[0m
+[0;32mI (227496) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (228526) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (228526) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (228526) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (229186) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (229186) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (229186) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (229486) test: Read Values: temp = 27.5200, hum = 47.8936[0m
+[0;32mI (230536) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (231566) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (231566) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (231566) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (231586) test: Read Values: temp = 27.5200, hum = 47.7842[0m
+[0;32mI (233196) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (233196) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (233196) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (233576) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (233686) test: Read Values: temp = 27.5200, hum = 47.6992[0m
+[0;32mI (234606) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (234606) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (234606) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (235786) test: Read Values: temp = 27.5200, hum = 47.6748[0m
+[0;32mI (236616) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (237206) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (237206) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 22 ug/m3[0m
+[0;32mI (237206) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 22.00 ug/m3[0m
+[0;32mI (237646) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (237646) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (237646) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (237886) test: Read Values: temp = 27.5200, hum = 47.7236[0m
+[0;32mI (239656) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (239986) test: Read Values: temp = 27.5200, hum = 47.6396[0m
+[0;32mI (240686) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (240686) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 10 00  53                       |....E...S|[0m
+[0;32mI (240686) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (241216) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (241216) PMS7003: PM1.0: 14 ug/m3, PM2.5: 19 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (241216) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (242086) test: Read Values: temp = 27.5200, hum = 47.4941[0m
+[0;32mI (242696) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (243726) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (243726) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 d0 45 00 11 00  52                       |....E...R|[0m
+[0;32mI (243726) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 792.00 ppm
+
+[0m
+[0;32mI (244186) test: Read Values: temp = 27.5200, hum = 47.5303[0m
+[0;32mI (245226) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (245226) PMS7003: PM1.0: 14 ug/m3, PM2.5: 19 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (245226) PMS7003: Calibrated PM1.0: 14.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (245736) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (246286) test: Read Values: temp = 27.5200, hum = 47.6035[0m
+[0;32mI (246766) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (246766) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cf 45 00 11 00  53                       |....E...S|[0m
+[0;32mI (246766) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 790.90 ppm
+
+[0m
+[0;32mI (248386) test: Read Values: temp = 27.5200, hum = 47.4082[0m
+[0;32mI (248776) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (249236) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (249236) PMS7003: PM1.0: 15 ug/m3, PM2.5: 19 ug/m3, PM10: 19 ug/m3[0m
+[0;32mI (249236) PMS7003: Calibrated PM1.0: 15.00 ug/m3, PM2.5: 19.00 ug/m3, PM10: 19.00 ug/m3[0m
+[0;32mI (249806) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (249806) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ce 45 00 11 00  54                       |....E...T|[0m
+[0;32mI (249806) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 789.80 ppm
+
+[0m
+[0;32mI (250476) test: Read Values: temp = 27.5200, hum = 47.7842[0m
+[0;32mI (251816) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (252586) test: Read Values: temp = 27.5200, hum = 47.9785[0m
+[0;32mI (252846) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (252846) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 ce 45 00 11 00  54                       |....E...T|[0m
+[0;32mI (252846) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 789.80 ppm
+
+[0m
+[0;32mI (253246) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (253246) PMS7003: PM1.0: 16 ug/m3, PM2.5: 21 ug/m3, PM10: 21 ug/m3[0m
+[0;32mI (253246) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 21.00 ug/m3, PM10: 21.00 ug/m3[0m
+[0;32mI (254686) test: Read Values: temp = 27.5200, hum = 47.9297[0m
+[0;32mI (254856) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (255886) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (255886) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cd 45 00 11 00  55                       |....E...U|[0m
+[0;32mI (255886) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 788.70 ppm
+
+[0m
+[0;32mI (256786) test: Read Values: temp = 27.5200, hum = 47.6748[0m
+[0;32mI (257256) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (257256) PMS7003: PM1.0: 16 ug/m3, PM2.5: 20 ug/m3, PM10: 20 ug/m3[0m
+[0;32mI (257256) PMS7003: Calibrated PM1.0: 16.00 ug/m3, PM2.5: 20.00 ug/m3, PM10: 20.00 ug/m3[0m
+[0;32mI (257896) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (258886) test: Read Values: temp = 27.5100, hum = 47.7598[0m
+[0;32mI (258926) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (258926) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cc 45 00 11 00  56                       |....E...V|[0m
+[0;32mI (258926) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 787.60 ppm
+
+[0m
+[0;32mI (260936) TX_MHZ14A_TASK: Wrote 9 bytes[0m
+[0;32mI (260986) test: Read Values: temp = 27.5100, hum = 47.5166[0m
+[0;32mI (261266) PMS7003: PMS7003 sensor read data successful.[0m
+[0;32mI (261266) PMS7003: PM1.0: 17 ug/m3, PM2.5: 23 ug/m3, PM10: 23 ug/m3[0m
+[0;32mI (261266) PMS7003: Calibrated PM1.0: 17.00 ug/m3, PM2.5: 23.00 ug/m3, PM10: 23.00 ug/m3[0m
+[0;32mI (261966) RX_MHZ14A_TASK: Read 9 bytes: '���E'[0m
+[0;32mI (261966) RX_MHZ14A_TASK: 0x3ffdc8bc   ff 86 02 cb 45 00 11 00  57                       |....E...W|[0m
+[0;32mI (261966) RX_MHZ14A_TASK: 
+
+	Calibrated CO2 Concentration: 786.50 ppm
+
+[0m
+[0;32mI (263086) test: Read Values: temp = 27.5100, hum = 47.6016[0m
+[0;32mI (263976) TX_MHZ14A_TASK: Wrote 9 bytes[0m

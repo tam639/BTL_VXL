@@ -1,0 +1,2478 @@
+e�&�+
+B��J��ѹespets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30370h (197488) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=00040398 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004424c vaddr=40080000 size=0bdcch ( 48588) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8274h (885364) map[0m
+[0;32mI (501) esp_image: segment 4: paddr=0012829c vaddr=4008bdcc size=0cb9ch ( 52124) load[0m
+[0;32mI (534) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (534) boot: Disabling RNG early entropy source...[0m
+[0;32mI (546) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (567) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (573) cpu_start: ELF file SHA256:  b69511195...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D00 len 0001F300 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (638) spi_flash: detected chip: generic[0m
+[0;32mI (641) spi_flash: flash io: dio[0m
+[0;33mW (645) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d00, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+[0;32mI (900) example: Turn off LCD backlight[0m
+[0;32mI (900) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (900) example: Initialize SPI bus[0m
+[0;32mI (910) example: Install panel IO[0m
+[0;32mI (910) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (920) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (930) wifi:state: init -> auth (b0)
+[0;32mI (930) example: Install ILI9341 panel driver[0m
+[0;32mI (930) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (940) ili9341: LCD panel create success, version: 1.2.0[0m
+I (970) wifi:state: auth -> assoc (0)
+I (1050) wifi:state: assoc -> run (10)
+[0;32mI (1070) example: Turn on LCD backlight[0m
+[0;32mI (1070) example: Initialize LVGL library[0m
+[0;32mI (1070) example: Register display driver to LVGL[0m
+[0;32mI (1080) example: Install LVGL tick timer[0m
+I (1080) wifi:state: run -> init (0)
+I (1080) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1130) smartconfig: SC version: V3.0.1
+I (1130) smartconfig: scan status 1
+W (1180) wifi:sta_scan: STA is connecting, scan are not allowed!
+E (1180) smartconfig: promis scan ret 12294
+I (1180) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1180) wifi:state: init -> auth (b0)
+I (1280) wifi:state: auth -> assoc (0)
+I (1380) wifi:state: assoc -> run (10)
+I (1500) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1500) wifi:security: WPA2-PSK, phy: bgn, rssi: -74
+I (1510) wifi:pm start, type: 1
+
+I (1510) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1540) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2520) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2520) MQTT_PROJECT: WiFi Connected to app[0m
+[0;32mI (2530) main_task: Returned from app_main()[0m
+I (2560) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2620) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (31780) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (31780) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (31780) mqtt_client: Error to resend data [0m
+[0;32mI (31780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (31790) mqtt_client: Client force reconnect requested[0m
+[0;32mI (32040) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (42780) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (42780) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (42780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (42780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (53780) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (53780) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (53780) mqtt_client: MQTT connect failed[0m
+[0;32mI (53780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (53790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (64780) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (64780) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (64780) mqtt_client: MQTT connect failed[0m
+[0;32mI (64780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (64790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (74810) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (74810) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (74810) mqtt_client: Error transport connect[0m
+[0;32mI (74810) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (74820) mqtt_client: Client force reconnect requested[0m
+[0;32mI (76370) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (103280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (103280) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (103280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103290) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103300) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103310) mqtt_client: Error transport connect[0m
+[0;32mI (103310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103340) mqtt_client: Error transport connect[0m
+[0;32mI (103340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103350) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103360) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103370) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103370) mqtt_client: Error transport connect[0m
+[0;32mI (103380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103390) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103400) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103410) mqtt_client: Error transport connect[0m
+[0;32mI (103410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103420) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103430) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103440) mqtt_client: Error transport connect[0m
+[0;32mI (103440) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103460) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103470) mqtt_client: Error transport connect[0m
+[0;32mI (103480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103490) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103500) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103500) mqtt_client: Error transport connect[0m
+[0;32mI (103510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103520) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103540) mqtt_client: Error transport connect[0m
+[0;32mI (103540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103550) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103570) mqtt_client: Error transport connect[0m
+[0;32mI (103580) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103590) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103600) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103600) mqtt_client: Error transport connect[0m
+[0;32mI (103610) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103620) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103640) mqtt_client: Error transport connect[0m
+[0;32mI (103640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103650) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103660) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103670) mqtt_client: Error transport connect[0m
+[0;32mI (103680) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103690) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103700) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103700) mqtt_client: Error transport connect[0m
+[0;32mI (103710) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103730) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103740) mqtt_client: Error transport connect[0m
+[0;32mI (103740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103770) mqtt_client: Error transport connect[0m
+[0;32mI (103780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103790) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103800) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103800) mqtt_client: Error transport connect[0m
+[0;32mI (103810) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103810) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103820) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103830) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103840) mqtt_client: Error transport connect[0m
+[0;32mI (103840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103870) mqtt_client: Error transport connect[0m
+[0;32mI (103870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103890) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103900) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103900) mqtt_client: Error transport connect[0m
+[0;32mI (103910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103920) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103930) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103940) mqtt_client: Error transport connect[0m
+[0;32mI (103940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (103960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (103970) mqtt_client: Error transport connect[0m
+[0;32mI (103970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (103980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (103990) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104000) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104000) mqtt_client: Error transport connect[0m
+[0;32mI (104010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104020) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104030) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104040) mqtt_client: Error transport connect[0m
+[0;32mI (104040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104060) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104070) mqtt_client: Error transport connect[0m
+[0;32mI (104070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104090) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104100) mqtt_client: Error transport connect[0m
+[0;32mI (104110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104120) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104130) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104130) mqtt_client: Error transport connect[0m
+[0;32mI (104140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104170) mqtt_client: Error transport connect[0m
+[0;32mI (104170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104200) mqtt_client: Error transport connect[0m
+[0;32mI (104210) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104230) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104230) mqtt_client: Error transport connect[0m
+[0;32mI (104240) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104270) mqtt_client: Error transport connect[0m
+[0;32mI (104270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104290) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104300) mqtt_client: Error transport connect[0m
+[0;32mI (104310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104330) mqtt_client: Error transport connect[0m
+[0;32mI (104340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104360) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104370) mqtt_client: Error transport connect[0m
+[0;32mI (104370) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104380) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104390) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104400) mqtt_client: Error transport connect[0m
+[0;32mI (104410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104430) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104430) mqtt_client: Error transport connect[0m
+[0;32mI (104440) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104440) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104450) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104470) mqtt_client: Error transport connect[0m
+[0;32mI (104470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104480) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104490) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104500) mqtt_client: Error transport connect[0m
+[0;32mI (104500) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104520) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104530) mqtt_client: Error transport connect[0m
+[0;32mI (104540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104540) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104570) mqtt_client: Error transport connect[0m
+[0;32mI (104570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104580) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104590) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104600) mqtt_client: Error transport connect[0m
+[0;32mI (104600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104620) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104630) mqtt_client: Error transport connect[0m
+[0;32mI (104640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104660) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104670) mqtt_client: Error transport connect[0m
+[0;32mI (104670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104680) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104690) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104700) mqtt_client: Error transport connect[0m
+[0;32mI (104700) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104720) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104730) mqtt_client: Error transport connect[0m
+[0;32mI (104740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104760) mqtt_client: Error transport connect[0m
+[0;32mI (104770) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104780) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104800) mqtt_client: Error transport connect[0m
+[0;32mI (104800) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104810) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104810) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104820) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104830) mqtt_client: Error transport connect[0m
+[0;32mI (104840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104860) mqtt_client: Error transport connect[0m
+[0;32mI (104870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104900) mqtt_client: Error transport connect[0m
+[0;32mI (104900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104910) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104920) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104930) mqtt_client: Error transport connect[0m
+[0;32mI (104940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (104960) mqtt_client: Error transport connect[0m
+[0;32mI (104970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (104970) mqtt_client: Client force reconnect requested[0m
+[0;31mE (104980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (104990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105000) mqtt_client: Error transport connect[0m
+[0;32mI (105000) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105010) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105020) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105030) mqtt_client: Error transport connect[0m
+[0;32mI (105040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105060) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105060) mqtt_client: Error transport connect[0m
+[0;32mI (105070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105070) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105080) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105100) mqtt_client: Error transport connect[0m
+[0;32mI (105100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105110) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105120) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105130) mqtt_client: Error transport connect[0m
+[0;32mI (105130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105160) mqtt_client: Error transport connect[0m
+[0;32mI (105170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105200) mqtt_client: Error transport connect[0m
+[0;32mI (105200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105210) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105220) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105230) mqtt_client: Error transport connect[0m
+[0;32mI (105230) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105260) mqtt_client: Error transport connect[0m
+[0;32mI (105270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105270) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105290) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105300) mqtt_client: Error transport connect[0m
+[0;32mI (105300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105310) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105320) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105330) mqtt_client: Error transport connect[0m
+[0;32mI (105330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105350) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105360) mqtt_client: Error transport connect[0m
+[0;32mI (105370) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105370) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105380) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105390) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105390) mqtt_client: Error transport connect[0m
+[0;32mI (105400) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105410) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105420) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105430) mqtt_client: Error transport connect[0m
+[0;32mI (105430) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105440) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105440) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105450) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105460) mqtt_client: Error transport connect[0m
+[0;32mI (105470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105470) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105480) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105490) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105490) mqtt_client: Error transport connect[0m
+[0;32mI (105500) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105500) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105510) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105520) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105530) mqtt_client: Error transport connect[0m
+[0;32mI (105530) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105540) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105540) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105550) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105560) mqtt_client: Error transport connect[0m
+[0;32mI (105570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105570) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105580) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105590) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105590) mqtt_client: Error transport connect[0m
+[0;32mI (105600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105600) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105610) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105620) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105630) mqtt_client: Error transport connect[0m
+[0;32mI (105630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105640) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105650) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105660) mqtt_client: Error transport connect[0m
+[0;32mI (105670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105680) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105690) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105690) mqtt_client: Error transport connect[0m
+[0;32mI (105700) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105700) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105710) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105720) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105730) mqtt_client: Error transport connect[0m
+[0;32mI (105730) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105740) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105750) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105760) mqtt_client: Error transport connect[0m
+[0;32mI (105760) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105770) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105780) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105790) mqtt_client: Error transport connect[0m
+[0;32mI (105800) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105800) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105810) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105820) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105830) mqtt_client: Error transport connect[0m
+[0;32mI (105830) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105840) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105850) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105860) mqtt_client: Error transport connect[0m
+[0;32mI (105860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105890) mqtt_client: Error transport connect[0m
+[0;32mI (105900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105900) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105910) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105920) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105930) mqtt_client: Error transport connect[0m
+[0;32mI (105930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105940) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105950) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105960) mqtt_client: Error transport connect[0m
+[0;32mI (105960) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105970) mqtt_client: Client force reconnect requested[0m
+[0;31mE (105980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (105990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (105990) mqtt_client: Error transport connect[0m
+[0;32mI (106000) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106000) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106010) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106020) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106020) mqtt_client: Error transport connect[0m
+[0;32mI (106030) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106040) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106050) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106060) mqtt_client: Error transport connect[0m
+[0;32mI (106060) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106070) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106070) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106080) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106090) mqtt_client: Error transport connect[0m
+[0;32mI (106100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106110) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106120) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106120) mqtt_client: Error transport connect[0m
+[0;32mI (106130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106130) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106140) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106150) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106160) mqtt_client: Error transport connect[0m
+[0;32mI (106160) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106170) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106180) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106190) mqtt_client: Error transport connect[0m
+[0;32mI (106200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106210) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106220) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106220) mqtt_client: Error transport connect[0m
+[0;32mI (106230) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106230) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106240) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106250) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106260) mqtt_client: Error transport connect[0m
+[0;32mI (106260) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106270) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106270) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106280) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106290) mqtt_client: Error transport connect[0m
+[0;32mI (106300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106310) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106320) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106320) mqtt_client: Error transport connect[0m
+[0;32mI (106330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106330) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106340) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106350) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106360) mqtt_client: Error transport connect[0m
+[0;32mI (106360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106370) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106370) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106380) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106390) mqtt_client: Error transport connect[0m
+[0;32mI (106390) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106400) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106410) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106420) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106420) mqtt_client: Error transport connect[0m
+[0;32mI (106430) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106430) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106440) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106450) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106460) mqtt_client: Error transport connect[0m
+[0;32mI (106460) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106470) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106470) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106480) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106490) mqtt_client: Error transport connect[0m
+[0;32mI (106490) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106500) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106510) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106520) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106520) mqtt_client: Error transport connect[0m
+[0;32mI (106530) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106530) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106540) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106550) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106560) mqtt_client: Error transport connect[0m
+[0;32mI (106560) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106570) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106570) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106580) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106590) mqtt_client: Error transport connect[0m
+[0;32mI (106590) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106600) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106610) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106610) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106620) mqtt_client: Error transport connect[0m
+[0;32mI (106630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106630) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106640) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106650) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106650) mqtt_client: Error transport connect[0m
+[0;32mI (106660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106670) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106680) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106690) mqtt_client: Error transport connect[0m
+[0;32mI (106690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106700) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106700) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106710) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106720) mqtt_client: Error transport connect[0m
+[0;32mI (106730) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106740) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106750) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106750) mqtt_client: Error transport connect[0m
+[0;32mI (106760) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106770) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106780) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106790) mqtt_client: Error transport connect[0m
+[0;32mI (106790) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106800) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106800) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106810) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106820) mqtt_client: Error transport connect[0m
+[0;32mI (106830) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106830) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106840) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106850) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106850) mqtt_client: Error transport connect[0m
+[0;32mI (106860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106860) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106870) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106880) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106890) mqtt_client: Error transport connect[0m
+[0;32mI (106890) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106900) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106900) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106910) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106920) mqtt_client: Error transport connect[0m
+[0;32mI (106930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106930) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106940) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106950) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106950) mqtt_client: Error transport connect[0m
+[0;32mI (106960) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106960) mqtt_client: Client force reconnect requested[0m
+[0;31mE (106970) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (106980) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106990) mqtt_client: Error transport connect[0m
+[0;32mI (106990) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107000) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107000) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107010) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107020) mqtt_client: Error transport connect[0m
+[0;32mI (107020) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107030) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107040) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107050) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107050) mqtt_client: Error transport connect[0m
+[0;32mI (107060) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107070) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107080) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107090) mqtt_client: Error transport connect[0m
+[0;32mI (107090) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107100) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107110) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107120) mqtt_client: Error transport connect[0m
+[0;32mI (107120) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107130) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107140) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107150) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107150) mqtt_client: Error transport connect[0m
+[0;32mI (107160) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107160) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107170) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107180) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107190) mqtt_client: Error transport connect[0m
+[0;32mI (107190) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107200) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107210) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107220) mqtt_client: Error transport connect[0m
+[0;32mI (107220) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107230) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107240) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107240) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107250) mqtt_client: Error transport connect[0m
+[0;32mI (107260) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107260) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107270) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107280) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107280) mqtt_client: Error transport connect[0m
+[0;32mI (107290) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107300) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107310) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107320) mqtt_client: Error transport connect[0m
+[0;32mI (107320) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107330) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107330) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107340) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107350) mqtt_client: Error transport connect[0m
+[0;32mI (107360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107360) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107370) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107380) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107380) mqtt_client: Error transport connect[0m
+[0;32mI (107390) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107390) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107400) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107410) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107420) mqtt_client: Error transport connect[0m
+[0;32mI (107420) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107430) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107430) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107440) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107450) mqtt_client: Error transport connect[0m
+[0;32mI (107460) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107460) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107470) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107480) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107480) mqtt_client: Error transport connect[0m
+[0;32mI (107490) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107490) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107500) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107510) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107520) mqtt_client: Error transport connect[0m
+[0;32mI (107520) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107530) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107530) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107540) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107550) mqtt_client: Error transport connect[0m
+[0;32mI (107560) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107560) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107570) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107580) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107580) mqtt_client: Error transport connect[0m
+[0;32mI (107590) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107590) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107600) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107610) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107620) mqtt_client: Error transport connect[0m
+[0;32mI (107620) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107630) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107630) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107640) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107650) mqtt_client: Error transport connect[0m
+[0;32mI (107650) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107660) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107670) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107680) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107680) mqtt_client: Error transport connect[0m
+[0;32mI (107690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107690) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107700) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107710) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107720) mqtt_client: Error transport connect[0m
+[0;32mI (107720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107730) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107740) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107750) mqtt_client: Error transport connect[0m
+[0;32mI (107750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107770) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107780) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107780) mqtt_client: Error transport connect[0m
+[0;32mI (107790) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107800) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107810) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107820) mqtt_client: Error transport connect[0m
+[0;32mI (107820) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107830) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107830) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107840) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107850) mqtt_client: Error transport connect[0m
+[0;32mI (107850) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107860) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107870) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107870) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107880) mqtt_client: Error transport connect[0m
+[0;32mI (107890) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107890) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107900) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107910) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107910) mqtt_client: Error transport connect[0m
+[0;32mI (107920) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107930) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107930) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107940) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107950) mqtt_client: Error transport connect[0m
+[0;32mI (107950) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107960) mqtt_client: Client force reconnect requested[0m
+[0;31mE (107960) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (107970) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107980) mqtt_client: Error transport connect[0m
+[0;32mI (107990) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (107990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108000) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108010) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108010) mqtt_client: Error transport connect[0m
+[0;32mI (108020) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108030) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108040) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108050) mqtt_client: Error transport connect[0m
+[0;32mI (108050) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108060) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108070) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108080) mqtt_client: Error transport connect[0m
+[0;32mI (108090) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108090) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108100) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108110) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108110) mqtt_client: Error transport connect[0m
+[0;32mI (108120) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108120) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108130) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108140) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108150) mqtt_client: Error transport connect[0m
+[0;32mI (108150) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108160) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108160) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108170) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108180) mqtt_client: Error transport connect[0m
+[0;32mI (108190) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108190) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108200) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108210) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108210) mqtt_client: Error transport connect[0m
+[0;32mI (108220) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108220) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108230) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108240) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108250) mqtt_client: Error transport connect[0m
+[0;32mI (108250) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108260) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108260) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108270) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108280) mqtt_client: Error transport connect[0m
+[0;32mI (108280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108300) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108310) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108310) mqtt_client: Error transport connect[0m
+[0;32mI (108320) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108330) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108340) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108350) mqtt_client: Error transport connect[0m
+[0;32mI (108350) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108360) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108360) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108370) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108380) mqtt_client: Error transport connect[0m
+[0;32mI (108380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108390) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108400) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108410) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108410) mqtt_client: Error transport connect[0m
+[0;32mI (108420) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108420) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108430) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108440) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108450) mqtt_client: Error transport connect[0m
+[0;32mI (108450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108460) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108460) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108470) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108480) mqtt_client: Error transport connect[0m
+[0;32mI (108480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108490) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108500) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108500) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108510) mqtt_client: Error transport connect[0m
+[0;32mI (108520) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108520) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108530) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108540) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108540) mqtt_client: Error transport connect[0m
+[0;32mI (108550) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108560) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108560) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108570) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108580) mqtt_client: Error transport connect[0m
+[0;32mI (108580) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108590) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108590) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108600) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108610) mqtt_client: Error transport connect[0m
+[0;32mI (108620) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108620) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108630) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108640) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108640) mqtt_client: Error transport connect[0m
+[0;32mI (108650) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108650) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108660) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108670) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108680) mqtt_client: Error transport connect[0m
+[0;32mI (108680) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108690) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108690) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108700) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108710) mqtt_client: Error transport connect[0m
+[0;32mI (108720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108720) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108730) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108740) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108740) mqtt_client: Error transport connect[0m
+[0;32mI (108750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108760) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108770) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108780) mqtt_client: Error transport connect[0m
+[0;32mI (108780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108790) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108800) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108810) mqtt_client: Error transport connect[0m
+[0;32mI (108820) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108820) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108830) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108840) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108840) mqtt_client: Error transport connect[0m
+[0;32mI (108850) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108860) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108870) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108880) mqtt_client: Error transport connect[0m
+[0;32mI (108880) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108890) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108890) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108900) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108910) mqtt_client: Error transport connect[0m
+[0;32mI (108910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108920) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108930) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108940) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108940) mqtt_client: Error transport connect[0m
+[0;32mI (108950) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108960) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (108970) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108980) mqtt_client: Error transport connect[0m
+[0;32mI (108980) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (108990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (108990) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109000) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109010) mqtt_client: Error transport connect[0m
+[0;32mI (109010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109030) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109040) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109040) mqtt_client: Error transport connect[0m
+[0;32mI (109050) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109060) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109070) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109080) mqtt_client: Error transport connect[0m
+[0;32mI (109080) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109090) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109090) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109100) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109110) mqtt_client: Error transport connect[0m
+[0;32mI (109110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109120) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109130) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109130) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109140) mqtt_client: Error transport connect[0m
+[0;32mI (109150) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109160) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109170) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109170) mqtt_client: Error transport connect[0m
+[0;32mI (109180) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109190) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109190) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109200) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109210) mqtt_client: Error transport connect[0m
+[0;32mI (109210) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109220) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109230) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109240) mqtt_client: Error transport connect[0m
+[0;32mI (109250) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109250) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109260) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109270) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109270) mqtt_client: Error transport connect[0m
+[0;32mI (109280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109290) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109300) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109310) mqtt_client: Error transport connect[0m
+[0;32mI (109310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109340) mqtt_client: Error transport connect[0m
+[0;32mI (109350) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109350) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109360) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109370) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109370) mqtt_client: Error transport connect[0m
+[0;32mI (109380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109390) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109400) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109410) mqtt_client: Error transport connect[0m
+[0;32mI (109410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109420) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109430) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109440) mqtt_client: Error transport connect[0m
+[0;32mI (109450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109460) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109470) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109470) mqtt_client: Error transport connect[0m
+[0;32mI (109480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109490) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109500) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109510) mqtt_client: Error transport connect[0m
+[0;32mI (109510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109520) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109520) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109540) mqtt_client: Error transport connect[0m
+[0;32mI (109540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109550) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109560) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109570) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109570) mqtt_client: Error transport connect[0m
+[0;32mI (109580) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109590) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109600) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109610) mqtt_client: Error transport connect[0m
+[0;32mI (109610) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109620) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109620) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109640) mqtt_client: Error transport connect[0m
+[0;32mI (109640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109650) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109660) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109670) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109670) mqtt_client: Error transport connect[0m
+[0;32mI (109680) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109690) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109700) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109710) mqtt_client: Error transport connect[0m
+[0;32mI (109710) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109720) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109730) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109740) mqtt_client: Error transport connect[0m
+[0;32mI (109740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109760) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109770) mqtt_client: Error transport connect[0m
+[0;32mI (109780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109790) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109800) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109800) mqtt_client: Error transport connect[0m
+[0;32mI (109810) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109820) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109820) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109830) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109840) mqtt_client: Error transport connect[0m
+[0;32mI (109840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109870) mqtt_client: Error transport connect[0m
+[0;32mI (109880) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109890) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109900) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109900) mqtt_client: Error transport connect[0m
+[0;32mI (109910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109920) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109930) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109940) mqtt_client: Error transport connect[0m
+[0;32mI (109940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (109960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (109970) mqtt_client: Error transport connect[0m
+[0;32mI (109980) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (109980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (109990) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110000) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110000) mqtt_client: Error transport connect[0m
+[0;32mI (110010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110020) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110030) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110040) mqtt_client: Error transport connect[0m
+[0;32mI (110040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110060) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110070) mqtt_client: Error transport connect[0m
+[0;32mI (110080) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110090) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110100) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110100) mqtt_client: Error transport connect[0m
+[0;32mI (110110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110120) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110130) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110140) mqtt_client: Error transport connect[0m
+[0;32mI (110140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110170) mqtt_client: Error transport connect[0m
+[0;32mI (110170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110190) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110200) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110200) mqtt_client: Error transport connect[0m
+[0;32mI (110210) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110230) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110240) mqtt_client: Error transport connect[0m
+[0;32mI (110240) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110250) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110270) mqtt_client: Error transport connect[0m
+[0;32mI (110270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110290) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110300) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110300) mqtt_client: Error transport connect[0m
+[0;32mI (110310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110340) mqtt_client: Error transport connect[0m
+[0;32mI (110340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110350) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110360) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110370) mqtt_client: Error transport connect[0m
+[0;32mI (110370) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110390) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110390) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110400) mqtt_client: Error transport connect[0m
+[0;32mI (110410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110430) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110430) mqtt_client: Error transport connect[0m
+[0;32mI (110440) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110450) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110470) mqtt_client: Error transport connect[0m
+[0;32mI (110470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110490) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110490) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110500) mqtt_client: Error transport connect[0m
+[0;32mI (110510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110520) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110530) mqtt_client: Error transport connect[0m
+[0;32mI (110540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110540) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110570) mqtt_client: Error transport connect[0m
+[0;32mI (110570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110580) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110590) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110600) mqtt_client: Error transport connect[0m
+[0;32mI (110610) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110620) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110630) mqtt_client: Error transport connect[0m
+[0;32mI (110640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110660) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110670) mqtt_client: Error transport connect[0m
+[0;32mI (110670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110680) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110690) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110700) mqtt_client: Error transport connect[0m
+[0;32mI (110710) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110730) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110730) mqtt_client: Error transport connect[0m
+[0;32mI (110740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110770) mqtt_client: Error transport connect[0m
+[0;32mI (110770) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110780) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110800) mqtt_client: Error transport connect[0m
+[0;32mI (110800) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110810) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110820) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110830) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110830) mqtt_client: Error transport connect[0m
+[0;32mI (110840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110870) mqtt_client: Error transport connect[0m
+[0;32mI (110870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110900) mqtt_client: Error transport connect[0m
+[0;32mI (110900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110920) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110930) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110930) mqtt_client: Error transport connect[0m
+[0;32mI (110940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (110970) mqtt_client: Error transport connect[0m
+[0;32mI (110970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (110980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (110980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (110990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111000) mqtt_client: Error transport connect[0m
+[0;32mI (111000) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111020) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111020) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111030) mqtt_client: Error transport connect[0m
+[0;32mI (111040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111060) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111060) mqtt_client: Error transport connect[0m
+[0;32mI (111070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111080) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111100) mqtt_client: Error transport connect[0m
+[0;32mI (111100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111120) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111120) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111130) mqtt_client: Error transport connect[0m
+[0;32mI (111140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111160) mqtt_client: Error transport connect[0m
+[0;32mI (111170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111200) mqtt_client: Error transport connect[0m
+[0;32mI (111200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111220) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111230) mqtt_client: Error transport connect[0m
+[0;32mI (111240) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111260) mqtt_client: Error transport connect[0m
+[0;32mI (111270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111270) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111290) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111300) mqtt_client: Error transport connect[0m
+[0;32mI (111300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111310) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111320) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111330) mqtt_client: Error transport connect[0m
+[0;32mI (111340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111360) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111360) mqtt_client: Error transport connect[0m
+[0;32mI (111370) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111370) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111380) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111390) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111400) mqtt_client: Error transport connect[0m
+[0;32mI (111400) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111410) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111420) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111430) mqtt_client: Error transport connect[0m
+[0;32mI (111430) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111440) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111450) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111460) mqtt_client: Error transport connect[0m
+[0;32mI (111470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111470) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111480) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111490) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111500) mqtt_client: Error transport connect[0m
+[0;32mI (111500) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111510) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111520) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111530) mqtt_client: Error transport connect[0m
+[0;32mI (111530) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111540) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111560) mqtt_client: Error transport connect[0m
+[0;32mI (111570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111570) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111580) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111590) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111600) mqtt_client: Error transport connect[0m
+[0;32mI (111600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111610) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111620) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111630) mqtt_client: Error transport connect[0m
+[0;32mI (111630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111650) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111660) mqtt_client: Error transport connect[0m
+[0;32mI (111670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111680) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111690) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111690) mqtt_client: Error transport connect[0m
+[0;32mI (111700) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111710) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111720) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111730) mqtt_client: Error transport connect[0m
+[0;32mI (111730) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111750) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111760) mqtt_client: Error transport connect[0m
+[0;32mI (111770) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111770) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111780) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111790) mqtt_client: Error transport connect[0m
+[0;32mI (111800) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111800) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111810) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111820) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111830) mqtt_client: Error transport connect[0m
+[0;32mI (111830) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111840) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111850) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111860) mqtt_client: Error transport connect[0m
+[0;32mI (111870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111890) mqtt_client: Error transport connect[0m
+[0;32mI (111900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111900) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111910) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111920) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111930) mqtt_client: Error transport connect[0m
+[0;32mI (111930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111940) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111950) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111960) mqtt_client: Error transport connect[0m
+[0;32mI (111970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111970) mqtt_client: Client force reconnect requested[0m
+[0;31mE (111980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (111990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (111990) mqtt_client: Error transport connect[0m
+[0;32mI (112000) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112000) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112010) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112020) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112030) mqtt_client: Error transport connect[0m
+[0;32mI (112030) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112040) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112050) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112060) mqtt_client: Error transport connect[0m
+[0;32mI (112070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112070) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112080) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112090) mqtt_client: Error transport connect[0m
+[0;32mI (112100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112110) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112120) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112130) mqtt_client: Error transport connect[0m
+[0;32mI (112130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112140) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112150) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112160) mqtt_client: Error transport connect[0m
+[0;32mI (112160) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112190) mqtt_client: Error transport connect[0m
+[0;32mI (112200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112210) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112220) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112230) mqtt_client: Error transport connect[0m
+[0;32mI (112230) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112240) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112250) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112260) mqtt_client: Error transport connect[0m
+[0;32mI (112260) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112270) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112280) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112290) mqtt_client: Error transport connect[0m
+[0;32mI (112300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112310) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112320) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112320) mqtt_client: Error transport connect[0m
+[0;32mI (112330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112340) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112350) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112360) mqtt_client: Error transport connect[0m
+[0;32mI (112360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112370) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112380) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112380) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112390) mqtt_client: Error transport connect[0m
+[0;32mI (112400) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112400) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112410) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112420) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112420) mqtt_client: Error transport connect[0m
+[0;32mI (112430) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112430) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112440) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112450) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112460) mqtt_client: Error transport connect[0m
+[0;32mI (112460) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112470) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112470) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112480) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112490) mqtt_client: Error transport connect[0m
+[0;32mI (112500) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112500) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112510) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112520) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112520) mqtt_client: Error transport connect[0m
+[0;32mI (112530) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112530) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112540) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112550) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112560) mqtt_client: Error transport connect[0m
+[0;32mI (112560) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112570) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112570) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112580) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112590) mqtt_client: Error transport connect[0m
+[0;32mI (112600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112600) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112610) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112620) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112620) mqtt_client: Error transport connect[0m
+[0;32mI (112630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112630) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112640) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112650) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112660) mqtt_client: Error transport connect[0m
+[0;32mI (112660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112670) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112680) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112690) mqtt_client: Error transport connect[0m
+[0;32mI (112700) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112700) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112710) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112720) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112720) mqtt_client: Error transport connect[0m
+[0;32mI (112730) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112740) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112750) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112760) mqtt_client: Error transport connect[0m
+[0;32mI (112760) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112770) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112770) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112780) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112790) mqtt_client: Error transport connect[0m
+[0;32mI (112790) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112800) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112810) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112820) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112820) mqtt_client: Error transport connect[0m
+[0;32mI (112830) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112830) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112840) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112850) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112860) mqtt_client: Error transport connect[0m
+[0;32mI (112860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112870) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112880) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112890) mqtt_client: Error transport connect[0m
+[0;32mI (112890) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112900) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112910) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112920) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112920) mqtt_client: Error transport connect[0m
+[0;32mI (112930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112930) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112940) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112950) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112950) mqtt_client: Error transport connect[0m
+[0;32mI (112960) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112970) mqtt_client: Client force reconnect requested[0m
+[0;31mE (112970) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (112980) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (112990) mqtt_client: Error transport connect[0m
+[0;32mI (112990) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113000) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113010) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113010) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113020) mqtt_client: Error transport connect[0m
+[0;32mI (113030) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113030) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113040) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113050) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113050) mqtt_client: Error transport connect[0m
+[0;32mI (113060) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113070) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113080) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113090) mqtt_client: Error transport connect[0m
+[0;32mI (113090) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113100) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113110) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113120) mqtt_client: Error transport connect[0m
+[0;32mI (113130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113130) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113140) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113150) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113150) mqtt_client: Error transport connect[0m
+[0;32mI (113160) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113160) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113170) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113180) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113190) mqtt_client: Error transport connect[0m
+[0;32mI (113190) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113200) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113210) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113220) mqtt_client: Error transport connect[0m
+[0;32mI (113230) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113230) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113240) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113250) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113250) mqtt_client: Error transport connect[0m
+[0;32mI (113260) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113260) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113270) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113280) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113290) mqtt_client: Error transport connect[0m
+[0;32mI (113290) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113300) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113310) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113320) mqtt_client: Error transport connect[0m
+[0;32mI (113330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113330) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113340) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113350) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113350) mqtt_client: Error transport connect[0m
+[0;32mI (113360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113360) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113370) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113380) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113390) mqtt_client: Error transport connect[0m
+[0;32mI (113390) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113400) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113400) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113410) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113420) mqtt_client: Error transport connect[0m
+[0;32mI (113420) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113430) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113440) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113450) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113450) mqtt_client: Error transport connect[0m
+[0;32mI (113460) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113460) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113470) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113480) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113490) mqtt_client: Error transport connect[0m
+[0;32mI (113490) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113500) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113500) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113510) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113520) mqtt_client: Error transport connect[0m
+[0;32mI (113520) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113530) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113540) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113550) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113550) mqtt_client: Error transport connect[0m
+[0;32mI (113560) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113560) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113570) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113580) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113580) mqtt_client: Error transport connect[0m
+[0;32mI (113590) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113600) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113600) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113610) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113620) mqtt_client: Error transport connect[0m
+[0;32mI (113620) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113630) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113640) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113640) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113650) mqtt_client: Error transport connect[0m
+[0;32mI (113660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113660) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113670) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113680) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113680) mqtt_client: Error transport connect[0m
+[0;32mI (113690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113690) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113700) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113710) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113720) mqtt_client: Error transport connect[0m
+[0;32mI (113720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113730) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113740) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113750) mqtt_client: Error transport connect[0m
+[0;32mI (113760) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113770) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113780) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113780) mqtt_client: Error transport connect[0m
+[0;32mI (113790) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113800) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113810) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113820) mqtt_client: Error transport connect[0m
+[0;32mI (113820) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113830) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113830) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113840) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113850) mqtt_client: Error transport connect[0m
+[0;32mI (113860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113860) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113870) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113880) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113880) mqtt_client: Error transport connect[0m
+[0;32mI (113890) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113890) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113900) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113910) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113920) mqtt_client: Error transport connect[0m
+[0;32mI (113920) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113930) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113930) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113940) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113950) mqtt_client: Error transport connect[0m
+[0;32mI (113960) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113960) mqtt_client: Client force reconnect requested[0m
+[0;31mE (113970) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (113980) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (113980) mqtt_client: Error transport connect[0m
+[0;32mI (113990) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (113990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114000) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114010) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114020) mqtt_client: Error transport connect[0m
+[0;32mI (114020) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114030) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114030) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114040) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114050) mqtt_client: Error transport connect[0m
+[0;32mI (114050) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114070) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114080) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114080) mqtt_client: Error transport connect[0m
+[0;32mI (114090) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114090) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114100) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114110) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114120) mqtt_client: Error transport connect[0m
+[0;32mI (114120) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114130) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114130) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114140) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114150) mqtt_client: Error transport connect[0m
+[0;32mI (114150) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114160) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114170) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114180) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114180) mqtt_client: Error transport connect[0m
+[0;32mI (114190) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114190) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114200) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114210) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114210) mqtt_client: Error transport connect[0m
+[0;32mI (114220) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114230) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114230) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114240) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114250) mqtt_client: Error transport connect[0m
+[0;32mI (114250) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114260) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114270) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114270) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114280) mqtt_client: Error transport connect[0m
+[0;32mI (114290) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114300) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114310) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114310) mqtt_client: Error transport connect[0m
+[0;32mI (114320) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114330) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114340) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114350) mqtt_client: Error transport connect[0m
+[0;32mI (114350) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114360) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114370) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114370) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114380) mqtt_client: Error transport connect[0m
+[0;32mI (114390) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114390) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114400) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114410) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114410) mqtt_client: Error transport connect[0m
+[0;32mI (114420) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114420) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114430) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114440) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114450) mqtt_client: Error transport connect[0m
+[0;32mI (114450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114460) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114460) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114470) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114480) mqtt_client: Error transport connect[0m
+[0;32mI (114490) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114490) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114500) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114510) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114510) mqtt_client: Error transport connect[0m
+[0;32mI (114520) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114520) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114530) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114540) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114550) mqtt_client: Error transport connect[0m
+[0;32mI (114550) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114560) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114560) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114570) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114580) mqtt_client: Error transport connect[0m
+[0;32mI (114590) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114590) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114600) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114610) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114610) mqtt_client: Error transport connect[0m
+[0;32mI (114620) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114620) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114630) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114640) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114650) mqtt_client: Error transport connect[0m
+[0;32mI (114650) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114660) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114660) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114670) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114680) mqtt_client: Error transport connect[0m
+[0;32mI (114680) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114690) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114700) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114710) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114710) mqtt_client: Error transport connect[0m
+[0;32mI (114720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114720) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114730) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114740) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114750) mqtt_client: Error transport connect[0m
+[0;32mI (114750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114760) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114770) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114780) mqtt_client: Error transport connect[0m
+[0;32mI (114780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114790) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114800) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114810) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114810) mqtt_client: Error transport connect[0m
+[0;32mI (114820) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114820) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114830) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114840) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114840) mqtt_client: Error transport connect[0m
+[0;32mI (114850) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114860) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114860) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114870) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114880) mqtt_client: Error transport connect[0m
+[0;32mI (114880) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114890) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114900) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114900) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114910) mqtt_client: Error transport connect[0m
+[0;32mI (114920) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114920) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114930) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114940) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114940) mqtt_client: Error transport connect[0m
+[0;32mI (114950) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (114960) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (114970) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (114980) mqtt_client: Error transport connect[0m
+[0;32mI (114980) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (114990) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115000) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115000) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115010) mqtt_client: Error transport connect[0m
+[0;32mI (115020) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115030) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115040) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115040) mqtt_client: Error transport connect[0m
+[0;32mI (115050) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115060) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115070) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115080) mqtt_client: Error transport connect[0m
+[0;32mI (115080) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115090) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115090) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115100) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115110) mqtt_client: Error transport connect[0m
+[0;32mI (115120) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115120) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115130) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115140) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115140) mqtt_client: Error transport connect[0m
+[0;32mI (115150) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115160) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115170) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115180) mqtt_client: Error transport connect[0m
+[0;32mI (115180) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115190) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115190) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115200) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115210) mqtt_client: Error transport connect[0m
+[0;32mI (115220) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115220) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115230) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115240) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115240) mqtt_client: Error transport connect[0m
+[0;32mI (115250) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115250) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115260) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115270) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115280) mqtt_client: Error transport connect[0m
+[0;32mI (115280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115290) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115300) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115310) mqtt_client: Error transport connect[0m
+[0;32mI (115310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115320) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115330) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115340) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115340) mqtt_client: Error transport connect[0m
+[0;32mI (115350) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115350) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115360) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115370) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115380) mqtt_client: Error transport connect[0m
+[0;32mI (115380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115390) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115390) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115400) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115410) mqtt_client: Error transport connect[0m
+[0;32mI (115410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115420) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115430) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115440) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115440) mqtt_client: Error transport connect[0m
+[0;32mI (115450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115460) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115470) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115480) mqtt_client: Error transport connect[0m
+[0;32mI (115480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115490) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115490) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115500) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115510) mqtt_client: Error transport connect[0m
+[0;32mI (115510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115520) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115530) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115540) mqtt_client: Error transport connect[0m
+[0;32mI (115550) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115550) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115560) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115570) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115570) mqtt_client: Error transport connect[0m
+[0;32mI (115580) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115590) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115590) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115600) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115610) mqtt_client: Error transport connect[0m
+[0;32mI (115610) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115620) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115630) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115640) mqtt_client: Error transport connect[0m
+[0;32mI (115650) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115650) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115660) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115670) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115670) mqtt_client: Error transport connect[0m
+[0;32mI (115680) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115690) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115700) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115710) mqtt_client: Error transport connect[0m
+[0;32mI (115710) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115720) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115730) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115740) mqtt_client: Error transport connect[0m
+[0;32mI (115750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115760) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115770) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115770) mqtt_client: Error transport connect[0m
+[0;32mI (115780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115790) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115800) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115810) mqtt_client: Error transport connect[0m
+[0;32mI (115810) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115820) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115820) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115830) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115840) mqtt_client: Error transport connect[0m
+[0;32mI (115850) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115860) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115870) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115870) mqtt_client: Error transport connect[0m
+[0;32mI (115880) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115890) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115900) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115910) mqtt_client: Error transport connect[0m
+[0;32mI (115910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115920) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115920) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115930) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115940) mqtt_client: Error transport connect[0m
+[0;32mI (115940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115960) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (115970) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (115970) mqtt_client: Error transport connect[0m
+[0;32mI (115980) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (115990) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116000) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116010) mqtt_client: Error transport connect[0m
+[0;32mI (116010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116020) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116030) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116040) mqtt_client: Error transport connect[0m
+[0;32mI (116040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116060) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116070) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116070) mqtt_client: Error transport connect[0m
+[0;32mI (116080) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116090) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116100) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116110) mqtt_client: Error transport connect[0m
+[0;32mI (116110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116120) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116120) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116130) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116140) mqtt_client: Error transport connect[0m
+[0;32mI (116140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116160) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116170) mqtt_client: Error transport connect[0m
+[0;32mI (116180) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116190) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116200) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116200) mqtt_client: Error transport connect[0m
+[0;32mI (116210) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116220) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116230) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116240) mqtt_client: Error transport connect[0m
+[0;32mI (116240) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116250) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116270) mqtt_client: Error transport connect[0m
+[0;32mI (116280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116290) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116300) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116300) mqtt_client: Error transport connect[0m
+[0;32mI (116310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116340) mqtt_client: Error transport connect[0m
+[0;32mI (116340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116350) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116360) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116370) mqtt_client: Error transport connect[0m
+[0;32mI (116380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116390) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116400) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116400) mqtt_client: Error transport connect[0m
+[0;32mI (116410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116430) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116440) mqtt_client: Error transport connect[0m
+[0;32mI (116440) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116450) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116470) mqtt_client: Error transport connect[0m
+[0;32mI (116480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116490) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116500) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116500) mqtt_client: Error transport connect[0m
+[0;32mI (116510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116520) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116530) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116540) mqtt_client: Error transport connect[0m
+[0;32mI (116540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116550) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116570) mqtt_client: Error transport connect[0m
+[0;32mI (116570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116590) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116600) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116600) mqtt_client: Error transport connect[0m
+[0;32mI (116610) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116620) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116630) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116640) mqtt_client: Error transport connect[0m
+[0;32mI (116640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116650) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116660) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116670) mqtt_client: Error transport connect[0m
+[0;32mI (116670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116680) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116690) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116700) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116700) mqtt_client: Error transport connect[0m
+[0;32mI (116710) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116720) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116730) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116740) mqtt_client: Error transport connect[0m
+[0;32mI (116740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116750) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116770) mqtt_client: Error transport connect[0m
+[0;32mI (116770) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116780) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116790) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116800) mqtt_client: Error transport connect[0m
+[0;32mI (116810) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116810) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116820) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116830) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116830) mqtt_client: Error transport connect[0m
+[0;32mI (116840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116870) mqtt_client: Error transport connect[0m
+[0;32mI (116870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116900) mqtt_client: Error transport connect[0m
+[0;32mI (116910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116920) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116930) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116930) mqtt_client: Error transport connect[0m
+[0;32mI (116940) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (116970) mqtt_client: Error transport connect[0m
+[0;32mI (116970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116980) mqtt_client: Client force reconnect requested[0m
+[0;31mE (116980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (116990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117000) mqtt_client: Error transport connect[0m
+[0;32mI (117010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117020) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117030) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117030) mqtt_client: Error transport connect[0m
+[0;32mI (117040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117060) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117070) mqtt_client: Error transport connect[0m
+[0;32mI (117070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117080) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117100) mqtt_client: Error transport connect[0m
+[0;32mI (117110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117120) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117130) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117130) mqtt_client: Error transport connect[0m
+[0;32mI (117140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117160) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117170) mqtt_client: Error transport connect[0m
+[0;32mI (117170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117200) mqtt_client: Error transport connect[0m
+[0;32mI (117200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117220) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117230) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117230) mqtt_client: Error transport connect[0m
+[0;32mI (117240) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117250) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117260) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117270) mqtt_client: Error transport connect[0m
+[0;32mI (117270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117290) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117300) mqtt_client: Error transport connect[0m
+[0;32mI (117300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117310) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117320) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117330) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117330) mqtt_client: Error transport connect[0m
+[0;32mI (117340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117350) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117360) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117370) mqtt_client: Error transport connect[0m
+[0;32mI (117370) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117380) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117390) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117400) mqtt_client: Error transport connect[0m
+[0;32mI (117400) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117420) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117420) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117430) mqtt_client: Error transport connect[0m
+[0;32mI (117440) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117440) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117450) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117460) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117460) mqtt_client: Error transport connect[0m
+[0;32mI (117470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117480) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117490) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117500) mqtt_client: Error transport connect[0m
+[0;32mI (117500) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117510) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117510) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117520) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117530) mqtt_client: Error transport connect[0m
+[0;32mI (117540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117540) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117550) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117560) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117560) mqtt_client: Error transport connect[0m
+[0;32mI (117570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117570) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117580) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117590) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117600) mqtt_client: Error transport connect[0m
+[0;32mI (117600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117610) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117620) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117630) mqtt_client: Error transport connect[0m
+[0;32mI (117640) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117650) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117660) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117660) mqtt_client: Error transport connect[0m
+[0;32mI (117670) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117680) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117690) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117700) mqtt_client: Error transport connect[0m
+[0;32mI (117700) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117710) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117710) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117720) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117730) mqtt_client: Error transport connect[0m
+[0;32mI (117740) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117740) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117750) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117760) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117760) mqtt_client: Error transport connect[0m
+[0;32mI (117770) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117770) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117780) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117790) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117800) mqtt_client: Error transport connect[0m
+[0;32mI (117800) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117810) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117810) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117820) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117830) mqtt_client: Error transport connect[0m
+[0;32mI (117830) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117850) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117860) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117860) mqtt_client: Error transport connect[0m
+[0;32mI (117870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117870) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117880) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117890) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117900) mqtt_client: Error transport connect[0m
+[0;32mI (117900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117910) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117920) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117930) mqtt_client: Error transport connect[0m
+[0;32mI (117930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117940) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117950) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117960) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (117960) mqtt_client: Error transport connect[0m
+[0;32mI (117970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (117970) mqtt_client: Client force reconnect requested[0m
+[0;31mE (117980) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (117990) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118000) mqtt_client: Error transport connect[0m
+[0;32mI (118000) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118010) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118010) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118020) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118030) mqtt_client: Error transport connect[0m
+[0;32mI (118030) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118040) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118050) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118050) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118060) mqtt_client: Error transport connect[0m
+[0;32mI (118070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118070) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118080) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118090) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118090) mqtt_client: Error transport connect[0m
+[0;32mI (118100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118110) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118120) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118130) mqtt_client: Error transport connect[0m
+[0;32mI (118130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118140) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118150) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118150) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118160) mqtt_client: Error transport connect[0m
+[0;32mI (118170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118180) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118190) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118190) mqtt_client: Error transport connect[0m
+[0;32mI (118200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118210) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118220) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118230) mqtt_client: Error transport connect[0m
+[0;32mI (118230) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118240) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118240) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118250) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118260) mqtt_client: Error transport connect[0m
+[0;32mI (118270) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118270) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118280) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118290) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118290) mqtt_client: Error transport connect[0m
+[0;32mI (118300) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (118310) esp-tls: couldn't get hostname for :103.1.238.175: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (118320) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (118330) mqtt_client: Error transport connect[0m
+[0;32mI (118330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (128360) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (128360) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (128360) mqtt_client: Error transport connect[0m
+[0;32mI (128360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (128370) mqtt_client: Client force reconnect requested[0m
+[0;32mI (130570) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (143300) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (143310) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (143310) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (143310) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (143320) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (154280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (154280) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (154280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (154280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (165280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (165280) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (165280) mqtt_client: MQTT connect failed[0m
+[0;32mI (165280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (165290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (175310) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (175310) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (175310) mqtt_client: Error transport connect[0m
+[0;32mI (175310) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (175320) mqtt_client: Client force reconnect requested[0m
+[0;32mI (175910) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (207280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (207280) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (207280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (207280) mqtt_client: Client force reconnect requested[0m
+[0;32mI (207370) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;33mW (220980) transport_base: Poll timeout or error, errno=No more processes, fd=54, timeout_ms=10000[0m
+[0;31mE (220980) mqtt_client: Writing didn't complete in specified timeout: errno=11[0m
+[0;32mI (220990) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (220990) mqtt_client: Client force reconnect requested[0m
+[0;32mI (221530) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (232280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (232280) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (232280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (232280) mqtt_client: Client force reconnect requested[0m
+[0;31mE (243280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (243280) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (243280) mqtt_client: MQTT connect failed[0m
+[0;32mI (243280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (243290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (254280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (254280) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (254280) mqtt_client: MQTT connect failed[0m
+[0;32mI (254280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (254290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (265280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (265280) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (265280) mqtt_client: MQTT connect failed[0m
+[0;32mI (265280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (265290) mqtt_client: Client force reconnect requested[0m
+[0;31mE (276280) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (276280) mqtt_client: Writing failed: errno=11[0m
+[0;31mE (276280) mqtt_client: MQTT connect failed[0m
+[0;32mI (276280) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (276290) mqtt_client: Client force reconnect requested[0m

@@ -1,0 +1,1 @@
+C:\Users\Hello\AppData\Local\Temp\kconfgen_tmp28bwp82k:2: warning: '1' is not a valid value for the bool symbol LV_COLOR_16_SWAP (defined at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/Kconfig:39). Assignment ignored.

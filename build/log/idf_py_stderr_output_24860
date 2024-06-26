@@ -1,0 +1,79 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400f4d09: lv_label_set_text at C:/get-started/BTL_VXL/managed_components/lvgl__lvgl/src/widgets/lv_label.c:134 (discriminator 1)
+0x400d7b6f: ui_Screen1_screen_init at C:/get-started/BTL_VXL/main/ui.c:188
+0x400d7c95: ui_init at C:/get-started/BTL_VXL/main/ui.c:225
+0x400d70d5: Display_Task at C:/get-started/BTL_VXL/main/main.c:416
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40085e52: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008357d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d65db: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:165
+0x400d6db7: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:218
+0x400d5bf7: console_write at C:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5782: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40175665: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4018228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40181c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40175bcd: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40191aad: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4009151d: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d7f41: esp_mqtt_client_publish at C:/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:2019 (discriminator 1)
+0x400d738d: ultrasonic_test at C:/get-started/BTL_VXL/main/main.c:310
+0x4008ad5d: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

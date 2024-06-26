@@ -1,0 +1,1467 @@
+2mI (40) boot.esp32:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (556) cpu_start: Pro cpu start user code[0m
+[0;32mI (556) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (556) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (585) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (625) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (920) wifi:state: auth -> init (8a0)
+I (920) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3350) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3350) wifi:state: init -> auth (b0)
+I (3410) wifi:state: auth -> assoc (0)
+I (3470) wifi:state: assoc -> run (10)
+I (3590) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3590) wifi:security: WPA2-PSK, phy: bgn, rssi: -70
+I (3600) wifi:pm start, type: 1
+
+I (3600) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3650) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4610) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4620) example: Turn off LCD backlight[0m
+[0;32mI (4620) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4620) example: Initialize SPI bus[0m
+[0;32mI (4630) example: Install panel IO[0m
+[0;32mI (4630) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (4640) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (4650) example: Install ILI9341 panel driver[0m
+[0;32mI (4650) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4660) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (4730) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4790) example: Turn on LCD backlight[0m
+[0;32mI (4790) example: Initialize LVGL library[0m
+[0;32mI (4790) example: Register display driver to LVGL[0m
+[0;32mI (4800) example: Install LVGL tick timer[0m
+[0;32mI (4800) main_task: Returned from app_main()[0m
+I (4800) wifi:state: run -> init (0)
+I (4800) wifi:pm stop, total sleep time: 621576 us / 1206261 us
+
+I (4810) wifi:<ba-del>idx:0, tid:0
+I (4810) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (4820) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (4830) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (4840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4850) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4850) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4860) mqtt_client: Error transport connect[0m
+[0;32mI (4860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4870) mqtt_client: Client force reconnect requested[0m
+I (4870) smartconfig: SC version: V3.0.1
+[0;31mE (4880) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (4880) smartconfig: scan status 1
+[0;31mE (4890) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (4880) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (4900) mqtt_client: Error transport connect[0m
+[0;32mI (4910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4920) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4920) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4930) mqtt_client: Error transport connect[0m
+[0;32mI (4930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4940) mqtt_client: Client force reconnect requested[0m
+W (4940) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (4950) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (4950) smartconfig: promis scan ret 12294
+[0;31mE (4960) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4970) mqtt_client: Error transport connect[0m
+[0;32mI (4970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4980) mqtt_client: Client force reconnect requested[0m
+I (4980) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (4990) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (4990) wifi:state: init -> auth (b0)
+[0;31mE (5000) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5010) mqtt_client: Error transport connect[0m
+[0;32mI (5010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5020) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5030) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5040) mqtt_client: Error transport connect[0m
+[0;32mI (5040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5050) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5060) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5070) mqtt_client: Error transport connect[0m
+[0;32mI (5070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5080) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5090) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5090) mqtt_client: Error transport connect[0m
+[0;32mI (5100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5100) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5110) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060330  A0      : 0x800dc733  A1      : 0x3ffd8430  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd84b0  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8430 0x400dc730:0x3ffd8450 0x400dca91:0x3ffd8510 0x400d7d91:0x3ffd8530 0x400d79ca:0x3ffd8550 0x4008ad5d:0x3ffd8580
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (900) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (930) wifi:state: auth -> assoc (0)
+I (1000) wifi:state: assoc -> run (10)
+I (1140) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1140) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+I (1150) wifi:pm start, type: 1
+
+I (1150) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1200) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2160) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2170) example: Turn off LCD backlight[0m
+[0;32mI (2170) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2170) example: Initialize SPI bus[0m
+[0;32mI (2170) example: Install panel IO[0m
+[0;32mI (2180) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2190) example: Install ILI9341 panel driver[0m
+I (2190) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2200) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2210) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (2330) example: Turn on LCD backlight[0m
+[0;32mI (2330) example: Initialize LVGL library[0m
+[0;32mI (2330) example: Register display driver to LVGL[0m
+[0;32mI (2340) example: Install LVGL tick timer[0m
+[0;32mI (2340) main_task: Returned from app_main()[0m
+I (2340) wifi:state: run -> init (0)
+I (2340) wifi:pm stop, total sleep time: 569962 us / 1192897 us
+
+I (2350) wifi:<ba-del>idx:0, tid:0
+I (2350) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2360) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;31mE (2370) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2370) mqtt_client: Error transport connect[0m
+[0;32mI (2380) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2380) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2390) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2400) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2400) mqtt_client: Error transport connect[0m
+I (2410) smartconfig: SC version: V3.0.1
+[0;32mI (2410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+I (2410) smartconfig: scan status 1
+[0;32mI (2420) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2410) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (2430) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2440) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2440) mqtt_client: Error transport connect[0m
+[0;32mI (2450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2460) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+W (2470) wifi:sta_scan: STA Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060330  A0      : 0x800dc733  A1      : 0x3ffd8420  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd84a0  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8420 0x400dc730:0x3ffd8440 0x400dca91:0x3ffd8500 0x400d7d91:0x3ffd8520 0x400d79ca:0x3ffd8540 0x4008ad5d:0x3ffd8570
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (970) wifi:state: auth -> assoc (0)
+I (1970) wifi:state: assoc -> init (2700)
+I (1970) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4390) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4390) wifi:state: init -> auth (b0)
+I (4450) wifi:state: auth -> assoc (0)
+I (4510) wifi:state: assoc -> run (10)
+I (4630) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (4630) wifi:security: WPA2-PSK, phy: bgn, rssi: -69
+I (4640) wifi:pm start, type: 1
+
+I (4640) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4690) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5650) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5660) example: Turn off LCD backlight[0m
+[0;32mI (5660) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5660) example: Initialize SPI bus[0m
+[0;32mI (5670) example: Install panel IO[0m
+[0;32mI (5670) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5680) example: Install ILI9341 panel driver[0m
+[0;32mI (5680) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5690) ili9341: LCD panel create success, version: 1.2.0[0m
+I (5700) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (5780) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5830) example: Turn on LCD backlight[0m
+[0;32mI (5830) example: Initialize LVGL library[0m
+[0;32mI (5830) example: Register display driver to LVGL[0m
+[0;32mI (5840) example: Install LVGL tick timer[0m
+[0;32mI (5840) main_task: Returned from app_main()[0m
+I (5840) wifi:state: run -> init (0)
+I (5840) wifi:pm stop, total sleep time: 557605 us / 1203890 us
+
+I (5850) wifi:<ba-del>idx:0, tid:0
+I (5850) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (5860) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (5870) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (5880) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5890) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5890) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5900) mqtt_client: Error transport connect[0m
+[0;32mI (5900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5910) mqtt_client: Client force reconnect requested[0m
+I (5910) smartconfig: SC version: V3.0.1
+[0;31mE (5920) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5920) smartconfig: scan status 1
+[0;31mE (5930) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (5920) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (5940) mqtt_client: Error transport connect[0m
+[0;32mI (5950) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5950) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5960) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5960) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5970) mqtt_client: Error transport connect[0m
+[0;32mI (5970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5980) mqtt_client: Client force reconnect requested[0m
+W (5980) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (5990) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (5990) smartconfig: promis scan ret 12294
+[0;31mE (6000) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6010) mqtt_client: Error transport connect[0m
+[0;32mI (6010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+I (6010) wifi:[0;32mI (6020) mqtt_client: Client force reconnect requested[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (6030) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (6030) wifi:state: init -> auth (b0)
+[0;31mE (6040) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6050) mqtt_client: Error transport connect[0m
+[0;32mI (6050) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6060) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6060) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6070) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6080) mqtt_client: Error transport connect[0m
+[0;32mI (6080) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6090) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6090) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6100) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6110) mqtt_client: Error transport connect[0m
+[0;32mI (6110) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6120) mqtt_client: Client force reconnect requested[0m
+I (6110) wifi:state: auth -> assoc (0)
+[0;31mE (6130) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6130) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6140) mqtt_client: Error transport connect[0m
+[0;32mI (6140) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6150) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6160) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6160) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (6170) mqtt_client: Error transport connect[0m
+[0;32mI (6170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6180) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6190) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6190) transport_base: Failed to open a new connection: 32772[0m
+I (6190) wifi:[0;31mE (6200) mqtt_client: Error transport connect[0m
+state: assoc -> run (10)
+[0;32mI (6200) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6210) mqtt_client: Client force reconnect requested[0m
+[0;31mE (6220) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (6220) transport_base: Failed to open a new connecGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060930  A0      : 0x800dc733  A1      : 0x3ffd8600  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd8680  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8600 0x400dc730:0x3ffd8620 0x400dca91:0x3ffd86e0 0x400d7d91:0x3ffd8700 0x400d79ca:0x3ffd8720 0x4008ad5d:0x3ffd8750
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (930) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (930) wifi:state: init -> auth (b0)
+I (950) wifi:state: auth -> assoc (0)
+I (1020) wifi:state: assoc -> run (10)
+I (1210) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1210) wifi:security: WPA2-PSK, phy: bgn, rssi: -70
+I (1220) wifi:pm start, type: 1
+
+I (1220) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1230) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2230) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2240) example: Turn off LCD backlight[0m
+[0;32mI (2240) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2240) example: Initialize SPI bus[0m
+[0;32mI (2250) example: Install panel IO[0m
+[0;32mI (2250) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (2250) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (2270) example: Install ILI9341 panel driver[0m
+[0;32mI (2270) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2280) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (2310) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2410) example: Turn on LCD backlight[0m
+[0;32mI (2410) example: Initialize LVGL library[0m
+[0;32mI (2410) example: Register display driver to LVGL[0m
+[0;32mI (2420) example: Install LVGL tick timer[0m
+[0;32mI (2420) main_task: Returned from app_main()[0m
+I (2420) wifi:state: run -> init (0)
+I (2420) wifi:pm stop, total sleep time: 618744 us / 1206977 us
+
+I (2430) wifi:<ba-del>idx:0, tid:0
+I (2430) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2440) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2450) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (2460) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2460) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2470) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2470) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2480) mqtt_client: Error transport connect[0m
+[0;32mI (2480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2490) mqtt_client: Client force reconnect requested[0m
+I (2490) smartconfig: SC version: V3.0.1
+[0;31mE (2500) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2500) smartconfig: scan status 1
+[0;31mE (2510) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2500) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (2510) mqtt_client: Error transport connect[0m
+[0;32mI (2530) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2530) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2540) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2540) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2550) mqtt_client: Error transport connect[0m
+[0;32mI (2550) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2560) mqtt_client: Client force reconnect requested[0m
+W (2560) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (2570) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (2570) smartconfig: promis scan ret 12294
+[0;31mE (2580) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2590) mqtt_client: Error transport connect[0m
+[0;32mI (2590) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2600) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2610) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2610) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2610) transport_base: Failed to open a new connection: 32772[0m
+I (2620) wifi:[0;31mE (2620) mqtt_client: Error transport connect[0m
+state: init -> auth (b0)
+[0;32mI (2630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2640) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2650) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2660) mqtt_client: Error transport connect[0m
+[0;32mI (2660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2670) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2680) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2690) mqtt_client: Error transport connect[0m
+[0;32mI (2690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2700) mqtt_client: Client force reconnect requested[0m
+I (2690) wifi:state: auth -> assoc (0)
+[0;31mE (2710) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2710) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2720) mqtt_client: Error transport connect[0m
+[0;32mI (2720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2740) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2740) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2750) mqtt_client: Error transport connect[0m
+[0;32mI (2750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2770) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060d30  A0      : 0x800dc733  A1      : 0x3ffd8440  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd84c0  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8440 0x400dc730:0x3ffd8460 0x400dca91:0x3ffd8520 0x400d7d91:0x3ffd8540 0x400d79ca:0x3ffd8560 0x4008ad5d:0x3ffd8590
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (930) wifi:state: auth -> assoc (0)
+I (1020) wifi:state: assoc -> run (10)
+I (1090) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1090) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+I (1100) wifi:pm start, type: 1
+
+I (1100) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1140) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2110) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2120) example: Turn off LCD backlight[0m
+[0;32mI (2120) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2120) example: Initialize SPI bus[0m
+[0;32mI (2120) example: Install panel IO[0m
+[0;32mI (2130) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (2130) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2150) example: Install ILI9341 panel driver[0m
+[0;32mI (2150) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2160) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (2210) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2290) example: Turn on LCD backlight[0m
+[0;32mI (2290) example: Initialize LVGL library[0m
+[0;32mI (2290) example: Register display driver to LVGL[0m
+[0;32mI (2300) example: Install LVGL tick timer[0m
+[0;32mI (2300) main_task: Returned from app_main()[0m
+I (2300) wifi:state: run -> init (0)
+I (2300) wifi:pm stop, total sleep time: 483013 us / 1205320 us
+
+I (2310) wifi:<ba-del>idx:0, tid:0
+I (2310) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2320) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2330) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (2340) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2340) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2350) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2350) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2360) mqtt_client: Error transport connect[0m
+[0;32mI (2360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2370) mqtt_client: Client force reconnect requested[0m
+I (2370) smartconfig: SC version: V3.0.1
+[0;31mE (2380) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2380) smartconfig: scan status 1
+[0;31mE (2390) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2380) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (2400) mqtt_client: Error transport connect[0m
+[0;32mI (2410) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2410) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2420) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2420) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2430) mqtt_client: Error transport connect[0m
+[0;32mI (2430) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2440) mqtt_client: Client force reconnect requested[0m
+W (2440) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (2450) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (2450) smartconfig: promis scan ret 12294
+[0;31mE (2460) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2470) mqtt_client: Error transport connect[0m
+I (2470) wifi:[0;32mI (2470) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (2480) mqtt_client: Client force reconnect requested[0m
+
+I (2490) wifi:state: init -> auth (b0)
+[0;31mE (2490) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2500) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2510) mqtt_client: Error transport connect[0m
+[0;32mI (2510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2520) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2520) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2530) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2540) mqtt_client: Error transport connect[0m
+[0;32mI (2540) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2550) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2550) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2560) wifi:state: auth -> assoc (0)
+[0;31mE (2560) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2570) mqtt_client: Error transport connect[0m
+[0;32mI (2570) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2580) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2590) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2590) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2600) mqtt_client: Error transport connect[0m
+[0;32mI (2600) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2610) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2620) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2620) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2630) mqtt_client: Error transport connect[0m
+[0;32mI (2630) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2640) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2640) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2650) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2660) mqtt_client: Error transport connect[0m
+[0;32mI (2660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2670) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2680) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2690) mqtt_client: Error transport connect[0m
+[0;32mI (2690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2700) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2700) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2710) Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060530  A0      : 0x800dc733  A1      : 0x3ffd84c0  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd8540  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd84c0 0x400dc730:0x3ffd84e0 0x400dca91:0x3ffd85a0 0x400d7d91:0x3ffd85c0 0x400d79ca:0x3ffd85e0 0x4008ad5d:0x3ffd8610
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (960) wifi:state: auth -> assoc (0)
+I (1090) wifi:state: assoc -> run (10)
+I (1250) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (1250) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+I (1250) wifi:pm start, type: 1
+
+I (1250) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1410) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2260) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2270) example: Turn off LCD backlight[0m
+[0;32mI (2270) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2270) example: Initialize SPI bus[0m
+[0;32mI (2280) example: Install panel IO[0m
+[0;32mI (2280) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2290) example: Install ILI9341 panel driver[0m
+I (2290) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (2300) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2310) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (2340) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2440) example: Turn on LCD backlight[0m
+[0;32mI (2440) example: Initialize LVGL library[0m
+[0;32mI (2440) example: Register display driver to LVGL[0m
+[0;32mI (2450) example: Install LVGL tick timer[0m
+[0;32mI (2450) main_task: Returned from app_main()[0m
+I (2450) wifi:state: run -> init (0)
+I (2450) wifi:pm stop, total sleep time: 419508 us / 1201157 us
+
+I (2460) wifi:<ba-del>idx:0, tid:0
+I (2460) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2470) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (2480) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (2490) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2490) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2500) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2500) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2510) mqtt_client: Error transport connect[0m
+[0;32mI (2510) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2520) mqtt_client: Client force reconnect requested[0m
+I (2520) smartconfig: SC version: V3.0.1
+[0;31mE (2530) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2530) smartconfig: scan status 1
+[0;31mE (2540) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2530) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (2550) mqtt_client: Error transport connect[0m
+[0;32mI (2560) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2560) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2570) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2570) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2580) mqtt_client: Error transport connect[0m
+[0;32mI (2580) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2590) mqtt_client: Client force reconnect requested[0m
+W (2590) wifi:sta_scan: STA is connecting, scan are not allowed!
+E (2600) smartconfig: promis scan ret 12294
+[0;31mE (2610) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2610) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2620) mqtt_client: Error transport connect[0m
+[0;32mI (2620) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2630) mqtt_client: Client force reconnect requested[0m
+I (2620) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2640) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2640) wifi:state: init -> auth (b0)
+[0;31mE (2650) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2660) mqtt_client: Error transport connect[0m
+[0;32mI (2660) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2670) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2670) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2680) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2690) mqtt_client: Error transport connect[0m
+[0;32mI (2690) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2700) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2700) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (2710) wifi:state: auth -> assoc (0)
+[0;31mE (2710) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2720) mqtt_client: Error transport connect[0m
+[0;32mI (2720) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2730) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2740) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2740) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2750) mqtt_client: Error transport connect[0m
+[0;32mI (2750) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2760) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2770) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2770) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2780) mqtt_client: Error transport connect[0m
+[0;32mI (2780) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2790) mqtt_client: Client force reconnect requested[0m
+I (2780) wifi:state: assoc -> run (10)
+[0;31mE (2800) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2800) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2810) mqtt_client: Error transport connect[0m
+[0;32mI (2820) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2820) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2830) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2830) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2840) mqtt_client: Error transport connect[0m
+[0;32mI (2850) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2850) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2860) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2860) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2870) mqtt_client: Error transport connect[0m
+[0;32mI (2870) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2880) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2890) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2890) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2900) mqtt_client: Error transport connect[0m
+[0;32mI (2900) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2910) mqtt_client: Client force reconnect requested[0m
+I (2920) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30[0;31mE (2920) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+
+I (2930) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+[0;31mE (2930) transport_base: FGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060930  A0      : 0x800dc733  A1      : 0x3ffd8420  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd84a0  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8420 0x400dc730:0x3ffd8440 0x400dca91:0x3ffd8500 0x400d7d91:0x3ffd8520 0x400d79ca:0x3ffd8540 0x4008ad5d:0x3ffd8570
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (930) wifi:state: auth -> init (8a0)
+I (930) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3350) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3360) wifi:state: init -> auth (b0)
+I (3410) wifi:state: auth -> assoc (0)
+I (3470) wifi:state: assoc -> run (10)
+I (3590) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3590) wifi:security: WPA2-PSK, phy: bgn, rssi: -70
+I (3600) wifi:pm start, type: 1
+
+I (3600) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3610) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4610) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4620) example: Turn off LCD backlight[0m
+[0;32mI (4620) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4620) example: Initialize SPI bus[0m
+[0;32mI (4630) example: Install panel IO[0m
+[0;32mI (4630) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (4630) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:6, winSize:64
+[0;32mI (4650) example: Install ILI9341 panel driver[0m
+[0;32mI (4650) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (4660) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (4690) MQTT_PROJECT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4790) example: Turn on LCD backlight[0m
+[0;32mI (4790) example: Initialize LVGL library[0m
+[0;32mI (4790) example: Register display driver to LVGL[0m
+[0;32mI (4800) example: Install LVGL tick timer[0m
+[0;32mI (4800) main_task: Returned from app_main()[0m
+I (4800) wifi:state: run -> init (0)
+I (4800) wifi:pm stop, total sleep time: 614932 us / 1203638 us
+
+I (4810) wifi:<ba-del>idx:0, tid:0
+I (4810) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (4820) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (4830) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (4840) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4840) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4850) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4850) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4860) mqtt_client: Error transport connect[0m
+[0;32mI (4860) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4870) mqtt_client: Client force reconnect requested[0m
+I (4870) smartconfig: SC version: V3.0.1
+[0;31mE (4880) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (4880) smartconfig: scan status 1
+[0;31mE (4890) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (4880) MQTT_PROJECT: WiFi Connected to app[0m
+[0;31mE (4900) mqtt_client: Error transport connect[0m
+[0;32mI (4910) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4910) mqtt_client: Client force reconnect requested[0m
+[0;31mE (4920) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4920) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4930) mqtt_client: Error transport connect[0m
+[0;32mI (4930) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4940) mqtt_client: Client force reconnect requested[0m
+W (4940) wifi:sta_scan: STA is connecting, scan are not allowed!
+[0;31mE (4950) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+E (4950) smartconfig: promis scan ret 12294
+[0;31mE (4960) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4970) mqtt_client: Error transport connect[0m
+[0;32mI (4970) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+I (4980) wifi:[0;32mI (4980) mqtt_client: Client force reconnect requested[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (4990) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (4990) wifi:state: init -> auth (b0)
+[0;31mE (5000) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5010) mqtt_client: Error transport connect[0m
+[0;32mI (5010) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5020) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5020) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5030) transport_base: Failed to open a new connection: 32772[0m
+I (5030) wifi:[0;31mE (5040) mqtt_client: Error transport connect[0m
+state: auth -> assoc (0)
+[0;32mI (5040) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5050) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5060) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5060) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5070) mqtt_client: Error transport connect[0m
+[0;32mI (5070) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5080) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5090) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5090) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5100) mqtt_client: Error transport connect[0m
+[0;32mI (5100) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5110) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5120) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5120) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5130) mqtt_client: Error transport connect[0m
+[0;32mI (5130) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5140) mqtt_client: Client force reconnect requested[0m
+I (5140) wifi:state: assoc -> run (10)
+[0;31mE (5150) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5150) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5160) mqtt_client: Error transport connect[0m
+[0;32mI (5170) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5170) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5180) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5180) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5190) mqtt_client: Error transport connect[0m
+[0;32mI (5190) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5200) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5210) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5210) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5220) mqtt_client: Error transport connect[0m
+[0;32mI (5220) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5230) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5240) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5240) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5250) mqtt_client: Error transport connect[0m
+[0;32mI (5250) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5260) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5270) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5270) wifi:connected with Thanh Tam, aid = 4, channel 1, BW20, bssid = 10:39:4e:fd:17:30[0;31mE (5270) transport_base: Failed to open a new connection: 32772[0m
+
+[0;31mE (5280) mqtt_client: Error transport connect[0m
+I (5290) wifi:security: WPA2-PSK, phy: bgn, rssi: -72
+[0;32mI (5290) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5300) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5310) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (5310) wifi:pm start, type: 1
+[0;31mE (5310) transport_base: Failed to open a new connection: 32772[0m
+
+[0;31mE (5320) mqtt_client: Error transport connect[0m
+[0;32mI (5330) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5330) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5340) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5350) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5350) mqtt_client: Error transport connect[0m
+[0;32mI (5360) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5360) mqtt_client: Client force reconnect requested[0m
+I (5350) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (5380) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5380) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5390) mqtt_client: Error transport connect[0m
+[0;32mI (5390) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5400) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5400) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5410) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5420) mqtt_client: Error transport connect[0m
+[0;32mI (5420) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5430) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5430) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5440) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5440) mqtt_client: Error transport connect[0m
+[0;32mI (5450) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5450) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5460) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5470) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5470) mqtt_client: Error transport connect[0m
+[0;32mI (5480) MQTT_PROJECT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (5480) mqtt_client: Client force reconnect requested[0m
+[0;31mE (5490) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (5500) trGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400e28e3  PS      : 0x00060f30  A0      : 0x800dc733  A1      : 0x3ffd8420  
+A2      : 0x00000000  A3      : 0x3ffb59f0  A4      : 0x3ffb5a28  A5      : 0x00000000  
+A6      : 0x0000ffff  A7      : 0x00000000  A8      : 0x8019d048  A9      : 0x3ffd84a0  
+A10     : 0x3ffb4650  A11     : 0x3ffb59f0  A12     : 0x0000ffff  A13     : 0x00000000  
+A14     : 0x000f0000  A15     : 0x3ffb4674  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400e28e0:0x3ffd8420 0x400dc730:0x3ffd8440 0x400dca91:0x3ffd8500 0x400d7d91:0x3ffd8520 0x400d79ca:0x3ffd8540 0x4008ad5d:0x3ffd8570
+
+
+
+
+ELF file SHA256: 4238f5adb
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2024 15:54:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30380h (197504) map[0m
+[0;32mI (172) esp_image: segment 1: paddr=000403a8 vaddr=3ffb0000 size=03each ( 16044) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0004425c vaddr=40080000 size=0bdbch ( 48572) load[0m
+[0;32mI (198) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d8938h (887096) map[0m
+[0;32mI (502) esp_image: segment 4: paddr=00128960 vaddr=4008bdbc size=0cbach ( 52140) load[0m
+[0;32mI (535) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (535) boot: Disabling RNG early entropy source...[0m
+[0;32mI (547) cpu_start: Multicore app[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (558) cpu_start: Project name:     main[0m
+[0;32mI (563) cpu_start: App version:      1[0m
+[0;32mI (568) cpu_start: Compile time:     Jun 24 2024 16:32:35[0m
+[0;32mI (574) cpu_start: ELF file SHA256:  4238f5adb...[0m
+[0;32mI (579) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (584) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (589) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (594) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (599) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (606) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFC0D10 len 0001F2F0 (124 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 40098968 len 00007698 (29 KiB): IRAM[0m
+[0;32mI (639) spi_flash: detected chip: generic[0m
+[0;32mI (642) spi_flash: flash io: dio[0m
+[0;33mW (646) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+I (710) wifi:wifi driver task: 3ffc8d10, prio:23, stack:6656, core=0
+I (730) wifi:wifi firmware version: a9f5b59
+I (730) wifi:wifi certification version: v7.0
+I (730) wifi:config NVS flash: enabled
+I (730) wifi:config nano formating: disabled
+I (730) wifi:Init data frame dynamic rx buffer num: 32
+I (740) wifi:Init static rx mgmt buffer num: 5
+I (740) wifi:Init management short buffer num: 32
+I (740) wifi:Init dynamic tx buffer num: 32
+I (750) wifi:Init static rx buffer size: 1600
+I (750) wifi:Init static rx buffer num: 10
+I (760) wifi:Init dynamic rx buffer num: 32
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (770) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (780) wifi_init: tcp tx win: 5760[0m
+[0;32mI (780) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (790) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (800) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (890) wifi:mode : sta (b0:b2:1c:a7:ba:fc)
+I (890) wifi:enable tsf
+I (910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (910) wifi:state: init -> auth (b0)
+I (920) wifi:state: auth -> init (8a0)
+I (920) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
